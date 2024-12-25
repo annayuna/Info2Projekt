@@ -1,0 +1,18 @@
+/*
+ * Losfahren.cpp
+ *
+ *  Created on: 03.12.2024
+ *      Author: annaroessel
+ */
+
+#include "Losfahren.h"
+
+Losfahren::Losfahren() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Losfahren::~Losfahren() {
+	// TODO Auto-generated destructor stub
+}
+

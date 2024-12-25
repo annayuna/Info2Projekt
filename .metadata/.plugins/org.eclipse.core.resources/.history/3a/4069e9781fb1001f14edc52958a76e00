@@ -1,0 +1,17 @@
+/*
+ * Simulationsobjekt.h
+ *
+ *  Created on: 03.12.2024
+ *      Author: annaroessel
+ */
+
+#ifndef SIMULATIONSOBJEKT_H_
+#define SIMULATIONSOBJEKT_H_
+
+class Simulationsobjekt {
+public:
+	Simulationsobjekt();
+	virtual ~Simulationsobjekt();
+};
+
+#endif /* SIMULATIONSOBJEKT_H_ */

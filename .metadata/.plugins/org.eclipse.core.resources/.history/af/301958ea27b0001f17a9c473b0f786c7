@@ -1,0 +1,57 @@
+/*
+ * Fahrzeug.cpp
+ *
+ *  Created on: 29.10.2024
+ *      Author: annaroessel
+ */
+
+#include "Fahrzeug.h"
+
+
+Fahrzeug::Fahrzeug() : p_sName(""){
+	// TODO Auto-generated constructor stub
+	std::cout<<"Konstruktor:"<<p_sName<<" "<<p_iID<<std::endl;
+}
+
+Fahrzeug::Fahrzeug(std::string s) : p_sName(s){
+	std::cout<<"Parameter-Konstruktor:"<<p_sName<<" "<<p_iID<<std::endl;
+}
+
+Fahrzeug::Fahrzeug(std::string s, double d) : p_sName(s), p_dMaxGeschwindigkeit((d>0)?d:0){
+}
+
+
+Fahrzeug::~Fahrzeug() {
+	// TODO Auto-generated destructor stub
+	std::cout << "Fahrzeug \"" << p_sName << "\" mit ID " << p_iID << " wurde gelöscht." << endl;
+}
+
+void Fahrzeug::vKopf()
+{
+	std::cout<<std::resetiosflags(std::ios::right)<<std::setiosflags(std::ios::left);
+	std::cout<<std::setw(4)<<"ID";
+	std::cout<<std::setw(15)<<"Name";
+	std::cout<<std::setw(35)<<"Momentangeschwindigkeit[km/h]";
+	std::cout<<std::setw(20)<<"Gesamtstrecke"<<std::endl;
+	std::cout<<"--------------------------------------------------------------------------"<<std::endl;
+}
+
+void Fahrzeug::vAusgeben()const
+{
+	std::cout<<std::resetiosflags(std::ios::right)<<std::setiosflags(std::ios::left);
+	std::cout<<std::setw(4) << p_iID;
+	std::cout<<std::setw(15)<< p_sName;
+	std::cout<<std::setw(35)<< p_dMaxGeschwindigkeit;
+	std::cout<<std::setw(20)<< p_dGesamtStrecke;
+}
+
+void Fahrzeug::vSimulieren(){
+	if(p_dZeit<dGlobaleZeit){
+		p_dGesamtStrecke = p_dGesamtStrecke + (dGlobaleZeit - p_dZeit) * p_dMaxGeschwindigkeit;
+		p_dGesamtZeit = p_dGesamtZeit + (dGlobaleZeit - p_dZeit);
+		p_dZeit = dGlobaleZeit;
+	}
+}
+
+
+

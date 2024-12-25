@@ -1,0 +1,71 @@
+11:06:14 **** Incremental Build of configuration Debug for project tesssssst ****
+make all 
+Building file: ../src/tesssssst.cpp
+Invoking: GCC C++ Compiler
+g++ -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tesssssst.d" -MT"src/tesssssst.o" -o "src/tesssssst.o" "../src/tesssssst.cpp"
+In file included from ../src/tesssssst.cpp:11:
+In file included from /Users/anna-mariarossel/boost/boost/algorithm/hex.hpp:30:
+In file included from /Users/anna-mariarossel/boost/boost/exception/info.hpp:13:
+In file included from /Users/anna-mariarossel/boost/boost/exception/detail/shared_ptr.hpp:13:
+In file included from /Users/anna-mariarossel/boost/boost/shared_ptr.hpp:17:
+In file included from /Users/anna-mariarossel/boost/boost/smart_ptr/shared_ptr.hpp:17:
+/Users/anna-mariarossel/boost/boost/smart_ptr/detail/requires_cxx11.hpp:19:1: warning: C++03 support was deprecated in Boost.SmartPtr 1.82 and will be removed in Boost.SmartPtr 1.84. Please open an issue in https://github.com/boostorg/smart_ptr if you want it retained. [-W#pragma-messages]
+BOOST_PRAGMA_MESSAGE("C++03 support was deprecated in Boost.SmartPtr 1.82 and will be removed in Boost.SmartPtr 1.84. Please open an issue in https://github.com/boostorg/smart_ptr if you want it retained.")
+^
+/Users/anna-mariarossel/boost/boost/config/pragma_message.hpp:24:34: note: expanded from macro 'BOOST_PRAGMA_MESSAGE'
+# define BOOST_PRAGMA_MESSAGE(x) _Pragma(BOOST_STRINGIZE(message(x)))
+                                 ^
+<scratch space>:200:2: note: expanded from here
+ message("C++03 support was deprecated in Boost.SmartPtr 1.82 and will be removed in Boost.SmartPtr 1.84. Please open an issue in https://github.com/boostorg/smart_ptr if you want it retained.")
+ ^
+In file included from ../src/tesssssst.cpp:12:
+In file included from /Users/anna-mariarossel/boost/boost/algorithm/string.hpp:23:
+In file included from /Users/anna-mariarossel/boost/boost/algorithm/string/split.hpp:16:
+In file included from /Users/anna-mariarossel/boost/boost/algorithm/string/iter_find.hpp:27:
+In file included from /Users/anna-mariarossel/boost/boost/algorithm/string/find_iterator.hpp:24:
+In file included from /Users/anna-mariarossel/boost/boost/algorithm/string/detail/find_iterator.hpp:18:
+In file included from /Users/anna-mariarossel/boost/boost/function.hpp:30:
+In file included from /Users/anna-mariarossel/boost/boost/function/detail/prologue.hpp:17:
+In file included from /Users/anna-mariarossel/boost/boost/function/function_base.hpp:21:
+In file included from /Users/anna-mariarossel/boost/boost/type_index.hpp:29:
+In file included from /Users/anna-mariarossel/boost/boost/type_index/stl_type_index.hpp:47:
+In file included from /Users/anna-mariarossel/boost/boost/container_hash/hash.hpp:14:
+/Users/anna-mariarossel/boost/boost/container_hash/detail/requires_cxx11.hpp:18:1: warning: C++03 support was deprecated in Boost.ContainerHash 1.82 and will be removed in Boost.ContainerHash 1.84. Please open an issue in https://github.com/boostorg/container_hash if you want it retained. [-W#pragma-messages]
+BOOST_PRAGMA_MESSAGE("C++03 support was deprecated in Boost.ContainerHash 1.82 and will be removed in Boost.ContainerHash 1.84. Please open an issue in https://github.com/boostorg/container_hash if you want it retained.")
+^
+/Users/anna-mariarossel/boost/boost/config/pragma_message.hpp:24:34: note: expanded from macro 'BOOST_PRAGMA_MESSAGE'
+# define BOOST_PRAGMA_MESSAGE(x) _Pragma(BOOST_STRINGIZE(message(x)))
+                                 ^
+<scratch space>:11:2: note: expanded from here
+ message("C++03 support was deprecated in Boost.ContainerHash 1.82 and will be removed in Boost.ContainerHash 1.84. Please open an issue in https://github.com/boostorg/container_hash if you want it retained.")
+ ^
+In file included from ../src/tesssssst.cpp:12:
+In file included from /Users/anna-mariarossel/boost/boost/algorithm/string.hpp:23:
+In file included from /Users/anna-mariarossel/boost/boost/algorithm/string/split.hpp:16:
+In file included from /Users/anna-mariarossel/boost/boost/algorithm/string/iter_find.hpp:27:
+In file included from /Users/anna-mariarossel/boost/boost/algorithm/string/find_iterator.hpp:24:
+In file included from /Users/anna-mariarossel/boost/boost/algorithm/string/detail/find_iterator.hpp:18:
+In file included from /Users/anna-mariarossel/boost/boost/function.hpp:30:
+In file included from /Users/anna-mariarossel/boost/boost/function/detail/prologue.hpp:18:
+In file included from /Users/anna-mariarossel/boost/boost/mem_fn.hpp:22:
+In file included from /Users/anna-mariarossel/boost/boost/bind/mem_fn.hpp:24:
+/Users/anna-mariarossel/boost/boost/bind/detail/requires_cxx11.hpp:18:1: warning: C++03 support was deprecated in Boost.Bind 1.82 and will be removed in Boost.Bind 1.84. Please open an issue in https://github.com/boostorg/bind if you want it retained. [-W#pragma-messages]
+BOOST_PRAGMA_MESSAGE("C++03 support was deprecated in Boost.Bind 1.82 and will be removed in Boost.Bind 1.84. Please open an issue in https://github.com/boostorg/bind if you want it retained.")
+^
+/Users/anna-mariarossel/boost/boost/config/pragma_message.hpp:24:34: note: expanded from macro 'BOOST_PRAGMA_MESSAGE'
+# define BOOST_PRAGMA_MESSAGE(x) _Pragma(BOOST_STRINGIZE(message(x)))
+                                 ^
+<scratch space>:246:2: note: expanded from here
+ message("C++03 support was deprecated in Boost.Bind 1.82 and will be removed in Boost.Bind 1.84. Please open an issue in https://github.com/boostorg/bind if you want it retained.")
+ ^
+3 warnings generated.
+Finished building: ../src/tesssssst.cpp
+ 
+Building target: tesssssst
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "tesssssst"  ./src/tesssssst.o   
+Finished building target: tesssssst
+ 
+
+11:06:17 Build Finished. 0 errors, 3 warnings. (took 3s.732ms)
+

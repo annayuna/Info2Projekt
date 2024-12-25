@@ -1,0 +1,93 @@
+//============================================================================
+// Name        : Aufgabenblock1.cpp
+// Author      : anna
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include "Fahrzeug.h"
+#include <memory>
+#include <vector>
+
+double dGlobaleZeit = 0.0;
+
+void vAufgabe_1(){
+
+	std::cout << "##################" << std::endl;
+	std::cout << "## vAufgabe_1() ##" << std::endl;
+	std::cout << "##################" << std::endl << std::endl;
+
+	// Erzeugung von Fahrzeugen auf Stack
+	Fahrzeug tFahrzeugA;
+	Fahrzeug tFahrzeugB;
+	Fahrzeug tFahrzeugC;
+	std::cout << std::endl;
+	// Erzeugung von Fahrzeugen auf Heap
+	Fahrzeug* pFahrzeugD = new Fahrzeug();
+	Fahrzeug* pFahrzeugE = new Fahrzeug("FahrzeugE");
+	std::cout << std::endl;
+	// Löschung von Fahrzeugen auf Heap
+	delete pFahrzeugD;
+	delete pFahrzeugE;
+	std::cout << std::endl;
+
+	// Nutzung von Smartpointern
+	std::unique_ptr<Fahrzeug> pFahrzeugF = std::make_unique<Fahrzeug>();
+	std::unique_ptr<Fahrzeug> pFahrzeugG = std::make_unique<Fahrzeug>("FahrzeugG");
+	std::shared_ptr<Fahrzeug> pFahrzeugH = std::make_shared<Fahrzeug>();
+	std::shared_ptr<Fahrzeug> pFahrzeugI = std::make_shared<Fahrzeug>("FahrzeugI");
+	std::cout << "FahrzeugI use_count: " << pFahrzeugI.use_count() << std::endl; // use_count = 1
+	std::shared_ptr<Fahrzeug> pFahrzeugJ = pFahrzeugI;
+	std::cout << "FahrzeugI use_count: " << pFahrzeugI.use_count() << std::endl << std::endl; // use_count = 2
+
+	std::vector<std::unique_ptr<Fahrzeug>> tFahrzeugeUnique;
+	tFahrzeugeUnique.push_back(move(pFahrzeugF));
+	tFahrzeugeUnique.push_back(move(pFahrzeugG));
+	// nur unique Pointer können im Vektor gespeichert werden
+	tFahrzeugeUnique.clear();
+	// Fahrzeug deren unique Pointer im Vektor waren wurden hier gelöscht
+
+	std::vector<std::shared_ptr<Fahrzeug>> tFahrzeugeShared;
+	std::cout << "FahrzeugH use_count: " << pFahrzeugH.use_count() << "   FahrzeugI use_count: " << pFahrzeugI.use_count() << std::endl;
+	// FahrzeugH use_count: 1   FahrzeugI use_count: 2
+	tFahrzeugeShared.push_back(pFahrzeugH);
+	tFahrzeugeShared.push_back(move(pFahrzeugI));
+	std::cout << "FahrzeugH use_count: " << pFahrzeugH.use_count() << "   FahrzeugI use_count: " << pFahrzeugI.use_count() << std::endl;
+	// FahrzeugH use_count: 2   FahrzeugI use_count: 0
+	std::cout << std::endl;
+	tFahrzeugeShared.clear();
+
+}
+
+void vAufgabe_1a(){
+
+	std::unique_ptr<Fahrzeug> fahrzeugptr1 = std::make_unique<Fahrzeug>("auto1",100);
+	std::unique_ptr<Fahrzeug> fahrzeugptr2 = std::make_unique<Fahrzeug>("auto2",100);
+	std::unique_ptr<Fahrzeug> fahrzeugptr3 = std::make_unique<Fahrzeug>("auto3",100);
+
+	std::vector<std::unique_ptr<Fahrzeug>> vector1;
+
+	vector1.push_back(std::move(fahrzeugptr1));
+	vector1.push_back(std::move(fahrzeugptr2));
+	vector1.push_back(std::move(fahrzeugptr3));
+
+	Fahrzeug::vKopf();
+
+	for (dGlobaleZeit = 0; dGlobaleZeit <=5; dGlobaleZeit++){
+		for(int i=0; i<3; i++){
+			vector1[i]-> vSimulieren();
+			vector1[i]-> vAusgeben();
+			std::cout<<std::endl;
+		}
+	}
+
+}
+
+int main() {
+
+	vAufgabe_1();
+	//vAufgabe_1a();
+	return 0;
+}

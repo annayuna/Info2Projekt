@@ -1,0 +1,18 @@
+/*
+ * Streckenende.cpp
+ *
+ *  Created on: 03.12.2024
+ *      Author: annaroessel
+ */
+
+#include "Streckenende.h"
+
+Streckenende::Streckenende() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Streckenende::~Streckenende() {
+	// TODO Auto-generated destructor stub
+}
+

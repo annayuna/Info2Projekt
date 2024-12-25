@@ -1,0 +1,30 @@
+/*
+ * Parken.cpp
+ *
+ *  Created on: 03.12.2024
+ *      Author: annaroessel
+ */
+
+#include "Parken.h"
+
+Parken::Parken(const Weg& aWeg, double dStartZeit) :
+		Verhalten(aWeg), p_dStartZeit(dStartZeit)
+{
+}
+
+Parken::~Parken()
+{
+}
+
+
+double Parken::dStrecke(const Fahrzeug& aFzg, double dZeitIntervall) const
+{
+	// Exception, wenn p_dStartZeit erreicht wurde
+	if (p_dStartZeit - 1e-10 <= dGlobaleZeit)
+	{
+		//throw Losfahren(p_pWeg, aFzg);
+	}
+
+	// fahrbare Strecke ist bei Parken immer 0
+	return 0;
+}

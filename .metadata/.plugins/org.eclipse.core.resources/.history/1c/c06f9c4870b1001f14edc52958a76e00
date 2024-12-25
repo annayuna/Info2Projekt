@@ -1,0 +1,32 @@
+/*
+ * Weg.h
+ *
+ *  Created on: 03.12.2024
+ *      Author: annaroessel
+ */
+
+#ifndef WEG_H_
+#define WEG_H_
+
+#include "Simulationsobjekt.h"
+#include "Tempolimit.h"
+
+#include <list>
+
+#include "Fahrzeug.h"
+//class Fahrzeug;
+
+class Weg : public Simulationsobjekt {
+public:
+	Weg(const std::string& s = "", const double l = 0, const Tempolimit t = Tempolimit::Autobahn);
+	virtual ~Weg();
+
+private:
+	const double p_dLaenge = 0;
+	std::list<std::unique_ptr<Fahrzeug>> p_pFahrzeuge;
+	const Tempolimit p_eTempolimit = Tempolimit::Autobahn;
+
+
+};
+
+#endif /* WEG_H_ */

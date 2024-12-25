@@ -1,0 +1,54 @@
+/*
+ * Weg.cpp
+ *
+ *  Created on: 03.12.2024
+ *      Author: annaroessel
+ */
+
+#include "Weg.h"
+#include <iomanip>
+
+Weg::Weg(const std::string& s, const double l, const Tempolimit t) :
+		Simulationsobjekt(s), p_dLaenge(l), p_eTempolimit(t)
+{
+}
+
+Weg::~Weg()
+{
+}
+
+void Weg::vSimulieren()
+{
+	for(const auto& fahrzeug : p_pFahrzeuge)
+	{
+		fahrzeug -> vSimulieren();
+	}
+}
+
+double Weg::getTempolimit() const
+{
+	return (double) p_eTempolimit;
+}
+
+void Weg::vKopf()
+{
+	std::cout<<std::resetiosflags(std::ios::right)<<std::setiosflags(std::ios::left);
+	std::cout<<std::setw(4)<<"ID";
+	std::cout<<std::setw(15)<<"Name";
+	std::cout<<std::setw(8)<<"Laenge";
+	std::cout<<std::setw(9)<<"Fahrzeuge" << std::endl;
+	cout << "-----------------------------------------------------------------------------------------------------" << endl;
+}
+
+void Weg::vAusgeben(ostream& out) const
+{
+	Simulationsobjekt::vAusgeben(out);
+	std::cout<<std::resetiosflags(std::ios::left)<<std::setiosflags(std::ios::right);
+	out << 	": " << std::setw(8) << std::fixed << std::setprecision(2) << p_dLaenge << "  ( ";
+	std::cout<<std::resetiosflags(std::ios::right)<<std::setiosflags(std::ios::left);
+	for (const auto& fahrzeug : p_pFahrzeuge)
+	{
+		out << fahrzeug -> p_sName << " ";
+	}
+	out << ")";
+}

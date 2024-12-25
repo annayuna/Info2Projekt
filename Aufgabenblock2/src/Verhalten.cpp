@@ -1,0 +1,24 @@
+/*
+ * Verhalten.cpp
+ *
+ *  Created on: 03.12.2024
+ *      Author: annaroessel
+ */
+
+#include "Verhalten.h"
+
+Verhalten::Verhalten(Weg& aWeg) :
+		p_pWeg(aWeg)
+{
+}
+
+Verhalten::~Verhalten()
+{
+}
+
+
+
+const Weg& Verhalten::getWeg() const
+{
+	return p_pWeg;
+}

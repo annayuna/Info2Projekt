@@ -1,0 +1,31 @@
+/*
+ * Weg.cpp
+ *
+ *  Created on: 03.12.2024
+ *      Author: annaroessel
+ */
+
+#include "Weg.h"
+
+Weg::Weg(const std::string& s, const double l, const Tempolimit t) :
+		Simulationsobjekt(s), p_dLaenge(l), p_eTempolimit(t)
+{
+}
+
+Weg::~Weg()
+{
+}
+
+void Weg::vSimulieren() const
+{
+	for(const auto& fahrzeug : p_pFahrzeuge)
+	{
+		fahrzeug -> vSimulieren();
+	}
+}
+
+double Weg::getTempolimit() const
+{
+	return (double) p_eTempolimit;
+}
+

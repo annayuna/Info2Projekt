@@ -1,0 +1,18 @@
+/*
+ * Fahrausnahme.cpp
+ *
+ *  Created on: 03.12.2024
+ *      Author: annaroessel
+ */
+
+#include "Fahrausnahme.h"
+
+Fahrausnahme::Fahrausnahme() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Fahrausnahme::~Fahrausnahme() {
+	// TODO Auto-generated destructor stub
+}
+

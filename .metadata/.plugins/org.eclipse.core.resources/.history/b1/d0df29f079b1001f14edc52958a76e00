@@ -1,0 +1,17 @@
+/*
+ * Verhalten.h
+ *
+ *  Created on: 03.12.2024
+ *      Author: annaroessel
+ */
+
+#ifndef VERHALTEN_H_
+#define VERHALTEN_H_
+
+class Verhalten {
+public:
+	Verhalten();
+	virtual ~Verhalten();
+};
+
+#endif /* VERHALTEN_H_ */

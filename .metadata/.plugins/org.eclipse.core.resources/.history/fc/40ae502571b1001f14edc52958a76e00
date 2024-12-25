@@ -1,0 +1,18 @@
+/*
+ * Weg.cpp
+ *
+ *  Created on: 03.12.2024
+ *      Author: annaroessel
+ */
+
+#include "Weg.h"
+
+Weg::Weg(const std::string& s, const double l, const Tempolimit t) :
+		Simulationsobjekt(s), p_dLaenge(l), p_eTempolimit(t)
+{
+}
+
+Weg::~Weg() {
+	// TODO Auto-generated destructor stub
+}
+

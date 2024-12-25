@@ -1,0 +1,330 @@
+//============================================================================
+// Name        : Aufgabenblock1.cpp
+// Author      : anna
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include "Fahrzeug.h"
+#include "PKW.h"
+#include "Fahrrad.h"
+#include "Weg.h"
+#include <memory>
+#include <vector>
+
+double dGlobaleZeit = 0.0;
+
+// Ueberladung des "<<" Operators fuer Klasse Fahrzeug
+std::ostream& operator<<(std::ostream& out, Simulationsobjekt& simObj)
+{
+	simObj.vAusgeben(out);
+	return out;
+}
+
+// gibt alle Fahrzeug in einem vector aus
+void vFahrzeugListeAusgeben(std::vector<std::unique_ptr<Fahrzeug>>& tFahrzeuge)
+{
+	std::cout << std::endl;
+	Fahrzeug::vKopf();
+	for (const auto& fahrzeug : tFahrzeuge) //ref, weil unique ptr
+	{
+		std::cout << *fahrzeug << std::endl;
+	}
+	std::cout << std::endl;
+}
+
+// simuliert alle Fahrzeug in einem vector
+void vFahrzeugListeSimulieren(std::vector<std::unique_ptr<Fahrzeug>>& tFahrzeuge)
+{
+	for (const auto& fahrzeug : tFahrzeuge)
+	{
+		fahrzeug->vSimulieren();
+	}
+}
+
+void vFahrzeugListeTanken(std::vector<std::unique_ptr<Fahrzeug>>& tFahrzeuge)
+{
+	for (const auto& fahrzeug : tFahrzeuge)
+	{
+		fahrzeug->dTanken();
+	}
+}
+
+void vAufgabe_1(){
+
+	std::cout << "##################" << std::endl;
+	std::cout << "## vAufgabe_1() ##" << std::endl;
+	std::cout << "##################" << std::endl << std::endl;
+
+	// Erzeugung von Fahrzeugen auf Stack
+	Fahrzeug tFahrzeugA;
+	Fahrzeug tFahrzeugB;
+	Fahrzeug tFahrzeugC;
+	std::cout << std::endl;
+	// Erzeugung von Fahrzeugen auf Heap
+	Fahrzeug* pFahrzeugD = new Fahrzeug();
+	Fahrzeug* pFahrzeugE = new Fahrzeug("FahrzeugE");
+	std::cout << std::endl;
+	// Löschung von Fahrzeugen auf Heap
+	delete pFahrzeugD;
+	delete pFahrzeugE;
+	std::cout << std::endl;
+
+	// Nutzung von Smartpointern
+	std::unique_ptr<Fahrzeug> pFahrzeugF = std::make_unique<Fahrzeug>();
+	std::unique_ptr<Fahrzeug> pFahrzeugG = std::make_unique<Fahrzeug>("FahrzeugG");
+	std::shared_ptr<Fahrzeug> pFahrzeugH = std::make_shared<Fahrzeug>();
+	std::shared_ptr<Fahrzeug> pFahrzeugI = std::make_shared<Fahrzeug>("FahrzeugI");
+	std::cout << "FahrzeugI use_count: " << pFahrzeugI.use_count() << std::endl; // use_count = 1
+	std::shared_ptr<Fahrzeug> pFahrzeugJ = pFahrzeugI;
+	std::cout << "FahrzeugI use_count: " << pFahrzeugI.use_count() << std::endl << std::endl; // use_count = 2
+
+	std::vector<std::unique_ptr<Fahrzeug>> fahrzeugUniqueListe;
+	fahrzeugUniqueListe.push_back(std::move(pFahrzeugF));
+	fahrzeugUniqueListe.push_back(std::move(pFahrzeugG));
+	// nur unique Pointer können im Vektor gespeichert werden
+	fahrzeugUniqueListe.clear();
+	// Fahrzeug deren unique Pointer im Vektor waren wurden hier gelöscht
+
+	std::vector<std::shared_ptr<Fahrzeug>> fahrzeugSharedListe;
+	std::cout << "FahrzeugH use_count: " << pFahrzeugH.use_count() << "   FahrzeugI use_count: " << pFahrzeugI.use_count() << std::endl;
+	// FahrzeugH use_count: 1   FahrzeugI use_count: 2
+	fahrzeugSharedListe.push_back(pFahrzeugH);
+	fahrzeugSharedListe.push_back(std::move(pFahrzeugI));
+	std::cout << "FahrzeugH use_count: " << pFahrzeugH.use_count() << "   FahrzeugI use_count: " << pFahrzeugI.use_count() << std::endl;
+	// FahrzeugH use_count: 2   FahrzeugI use_count: 0
+	std::cout << std::endl;
+	fahrzeugSharedListe.clear();
+
+}
+
+void vAufgabe_1a(){
+
+	std::cout << "###################" << std::endl;
+	std::cout << "## vAufgabe_1a() ##" << std::endl;
+	std::cout << "###################" << std::endl << std::endl;
+
+	std::unique_ptr<Fahrzeug> pFahrzeugA = std::make_unique<Fahrzeug>("FahrzeugA",80);
+	std::unique_ptr<Fahrzeug> pFahrzeugB = std::make_unique<Fahrzeug>("FahrzeugB",-20);
+	std::unique_ptr<Fahrzeug> pFahrzeugC = std::make_unique<Fahrzeug>("FahrzeugC",100);
+
+	std::vector<std::unique_ptr<Fahrzeug>> fahrzeugListe;
+
+	fahrzeugListe.push_back(std::move(pFahrzeugA));
+	fahrzeugListe.push_back(std::move(pFahrzeugB));
+	fahrzeugListe.push_back(std::move(pFahrzeugC));
+
+	dGlobaleZeit = 0.0;
+
+	std::cout << std::endl;
+
+	for (int i = 0; i<10; i++){
+		dGlobaleZeit += 0.25;
+		std::cout << "Zeit: " << dGlobaleZeit << std::endl;
+		vFahrzeugListeSimulieren(fahrzeugListe);
+		vFahrzeugListeAusgeben(fahrzeugListe);
+	}
+
+}
+
+void vAufgabe_2(){
+
+	std::cout << "##################" << std::endl;
+	std::cout << "## vAufgabe_2() ##" << std::endl;
+	std::cout << "##################" << std::endl << std::endl;
+
+	// Fahrzeuge erzeugen und in Vector speichern
+	std::unique_ptr<Fahrzeug> pPKWA = std::make_unique<PKW>("PKW_A", 120, 10);
+	std::unique_ptr<Fahrzeug> pPKWB = std::make_unique<PKW>("PKW_B", 150, 20, 80);
+	std::unique_ptr<Fahrzeug> pFahrradA = std::make_unique<Fahrrad>("Fahrrad_A", 20);
+	std::unique_ptr<Fahrzeug> pFahrradB = std::make_unique<Fahrrad>("Fahrrad_B", 30);
+	std::vector<std::unique_ptr<Fahrzeug>> fahrzeugListe;
+	fahrzeugListe.push_back(std::move(pPKWA));
+	fahrzeugListe.push_back(std::move(pPKWB));
+	fahrzeugListe.push_back(std::move(pFahrradA));
+	fahrzeugListe.push_back(std::move(pFahrradB));
+
+	dGlobaleZeit = 0.0;
+	vFahrzeugListeAusgeben(fahrzeugListe);
+	bool bGetankt = false;
+	while(dGlobaleZeit < 9.999) // Schleife für Simulation und Ausgabe
+	{
+		dGlobaleZeit += 0.5;
+		std::cout << "Zeit: " << dGlobaleZeit << std::endl;
+		vFahrzeugListeSimulieren(fahrzeugListe);
+		if (dGlobaleZeit > 2.999 && bGetankt == false)
+		{
+			vFahrzeugListeTanken(fahrzeugListe);
+			bGetankt = true;
+		}
+		vFahrzeugListeAusgeben(fahrzeugListe);
+	}
+
+	fahrzeugListe.clear();
+}
+
+void vAufgabe_3()
+{
+	std::cout << "##################" << std::endl;
+	std::cout << "## vAufgabe_3() ##" << std::endl;
+	std::cout << "##################" << std::endl << std::endl;
+
+	std::unique_ptr<Fahrzeug> pPKWA = std::make_unique<PKW>("PKW_A", 120, 5);
+	std::unique_ptr<Fahrzeug> pPKWB = std::make_unique<PKW>("PKW_B", 150, 5);
+	std::unique_ptr<Fahrzeug> pPKWC = std::make_unique<PKW>("PKW_C", 180, 5);
+	std::vector<std::unique_ptr<Fahrzeug>> fahrzeugListe;
+	fahrzeugListe.push_back(std::move(pPKWA));
+	fahrzeugListe.push_back(std::move(pPKWB));
+	fahrzeugListe.push_back(std::move(pPKWC));
+
+	dGlobaleZeit = 0.0;
+	dGlobaleZeit += 0.5;
+	vFahrzeugListeSimulieren(fahrzeugListe);
+	vFahrzeugListeAusgeben(fahrzeugListe);
+	// C ist schneller als B, B ist schneller als A
+
+	if (*fahrzeugListe[0] < *fahrzeugListe[1])
+	{
+		std::cout << "PKW_B ist weiter gefahren als PKW_A." << std::endl;
+	}
+	else
+	{
+		std::cout << "PKW_A ist weiter gefahren als PKW_B." << std::endl;
+	}
+
+	*fahrzeugListe[0] = *fahrzeugListe[2];
+	std::cout << "PKW_A hat Werte von PKW_C bekommen." << std::endl;
+
+	if (*fahrzeugListe[0] < *fahrzeugListe[1])
+	{
+		std::cout << "PKW_B ist weiter gefahren als PKW_A." << std::endl;
+	}
+	else
+	{
+		std::cout << "PKW_A ist weiter gefahren als PKW_B." << std::endl;
+	}
+	std::cout << std::endl;
+
+	fahrzeugListe.clear();
+}
+
+void vAufgabe_4()
+{
+	std::cout << "##################" << std::endl;
+	std::cout << "## vAufgabe_4() ##" << std::endl;
+	std::cout << "##################" << std::endl << std::endl;
+
+	Weg Weg1 = Weg();
+	Weg Weg2 = Weg("A44", 200, Tempolimit::Autobahn);
+	Weg::vKopf();
+	std::cout << Weg1 << std::endl;
+	std::cout << Weg2 << std::endl << std::endl;
+}
+
+void vAufgabe_5()
+{
+	std::cout << "##################" << std::endl;
+	std::cout << "## vAufgabe_5() ##" << std::endl;
+	std::cout << "##################" << std::endl << std::endl;
+
+	dGlobaleZeit = 0.0;
+	Weg Weg1 = Weg("A44", 200, Tempolimit::Autobahn);
+	std::unique_ptr<Fahrzeug> pPKWA = std::make_unique<PKW>("PKW_A", 120, 5);
+	std::unique_ptr<Fahrzeug> pPKWB = std::make_unique<PKW>("PKW_B", 150, 5);
+	std::unique_ptr<Fahrzeug> pPKWC = std::make_unique<PKW>("PKW_C", 180, 5);
+	Weg1.vAnnahme(std::move(pPKWA));
+	Weg1.vAnnahme(std::move(pPKWB), 1.5);
+	Weg1.vAnnahme(std::move(pPKWC));
+
+	std::cout << std::endl;
+
+	while(dGlobaleZeit < 3 - 1e-10) // Schleife für Simulation und Ausgabe
+	{
+		dGlobaleZeit += 0.25;
+		std::cout << "Zeit: " << dGlobaleZeit << std::endl;
+		Weg1.vSimulieren();
+		std::cout << std::endl;
+		Weg::vKopf();
+		std::cout << Weg1 << std::endl << std::endl;
+	}
+}
+
+void vAufgabe_6()
+{
+	std::cout << "##################" << std::endl;
+	std::cout << "## vAufgabe_6() ##" << std::endl;
+	std::cout << "##################" << std::endl << std::endl;
+
+	dGlobaleZeit = 0.0;
+	Weg Weg1 = Weg("A44", 500, Tempolimit::Autobahn);
+	Weg Weg2 = Weg("Feldweg", 100, Tempolimit::Innerorts);
+	std::unique_ptr<Fahrzeug> pPKWA = std::make_unique<PKW>("PKW_A", 120, 5);
+	std::unique_ptr<Fahrzeug> pPKWB = std::make_unique<PKW>("PKW_B", 150, 5);
+	std::unique_ptr<Fahrzeug> pPKWC = std::make_unique<PKW>("PKW_C", 180, 5);
+	std::unique_ptr<Fahrzeug> pFahrradA = std::make_unique<Fahrrad>("Fahrrad_A", 20);
+	std::unique_ptr<Fahrzeug> pFahrradB = std::make_unique<Fahrrad>("Fahrrad_B", 15);
+	Weg1.vAnnahme(std::move(pPKWA));
+	Weg1.vAnnahme(std::move(pPKWB), 3);
+	Weg1.vAnnahme(std::move(pFahrradA), 1);
+	Weg2.vAnnahme(std::move(pPKWC));
+	Weg2.vAnnahme(std::move(pFahrradB));
+
+	/*bInitialisiereGrafik(800, 500);
+	int feld[] = { 100 , 200 , 300 , 400 };
+	int anzahl = 2;
+	bZeichneStrasse("A44", "Feldweg", 500, anzahl, feld);*/
+
+	while(dGlobaleZeit < 4 - 1e-10) // Schleife für Simulation und Ausgabe
+	{
+		dGlobaleZeit += 0.2;
+		std::cout << "Zeit: " << dGlobaleZeit << std::endl;
+		//vSetzeZeit(dGlobaleZeit);
+		Weg1.vSimulieren();
+		//pWeg1->vZeichnen();
+		Weg2.vSimulieren();
+		//pWeg2->vZeichnen();
+		std::cout << std::endl;
+		Weg::vKopf();
+		std::cout << Weg1 << std::endl;
+		std::cout << Weg2 << std::endl << std::endl;
+		//vSleep(500);
+	}
+
+	//vBeendeGrafik();
+}
+
+void vAufgabenblock1(){
+	std::cout << std::endl << "     ------  Aufgabenblock 1  ------" << std::endl << std::endl << std::endl << std::endl;
+
+	vAufgabe_1();
+	std::cout << std::endl << std::endl << std::endl;
+	vAufgabe_1a();
+	std::cout << std::endl << std::endl << std::endl;
+	vAufgabe_2();
+	std::cout << std::endl << std::endl << std::endl;
+	vAufgabe_3();
+	std::cout << std::endl << std::endl << std::endl;
+}
+
+void vAufgabenblock2(){
+	std::cout << std::endl << "     ------  Aufgabenblock 2  ------" << std::endl << std::endl << std::endl << std::endl;
+
+	vAufgabe_4();
+	std::cout << std::endl << std::endl << std::endl;
+	vAufgabe_5();
+	std::cout << std::endl << std::endl << std::endl;
+	vAufgabe_6();
+	std::cout << std::endl << std::endl << std::endl;
+	//vAufgabe_6a();
+	//std::cout << std::endl << std::endl << std::endl;
+}
+
+int main() {
+
+	vAufgabenblock1();
+	vAufgabenblock2();
+
+	return 0;
+}

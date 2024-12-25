@@ -1,0 +1,17 @@
+/*
+ * Weg.h
+ *
+ *  Created on: 03.12.2024
+ *      Author: annaroessel
+ */
+
+#ifndef WEG_H_
+#define WEG_H_
+
+class Weg {
+public:
+	Weg();
+	virtual ~Weg();
+};
+
+#endif /* WEG_H_ */

@@ -1,0 +1,2799 @@
+02:00:44 **** Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Aufgabenblock2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aufgabenblock2.d" -MT"src/Aufgabenblock2.o" -o "src/Aufgabenblock2.o" "../src/Aufgabenblock2.cpp"
+Finished building: ../src/Aufgabenblock2.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++  -o "Aufgabenblock2"  ./src/Aufgabenblock2.o   
+Finished building target: Aufgabenblock2
+ 
+02:00:59 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+02:11:20 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Aufgabenblock2.cpp
+Invoking: GCC C++ Compiler
+g++ -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aufgabenblock2.d" -MT"src/Aufgabenblock2.o" -o "src/Aufgabenblock2.o" "../src/Aufgabenblock2.cpp"
+Finished building: ../src/Aufgabenblock2.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Aufgabenblock2.o   
+Finished building target: Aufgabenblock2
+ 
+02:12:19 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+02:12:31 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+02:17:44 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Aufgabenblock2.cpp
+Invoking: GCC C++ Compiler
+g++ -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aufgabenblock2.d" -MT"src/Aufgabenblock2.o" -o "src/Aufgabenblock2.o" "../src/Aufgabenblock2.cpp"
+Finished building: ../src/Aufgabenblock2.cpp
+ 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+In file included from ../src/Fahrzeug.cpp:8:
+../src/Fahrzeug.h:20:40: warning: deleted function definitions are a C++11 extension [-Wc++11-extensions]
+        Fahrzeug(const Fahrzeug& tFahrzeug) = delete;
+                                              ^
+../src/Fahrzeug.h:33:13: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+        static int inline p_iMaxID = 0;
+                   ^
+../src/Fahrzeug.h:38:18: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        const int p_iID = ++p_iMaxID;
+                        ^
+../src/Fahrzeug.h:39:36: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        const double p_dMaxGeschwindigkeit=0;
+                                          ^
+../src/Fahrzeug.h:40:25: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        double p_dGesamtStrecke=0;
+                               ^
+../src/Fahrzeug.h:41:22: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        double p_dGesamtZeit=0;
+                            ^
+../src/Fahrzeug.h:42:16: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        double p_dZeit=0;
+                      ^
+7 warnings generated.
+Finished building: ../src/Fahrzeug.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Aufgabenblock2.o ./src/Fahrzeug.o   
+Undefined symbols for architecture x86_64:
+  "_dGlobaleZeit", referenced from:
+      Fahrzeug::vSimulieren() in Fahrzeug.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Aufgabenblock2] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:23:16 **** Incremental Build of configuration Debug for project Aufgabenblock1 ****
+make all 
+make: Nothing to be done for `all'.
+02:26:46 **** Incremental Build of configuration Debug for project Aufgabenblock1 ****
+make all 
+make: Nothing to be done for `all'.
+02:26:56 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Aufgabenblock2.cpp
+Invoking: GCC C++ Compiler
+g++ -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aufgabenblock2.d" -MT"src/Aufgabenblock2.o" -o "src/Aufgabenblock2.o" "../src/Aufgabenblock2.cpp"
+In file included from ../src/Aufgabenblock2.cpp:10:
+../src/Fahrzeug.h:20:40: warning: deleted function definitions are a C++11 extension [-Wc++11-extensions]
+        Fahrzeug(const Fahrzeug& tFahrzeug) = delete;
+                                              ^
+../src/Fahrzeug.h:33:13: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+        static int inline p_iMaxID = 0;
+                   ^
+../src/Fahrzeug.h:38:18: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        const int p_iID = ++p_iMaxID;
+                        ^
+../src/Fahrzeug.h:39:36: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        const double p_dMaxGeschwindigkeit=0;
+                                          ^
+../src/Fahrzeug.h:40:25: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        double p_dGesamtStrecke=0;
+                               ^
+../src/Fahrzeug.h:41:22: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        double p_dGesamtZeit=0;
+                            ^
+../src/Fahrzeug.h:42:16: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        double p_dZeit=0;
+                      ^
+../src/Aufgabenblock2.cpp:11:10: fatal error: 'PKW.h' file not found
+#include "PKW.h"
+         ^~~~~~~
+7 warnings and 1 error generated.
+make: *** [src/Aufgabenblock2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:30:29 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Aufgabenblock2.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aufgabenblock2.d" -MT"src/Aufgabenblock2.o" -o "src/Aufgabenblock2.o" "../src/Aufgabenblock2.cpp"
+../src/Aufgabenblock2.cpp:11:10: fatal error: 'PKW.h' file not found
+#include "PKW.h"
+         ^~~~~~~
+1 error generated.
+make: *** [src/Aufgabenblock2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:32:26 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+Finished building: ../src/Fahrrad.cpp
+ 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+Finished building: ../src/Fahrzeug.cpp
+ 
+Building file: ../src/PKW.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PKW.d" -MT"src/PKW.o" -o "src/PKW.o" "../src/PKW.cpp"
+Finished building: ../src/PKW.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrrad.o ./src/Fahrzeug.o ./src/PKW.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+02:32:34 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+12:42:32 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+Finished building: ../src/Fahrrad.cpp
+ 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+../src/Fahrzeug.cpp:46:31: error: too few arguments to function call, single argument 'out' was not specified
+        Simulationsobjekt::vAusgeben();
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+../src/Simulationsobjekt.h:21:15: note: 'vAusgeben' declared here
+        virtual void vAusgeben(std::ostream& out) const;
+                     ^
+1 error generated.
+make: *** [src/Fahrzeug.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:43:13 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+Finished building: ../src/Fahrrad.cpp
+ 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+../src/Fahrzeug.cpp:46:31: error: too few arguments to function call, single argument 'out' was not specified
+        Simulationsobjekt::vAusgeben();
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+../src/Simulationsobjekt.h:22:15: note: 'vAusgeben' declared here
+        virtual void vAusgeben(std::ostream& out) const;
+                     ^
+1 error generated.
+make: *** [src/Fahrzeug.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:44:03 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+Finished building: ../src/Fahrzeug.cpp
+ 
+Building file: ../src/PKW.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PKW.d" -MT"src/PKW.o" -o "src/PKW.o" "../src/PKW.cpp"
+Finished building: ../src/PKW.cpp
+ 
+Building file: ../src/Simulationsobjekt.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Simulationsobjekt.d" -MT"src/Simulationsobjekt.o" -o "src/Simulationsobjekt.o" "../src/Simulationsobjekt.cpp"
+../src/Simulationsobjekt.cpp:22:12: error: no member named 'resetiosflags' in namespace 'std'
+        out<<std::resetiosflags(std::ios::right)<<std::setiosflags(std::ios::left);
+             ~~~~~^
+../src/Simulationsobjekt.cpp:22:49: error: no member named 'setiosflags' in namespace 'std'
+        out<<std::resetiosflags(std::ios::right)<<std::setiosflags(std::ios::left);
+                                                  ~~~~~^
+../src/Simulationsobjekt.cpp:23:12: error: no member named 'setw' in namespace 'std'
+        out<<std::setw(4) << p_iID;
+             ~~~~~^
+../src/Simulationsobjekt.cpp:24:12: error: no member named 'setw' in namespace 'std'
+        out<<std::setw(15)<< p_sName;
+             ~~~~~^
+4 errors generated.
+make: *** [src/Simulationsobjekt.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:44:27 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Simulationsobjekt.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Simulationsobjekt.d" -MT"src/Simulationsobjekt.o" -o "src/Simulationsobjekt.o" "../src/Simulationsobjekt.cpp"
+Finished building: ../src/Simulationsobjekt.cpp
+ 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+Finished building: ../src/Weg.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrrad.o ./src/Fahrzeug.o ./src/PKW.o ./src/Simulationsobjekt.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+12:44:44 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+13:04:10 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+Finished building: ../src/Fahrrad.cpp
+ 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+Finished building: ../src/Fahrzeug.cpp
+ 
+Building file: ../src/PKW.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PKW.d" -MT"src/PKW.o" -o "src/PKW.o" "../src/PKW.cpp"
+Finished building: ../src/PKW.cpp
+ 
+Building file: ../src/Simulationsobjekt.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Simulationsobjekt.d" -MT"src/Simulationsobjekt.o" -o "src/Simulationsobjekt.o" "../src/Simulationsobjekt.cpp"
+Finished building: ../src/Simulationsobjekt.cpp
+ 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+../src/Weg.cpp:10:6: error: constructor for 'Weg' must explicitly initialize the base class 'Simulationsobjekt' which does not have a default constructor
+Weg::Weg() {
+     ^
+../src/Simulationsobjekt.h:16:7: note: 'Simulationsobjekt' declared here
+class Simulationsobjekt {
+      ^
+In file included from ../src/Weg.cpp:8:
+In file included from ../src/Weg.h:11:
+In file included from ../src/Simulationsobjekt.h:11:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:549:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/memory:860:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/shared_ptr.h:28:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/unique_ptr.h:46:19: error: invalid application of 'sizeof' to an incomplete type 'Fahrzeug'
+    static_assert(sizeof(_Tp) >= 0, "cannot delete an incomplete type");
+                  ^~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/unique_ptr.h:305:7: note: in instantiation of member function 'std::default_delete<Fahrzeug>::operator()' requested here
+      __ptr_.second()(__tmp);
+      ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/unique_ptr.h:259:19: note: in instantiation of member function 'std::unique_ptr<Fahrzeug>::reset' requested here
+  ~unique_ptr() { reset(); }
+                  ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocator_traits.h:319:15: note: in instantiation of member function 'std::unique_ptr<Fahrzeug>::~unique_ptr' requested here
+        __p->~_Tp();
+              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/list:743:34: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<std::__list_node<std::unique_ptr<Fahrzeug>, void *>>>::destroy<std::unique_ptr<Fahrzeug>, void, void>' requested here
+            __node_alloc_traits::destroy(__na, _VSTD::addressof(__np->__value_));
+                                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/list:724:3: note: in instantiation of member function 'std::__list_imp<std::unique_ptr<Fahrzeug>, std::allocator<std::unique_ptr<Fahrzeug>>>::clear' requested here
+  clear();
+  ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/list:815:28: note: in instantiation of member function 'std::__list_imp<std::unique_ptr<Fahrzeug>, std::allocator<std::unique_ptr<Fahrzeug>>>::~__list_imp' requested here
+class _LIBCPP_TEMPLATE_VIS list
+                           ^
+../src/Weg.h:16:7: note: forward declaration of 'Fahrzeug'
+class Fahrzeug;
+      ^
+../src/Weg.h:24:15: warning: private field 'p_dLaenge' is not used [-Wunused-private-field]
+        const double p_dLaenge = 0;
+                     ^
+../src/Weg.h:26:19: warning: private field 'p_eTempolimit' is not used [-Wunused-private-field]
+        const Tempolimit p_eTempolimit = Tempolimit::Autobahn;
+                         ^
+2 warnings and 2 errors generated.
+make: *** [src/Weg.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:10:10 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+In file included from ../src/Weg.cpp:8:
+In file included from ../src/Weg.h:11:
+In file included from ../src/Simulationsobjekt.h:11:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:549:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/memory:860:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/shared_ptr.h:28:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/unique_ptr.h:46:19: error: invalid application of 'sizeof' to an incomplete type 'Fahrzeug'
+    static_assert(sizeof(_Tp) >= 0, "cannot delete an incomplete type");
+                  ^~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/unique_ptr.h:305:7: note: in instantiation of member function 'std::default_delete<Fahrzeug>::operator()' requested here
+      __ptr_.second()(__tmp);
+      ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/unique_ptr.h:259:19: note: in instantiation of member function 'std::unique_ptr<Fahrzeug>::reset' requested here
+  ~unique_ptr() { reset(); }
+                  ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocator_traits.h:319:15: note: in instantiation of member function 'std::unique_ptr<Fahrzeug>::~unique_ptr' requested here
+        __p->~_Tp();
+              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/list:743:34: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<std::__list_node<std::unique_ptr<Fahrzeug>, void *>>>::destroy<std::unique_ptr<Fahrzeug>, void, void>' requested here
+            __node_alloc_traits::destroy(__na, _VSTD::addressof(__np->__value_));
+                                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/list:724:3: note: in instantiation of member function 'std::__list_imp<std::unique_ptr<Fahrzeug>, std::allocator<std::unique_ptr<Fahrzeug>>>::clear' requested here
+  clear();
+  ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/list:815:28: note: in instantiation of member function 'std::__list_imp<std::unique_ptr<Fahrzeug>, std::allocator<std::unique_ptr<Fahrzeug>>>::~__list_imp' requested here
+class _LIBCPP_TEMPLATE_VIS list
+                           ^
+../src/Weg.h:16:7: note: forward declaration of 'Fahrzeug'
+class Fahrzeug;
+      ^
+../src/Weg.h:24:15: warning: private field 'p_dLaenge' is not used [-Wunused-private-field]
+        const double p_dLaenge = 0;
+                     ^
+../src/Weg.h:26:19: warning: private field 'p_eTempolimit' is not used [-Wunused-private-field]
+        const Tempolimit p_eTempolimit = Tempolimit::Autobahn;
+                         ^
+2 warnings and 1 error generated.
+make: *** [src/Weg.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:14:15 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+Finished building: ../src/Fahrrad.cpp
+ 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+Finished building: ../src/Fahrzeug.cpp
+ 
+Building file: ../src/PKW.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PKW.d" -MT"src/PKW.o" -o "src/PKW.o" "../src/PKW.cpp"
+Finished building: ../src/PKW.cpp
+ 
+Building file: ../src/Simulationsobjekt.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Simulationsobjekt.d" -MT"src/Simulationsobjekt.o" -o "src/Simulationsobjekt.o" "../src/Simulationsobjekt.cpp"
+Finished building: ../src/Simulationsobjekt.cpp
+ 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+In file included from ../src/Weg.cpp:8:
+../src/Weg.h:25:15: warning: private field 'p_dLaenge' is not used [-Wunused-private-field]
+        const double p_dLaenge = 0;
+                     ^
+../src/Weg.h:27:19: warning: private field 'p_eTempolimit' is not used [-Wunused-private-field]
+        const Tempolimit p_eTempolimit = Tempolimit::Autobahn;
+                         ^
+2 warnings generated.
+Finished building: ../src/Weg.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrrad.o ./src/Fahrzeug.o ./src/PKW.o ./src/Simulationsobjekt.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+13:15:28 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+Finished building: ../src/Fahrrad.cpp
+ 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+Finished building: ../src/Fahrzeug.cpp
+ 
+Building file: ../src/PKW.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PKW.d" -MT"src/PKW.o" -o "src/PKW.o" "../src/PKW.cpp"
+Finished building: ../src/PKW.cpp
+ 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+In file included from ../src/Weg.cpp:8:
+In file included from ../src/Weg.h:11:
+In file included from ../src/Simulationsobjekt.h:11:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:549:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/memory:860:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/shared_ptr.h:28:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/unique_ptr.h:46:19: error: invalid application of 'sizeof' to an incomplete type 'Fahrzeug'
+    static_assert(sizeof(_Tp) >= 0, "cannot delete an incomplete type");
+                  ^~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/unique_ptr.h:305:7: note: in instantiation of member function 'std::default_delete<Fahrzeug>::operator()' requested here
+      __ptr_.second()(__tmp);
+      ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/unique_ptr.h:259:19: note: in instantiation of member function 'std::unique_ptr<Fahrzeug>::reset' requested here
+  ~unique_ptr() { reset(); }
+                  ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocator_traits.h:319:15: note: in instantiation of member function 'std::unique_ptr<Fahrzeug>::~unique_ptr' requested here
+        __p->~_Tp();
+              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/list:743:34: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<std::__list_node<std::unique_ptr<Fahrzeug>, void *>>>::destroy<std::unique_ptr<Fahrzeug>, void, void>' requested here
+            __node_alloc_traits::destroy(__na, _VSTD::addressof(__np->__value_));
+                                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/list:724:3: note: in instantiation of member function 'std::__list_imp<std::unique_ptr<Fahrzeug>, std::allocator<std::unique_ptr<Fahrzeug>>>::clear' requested here
+  clear();
+  ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/list:815:28: note: in instantiation of member function 'std::__list_imp<std::unique_ptr<Fahrzeug>, std::allocator<std::unique_ptr<Fahrzeug>>>::~__list_imp' requested here
+class _LIBCPP_TEMPLATE_VIS list
+                           ^
+../src/Weg.h:17:7: note: forward declaration of 'Fahrzeug'
+class Fahrzeug;
+      ^
+../src/Weg.h:25:15: warning: private field 'p_dLaenge' is not used [-Wunused-private-field]
+        const double p_dLaenge = 0;
+                     ^
+../src/Weg.h:27:19: warning: private field 'p_eTempolimit' is not used [-Wunused-private-field]
+        const Tempolimit p_eTempolimit = Tempolimit::Autobahn;
+                         ^
+2 warnings and 1 error generated.
+make: *** [src/Weg.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:15:54 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+Finished building: ../src/Fahrrad.cpp
+ 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+Finished building: ../src/Fahrzeug.cpp
+ 
+Building file: ../src/PKW.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PKW.d" -MT"src/PKW.o" -o "src/PKW.o" "../src/PKW.cpp"
+Finished building: ../src/PKW.cpp
+ 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+In file included from ../src/Weg.cpp:8:
+../src/Weg.h:24:15: warning: private field 'p_dLaenge' is not used [-Wunused-private-field]
+        const double p_dLaenge = 0;
+                     ^
+../src/Weg.h:26:19: warning: private field 'p_eTempolimit' is not used [-Wunused-private-field]
+        const Tempolimit p_eTempolimit = Tempolimit::Autobahn;
+                         ^
+2 warnings generated.
+Finished building: ../src/Weg.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrrad.o ./src/Fahrzeug.o ./src/PKW.o ./src/Simulationsobjekt.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+13:21:39 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+In file included from ../src/Weg.cpp:8:
+../src/Weg.h:23:15: error: 'vSimulieren' marked 'override' but does not override any member functions
+        virtual void vSimulieren() const override;
+                     ^
+../src/Weg.h:23:15: warning: 'Weg::vSimulieren' hides overloaded virtual function [-Woverloaded-virtual]
+../src/Simulationsobjekt.h:23:15: note: hidden overloaded virtual function 'Simulationsobjekt::vSimulieren' declared here: different qualifiers (unqualified vs 'const')
+        virtual void vSimulieren() = 0; //Rein virtuelle Funktion, simuliert Weg oder Fahrzeug
+                     ^
+In file included from ../src/Weg.cpp:8:
+../src/Weg.h:27:15: warning: private field 'p_dLaenge' is not used [-Wunused-private-field]
+        const double p_dLaenge = 0;
+                     ^
+2 warnings and 1 error generated.
+make: *** [src/Weg.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:23:08 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+In file included from ../src/Weg.cpp:8:
+../src/Weg.h:27:15: warning: private field 'p_dLaenge' is not used [-Wunused-private-field]
+        const double p_dLaenge = 0;
+                     ^
+1 warning generated.
+Finished building: ../src/Weg.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrrad.o ./src/Fahrzeug.o ./src/PKW.o ./src/Simulationsobjekt.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+13:33:22 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+../src/Weg.cpp:40:2: error: use of undeclared identifier 'cout'; did you mean 'std::cout'?
+        cout << "-----------------------------------------------------------------------------------------------------" << endl;
+        ^~~~
+        std::cout
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream:53:33: note: 'std::cout' declared here
+extern _LIBCPP_FUNC_VIS ostream cout;
+                                ^
+../src/Weg.cpp:40:117: error: use of undeclared identifier 'endl'; did you mean 'std::endl'?
+        cout << "-----------------------------------------------------------------------------------------------------" << endl;
+                                                                                                                           ^~~~
+                                                                                                                           std::endl
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1037:1: note: 'std::endl' declared here
+endl(basic_ostream<_CharT, _Traits>& __os)
+^
+../src/Weg.cpp:43:21: error: unknown type name 'ostream'
+void Weg::vAusgeben(ostream& out) const
+                    ^
+../src/Weg.cpp:51:22: error: 'p_sName' is a protected member of 'Simulationsobjekt'
+                out << fahrzeug -> p_sName << " ";
+                                   ^
+../src/Simulationsobjekt.h:33:14: note: declared protected here
+        std::string p_sName;
+                    ^
+4 errors generated.
+make: *** [src/Weg.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:36:00 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+Finished building: ../src/Fahrrad.cpp
+ 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+Finished building: ../src/Fahrzeug.cpp
+ 
+Building file: ../src/PKW.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PKW.d" -MT"src/PKW.o" -o "src/PKW.o" "../src/PKW.cpp"
+Finished building: ../src/PKW.cpp
+ 
+Building file: ../src/Simulationsobjekt.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Simulationsobjekt.d" -MT"src/Simulationsobjekt.o" -o "src/Simulationsobjekt.o" "../src/Simulationsobjekt.cpp"
+Finished building: ../src/Simulationsobjekt.cpp
+ 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+../src/Weg.cpp:43:21: error: unknown type name 'ostream'
+void Weg::vAusgeben(ostream& out) const
+                    ^
+1 error generated.
+make: *** [src/Weg.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:36:19 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+Finished building: ../src/Weg.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrrad.o ./src/Fahrzeug.o ./src/PKW.o ./src/Simulationsobjekt.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+13:40:42 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:220:12: error: invalid operands to binary expression ('std::ostream' (aka 'basic_ostream<char>') and 'Weg')
+        std::cout << *pWeg1 << std::endl;
+        ~~~~~~~~~ ^  ~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef:116:3: note: candidate function template not viable: no known conversion from 'std::ostream' (aka 'basic_ostream<char>') to 'std::byte' for 1st argument
+  operator<< (byte  __lhs, _Integer __shift) noexcept
+  ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:793:1: note: candidate function template not viable: no known conversion from 'Weg' to 'char' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:826:1: note: candidate function template not viable: no known conversion from 'Weg' to 'char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, char __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:833:1: note: candidate function template not viable: no known conversion from 'Weg' to 'signed char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, signed char __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:840:1: note: candidate function template not viable: no known conversion from 'Weg' to 'unsigned char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:854:1: note: candidate function template not viable: no known conversion from 'Weg' to 'const char *' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:900:1: note: candidate function template not viable: no known conversion from 'Weg' to 'const char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const char* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:907:1: note: candidate function template not viable: no known conversion from 'Weg' to 'const signed char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:915:1: note: candidate function template not viable: no known conversion from 'Weg' to 'const unsigned char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1100:1: note: candidate function template not viable: no known conversion from 'Weg' to 'const std::error_code' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec)
+^
+../src/main.cpp:20:15: note: candidate function not viable: no known conversion from 'Weg' to 'Fahrzeug &' for 2nd argument
+std::ostream& operator<<(std::ostream& out, Fahrzeug& fahrzeug)
+              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:786:1: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'Weg')
+operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h:259:1: note: candidate template ignored: could not match 'uniform_int_distribution<_IT>' against 'Weg'
+operator<<(basic_ostream<_CharT, _Traits>& __os,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:847:1: note: candidate template ignored: could not match 'const _CharT *' against 'Weg'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1083:1: note: candidate template ignored: could not match 'basic_string<_CharT, _Traits, _Allocator>' against 'Weg'
+operator<<(basic_ostream<_CharT, _Traits>& __os,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1091:1: note: candidate template ignored: could not match 'basic_string_view<_CharT, _Traits>' against 'Weg'
+operator<<(basic_ostream<_CharT, _Traits>& __os,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1108:1: note: candidate template ignored: could not match 'shared_ptr<_Yp>' against 'Weg'
+operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1127:1: note: candidate template ignored: could not match 'bitset<_Size>' against 'Weg'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1075:11: note: candidate template ignored: requirement 'integral_constant<bool, false>::value' was not satisfied [with _Stream = std::ostream &, _Tp = Weg]
+_Stream&& operator<<(_Stream&& __os, const _Tp& __x)
+          ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1120:1: note: candidate template ignored: could not match 'unique_ptr<_Yp, _Dp>' against 'Weg'
+operator<<(basic_ostream<_CharT, _Traits>& __os, unique_ptr<_Yp, _Dp> const& __p)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:222:20: note: candidate function not viable: no known conversion from 'Weg' to 'std::ostream &(*)(std::ostream &)' for 1st argument
+    basic_ostream& operator<<(basic_ostream& (*__pf)(basic_ostream&))
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:226:20: note: candidate function not viable: no known conversion from 'Weg' to 'basic_ios<std::basic_ostream<char>::char_type, std::basic_ostream<char>::traits_type> &(*)(basic_ios<std::basic_ostream<char>::char_type, std::basic_ostream<char>::traits_type> &)' (aka 'basic_ios<char, std::char_traits<char>> &(*)(basic_ios<char, std::char_traits<char>> &)') for 1st argument
+    basic_ostream& operator<<(basic_ios<char_type, traits_type>&
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:231:20: note: candidate function not viable: no known conversion from 'Weg' to 'std::ios_base &(*)(std::ios_base &)' for 1st argument
+    basic_ostream& operator<<(ios_base& (*__pf)(ios_base&))
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:234:20: note: candidate function not viable: no known conversion from 'Weg' to 'bool' for 1st argument
+    basic_ostream& operator<<(bool __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:235:20: note: candidate function not viable: no known conversion from 'Weg' to 'short' for 1st argument
+    basic_ostream& operator<<(short __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:236:20: note: candidate function not viable: no known conversion from 'Weg' to 'unsigned short' for 1st argument
+    basic_ostream& operator<<(unsigned short __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:237:20: note: candidate function not viable: no known conversion from 'Weg' to 'int' for 1st argument
+    basic_ostream& operator<<(int __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:238:20: note: candidate function not viable: no known conversion from 'Weg' to 'unsigned int' for 1st argument
+    basic_ostream& operator<<(unsigned int __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:239:20: note: candidate function not viable: no known conversion from 'Weg' to 'long' for 1st argument
+    basic_ostream& operator<<(long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:240:20: note: candidate function not viable: no known conversion from 'Weg' to 'unsigned long' for 1st argument
+    basic_ostream& operator<<(unsigned long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:241:20: note: candidate function not viable: no known conversion from 'Weg' to 'long long' for 1st argument
+    basic_ostream& operator<<(long long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:242:20: note: candidate function not viable: no known conversion from 'Weg' to 'unsigned long long' for 1st argument
+    basic_ostream& operator<<(unsigned long long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:243:20: note: candidate function not viable: no known conversion from 'Weg' to 'float' for 1st argument
+    basic_ostream& operator<<(float __f);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:244:20: note: candidate function not viable: no known conversion from 'Weg' to 'double' for 1st argument
+    basic_ostream& operator<<(double __f);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:245:20: note: candidate function not viable: no known conversion from 'Weg' to 'long double' for 1st argument
+    basic_ostream& operator<<(long double __f);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:246:20: note: candidate function not viable: no known conversion from 'Weg' to 'const void *' for 1st argument; remove *
+    basic_ostream& operator<<(const void* __p);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:255:20: note: candidate function not viable: no known conversion from 'Weg' to 'basic_streambuf<std::basic_ostream<char>::char_type, std::basic_ostream<char>::traits_type> *' (aka 'basic_streambuf<char, std::char_traits<char>> *') for 1st argument
+    basic_ostream& operator<<(basic_streambuf<char_type, traits_type>* __sb);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:261:20: note: candidate function not viable: no known conversion from 'Weg' to 'nullptr_t' (aka 'std::nullptr_t') for 1st argument
+    basic_ostream& operator<<(nullptr_t)
+                   ^
+../src/main.cpp:221:12: error: invalid operands to binary expression ('std::ostream' (aka 'basic_ostream<char>') and 'Weg')
+        std::cout << *pWeg2 << std::endl;
+        ~~~~~~~~~ ^  ~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef:116:3: note: candidate function template not viable: no known conversion from 'std::ostream' (aka 'basic_ostream<char>') to 'std::byte' for 1st argument
+  operator<< (byte  __lhs, _Integer __shift) noexcept
+  ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:793:1: note: candidate function template not viable: no known conversion from 'Weg' to 'char' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:826:1: note: candidate function template not viable: no known conversion from 'Weg' to 'char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, char __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:833:1: note: candidate function template not viable: no known conversion from 'Weg' to 'signed char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, signed char __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:840:1: note: candidate function template not viable: no known conversion from 'Weg' to 'unsigned char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:854:1: note: candidate function template not viable: no known conversion from 'Weg' to 'const char *' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:900:1: note: candidate function template not viable: no known conversion from 'Weg' to 'const char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const char* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:907:1: note: candidate function template not viable: no known conversion from 'Weg' to 'const signed char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:915:1: note: candidate function template not viable: no known conversion from 'Weg' to 'const unsigned char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1100:1: note: candidate function template not viable: no known conversion from 'Weg' to 'const std::error_code' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec)
+^
+../src/main.cpp:20:15: note: candidate function not viable: no known conversion from 'Weg' to 'Fahrzeug &' for 2nd argument
+std::ostream& operator<<(std::ostream& out, Fahrzeug& fahrzeug)
+              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:786:1: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'Weg')
+operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h:259:1: note: candidate template ignored: could not match 'uniform_int_distribution<_IT>' against 'Weg'
+operator<<(basic_ostream<_CharT, _Traits>& __os,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:847:1: note: candidate template ignored: could not match 'const _CharT *' against 'Weg'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1083:1: note: candidate template ignored: could not match 'basic_string<_CharT, _Traits, _Allocator>' against 'Weg'
+operator<<(basic_ostream<_CharT, _Traits>& __os,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1091:1: note: candidate template ignored: could not match 'basic_string_view<_CharT, _Traits>' against 'Weg'
+operator<<(basic_ostream<_CharT, _Traits>& __os,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1108:1: note: candidate template ignored: could not match 'shared_ptr<_Yp>' against 'Weg'
+operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1127:1: note: candidate template ignored: could not match 'bitset<_Size>' against 'Weg'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1075:11: note: candidate template ignored: requirement 'integral_constant<bool, false>::value' was not satisfied [with _Stream = std::ostream &, _Tp = Weg]
+_Stream&& operator<<(_Stream&& __os, const _Tp& __x)
+          ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1120:1: note: candidate template ignored: could not match 'unique_ptr<_Yp, _Dp>' against 'Weg'
+operator<<(basic_ostream<_CharT, _Traits>& __os, unique_ptr<_Yp, _Dp> const& __p)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:222:20: note: candidate function not viable: no known conversion from 'Weg' to 'std::ostream &(*)(std::ostream &)' for 1st argument
+    basic_ostream& operator<<(basic_ostream& (*__pf)(basic_ostream&))
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:226:20: note: candidate function not viable: no known conversion from 'Weg' to 'basic_ios<std::basic_ostream<char>::char_type, std::basic_ostream<char>::traits_type> &(*)(basic_ios<std::basic_ostream<char>::char_type, std::basic_ostream<char>::traits_type> &)' (aka 'basic_ios<char, std::char_traits<char>> &(*)(basic_ios<char, std::char_traits<char>> &)') for 1st argument
+    basic_ostream& operator<<(basic_ios<char_type, traits_type>&
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:231:20: note: candidate function not viable: no known conversion from 'Weg' to 'std::ios_base &(*)(std::ios_base &)' for 1st argument
+    basic_ostream& operator<<(ios_base& (*__pf)(ios_base&))
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:234:20: note: candidate function not viable: no known conversion from 'Weg' to 'bool' for 1st argument
+    basic_ostream& operator<<(bool __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:235:20: note: candidate function not viable: no known conversion from 'Weg' to 'short' for 1st argument
+    basic_ostream& operator<<(short __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:236:20: note: candidate function not viable: no known conversion from 'Weg' to 'unsigned short' for 1st argument
+    basic_ostream& operator<<(unsigned short __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:237:20: note: candidate function not viable: no known conversion from 'Weg' to 'int' for 1st argument
+    basic_ostream& operator<<(int __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:238:20: note: candidate function not viable: no known conversion from 'Weg' to 'unsigned int' for 1st argument
+    basic_ostream& operator<<(unsigned int __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:239:20: note: candidate function not viable: no known conversion from 'Weg' to 'long' for 1st argument
+    basic_ostream& operator<<(long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:240:20: note: candidate function not viable: no known conversion from 'Weg' to 'unsigned long' for 1st argument
+    basic_ostream& operator<<(unsigned long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:241:20: note: candidate function not viable: no known conversion from 'Weg' to 'long long' for 1st argument
+    basic_ostream& operator<<(long long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:242:20: note: candidate function not viable: no known conversion from 'Weg' to 'unsigned long long' for 1st argument
+    basic_ostream& operator<<(unsigned long long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:243:20: note: candidate function not viable: no known conversion from 'Weg' to 'float' for 1st argument
+    basic_ostream& operator<<(float __f);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:244:20: note: candidate function not viable: no known conversion from 'Weg' to 'double' for 1st argument
+    basic_ostream& operator<<(double __f);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:245:20: note: candidate function not viable: no known conversion from 'Weg' to 'long double' for 1st argument
+    basic_ostream& operator<<(long double __f);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:246:20: note: candidate function not viable: no known conversion from 'Weg' to 'const void *' for 1st argument; remove *
+    basic_ostream& operator<<(const void* __p);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:255:20: note: candidate function not viable: no known conversion from 'Weg' to 'basic_streambuf<std::basic_ostream<char>::char_type, std::basic_ostream<char>::traits_type> *' (aka 'basic_streambuf<char, std::char_traits<char>> *') for 1st argument
+    basic_ostream& operator<<(basic_streambuf<char_type, traits_type>* __sb);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:261:20: note: candidate function not viable: no known conversion from 'Weg' to 'nullptr_t' (aka 'std::nullptr_t') for 1st argument
+    basic_ostream& operator<<(nullptr_t)
+                   ^
+2 errors generated.
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:41:47 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrrad.o ./src/Fahrzeug.o ./src/PKW.o ./src/Simulationsobjekt.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+13:41:53 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+13:42:58 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+Finished building: ../src/Weg.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrrad.o ./src/Fahrzeug.o ./src/PKW.o ./src/Simulationsobjekt.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+13:43:06 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+Finished building: ../src/Weg.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrrad.o ./src/Fahrzeug.o ./src/PKW.o ./src/Simulationsobjekt.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+13:43:25 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+Finished building: ../src/Weg.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrrad.o ./src/Fahrzeug.o ./src/PKW.o ./src/Simulationsobjekt.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+14:24:35 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+Finished building: ../src/Fahrrad.cpp
+ 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+../src/Fahrzeug.cpp:90:29: error: use of undeclared identifier 'Fahren'
+        p_pVerhalten = make_unique<Fahren>(aWeg);
+                                   ^
+1 error generated.
+make: *** [src/Fahrzeug.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:54:41 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahren.d" -MT"src/Fahren.o" -o "src/Fahren.o" "../src/Fahren.cpp"
+../src/Fahren.cpp:10:9: error: out-of-line definition of 'Fahren' does not match any declaration in 'Fahren'
+Fahren::Fahren(Weg& aWeg) :
+        ^~~~~~
+../src/Fahren.h:15:15: note: type of 1st parameter of member declaration does not match definition ('const Weg &' vs 'Weg &')
+        Fahren(const Weg& aWeg);
+                     ^
+../src/Fahren.cpp:20:16: error: out-of-line definition of 'dStrecke' does not match any declaration in 'Fahren'
+double Fahren::dStrecke(Fahrzeug& aFzg, double dZeitIntervall) const
+               ^~~~~~~~
+../src/Fahren.h:18:24: note: type of 1st parameter of member declaration does not match definition ('const Fahrzeug &' vs 'Fahrzeug &')
+        double dStrecke(const Fahrzeug& aFzg, double dZeitIntervall) const override;
+                              ^
+../src/Fahren.cpp:23:38: error: member access into incomplete type 'const Weg'
+        double dVerbleibendeStrecke = p_pWeg.getLaenge() - aFzg.getAbschnittStrecke();
+                                            ^
+../src/Verhalten.h:11:7: note: forward declaration of 'Weg'
+class Weg;
+      ^
+../src/Fahren.cpp:23:57: error: member access into incomplete type 'Fahrzeug'
+        double dVerbleibendeStrecke = p_pWeg.getLaenge() - aFzg.getAbschnittStrecke();
+                                                               ^
+../src/Verhalten.h:12:7: note: forward declaration of 'Fahrzeug'
+class Fahrzeug;
+      ^
+../src/Fahren.cpp:32:32: error: member access into incomplete type 'Fahrzeug'
+        double dFahrzeugStrecke = aFzg.dGeschwindigkeit() * dZeitIntervall;
+                                      ^
+../src/Verhalten.h:12:7: note: forward declaration of 'Fahrzeug'
+class Fahrzeug;
+      ^
+5 errors generated.
+make: *** [src/Fahren.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:55:11 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahren.d" -MT"src/Fahren.o" -o "src/Fahren.o" "../src/Fahren.cpp"
+../src/Fahren.cpp:20:16: error: out-of-line definition of 'dStrecke' does not match any declaration in 'Fahren'
+double Fahren::dStrecke(Fahrzeug& aFzg, double dZeitIntervall) const
+               ^~~~~~~~
+../src/Fahren.h:18:24: note: type of 1st parameter of member declaration does not match definition ('const Fahrzeug &' vs 'Fahrzeug &')
+        double dStrecke(const Fahrzeug& aFzg, double dZeitIntervall) const override;
+                              ^
+../src/Fahren.cpp:23:38: error: member access into incomplete type 'const Weg'
+        double dVerbleibendeStrecke = p_pWeg.getLaenge() - aFzg.getAbschnittStrecke();
+                                            ^
+../src/Verhalten.h:11:7: note: forward declaration of 'Weg'
+class Weg;
+      ^
+../src/Fahren.cpp:23:57: error: member access into incomplete type 'Fahrzeug'
+        double dVerbleibendeStrecke = p_pWeg.getLaenge() - aFzg.getAbschnittStrecke();
+                                                               ^
+../src/Verhalten.h:12:7: note: forward declaration of 'Fahrzeug'
+class Fahrzeug;
+      ^
+../src/Fahren.cpp:32:32: error: member access into incomplete type 'Fahrzeug'
+        double dFahrzeugStrecke = aFzg.dGeschwindigkeit() * dZeitIntervall;
+                                      ^
+../src/Verhalten.h:12:7: note: forward declaration of 'Fahrzeug'
+class Fahrzeug;
+      ^
+4 errors generated.
+make: *** [src/Fahren.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:56:17 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahren.d" -MT"src/Fahren.o" -o "src/Fahren.o" "../src/Fahren.cpp"
+../src/Fahren.cpp:23:38: error: member access into incomplete type 'const Weg'
+        double dVerbleibendeStrecke = p_pWeg.getLaenge() - aFzg.getAbschnittStrecke();
+                                            ^
+../src/Verhalten.h:11:7: note: forward declaration of 'Weg'
+class Weg;
+      ^
+../src/Fahren.cpp:23:57: error: member access into incomplete type 'const Fahrzeug'
+        double dVerbleibendeStrecke = p_pWeg.getLaenge() - aFzg.getAbschnittStrecke();
+                                                               ^
+../src/Verhalten.h:12:7: note: forward declaration of 'Fahrzeug'
+class Fahrzeug;
+      ^
+../src/Fahren.cpp:32:32: error: member access into incomplete type 'const Fahrzeug'
+        double dFahrzeugStrecke = aFzg.dGeschwindigkeit() * dZeitIntervall;
+                                      ^
+../src/Verhalten.h:12:7: note: forward declaration of 'Fahrzeug'
+class Fahrzeug;
+      ^
+3 errors generated.
+make: *** [src/Fahren.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:59:42 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahren.d" -MT"src/Fahren.o" -o "src/Fahren.o" "../src/Fahren.cpp"
+Finished building: ../src/Fahren.cpp
+ 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+Finished building: ../src/Fahrrad.cpp
+ 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+../src/Fahrzeug.cpp:92:17: error: use of undeclared identifier 'make_unique'; did you mean 'std::make_unique'?
+        p_pVerhalten = make_unique<Fahren>(aWeg);
+                       ^~~~~~~~~~~
+                       std::make_unique
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/unique_ptr.h:712:1: note: 'std::make_unique' declared here
+make_unique(_Args&&... __args)
+^
+../src/Fahrzeug.cpp:92:17: warning: use of function template name with no prior declaration in function call with explicit template arguments is a C++20 extension [-Wc++20-extensions]
+        p_pVerhalten = make_unique<Fahren>(aWeg);
+                       ^
+1 warning and 1 error generated.
+make: *** [src/Fahrzeug.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:00:05 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+../src/Fahrzeug.cpp:92:17: error: use of undeclared identifier 'make_unique'; did you mean 'std::make_unique'?
+        p_pVerhalten = make_unique<Fahren>(aWeg);
+                       ^~~~~~~~~~~
+                       std::make_unique
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/unique_ptr.h:712:1: note: 'std::make_unique' declared here
+make_unique(_Args&&... __args)
+^
+../src/Fahrzeug.cpp:92:17: warning: use of function template name with no prior declaration in function call with explicit template arguments is a C++20 extension [-Wc++20-extensions]
+        p_pVerhalten = make_unique<Fahren>(aWeg);
+                       ^
+1 warning and 1 error generated.
+make: *** [src/Fahrzeug.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:00:21 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+Finished building: ../src/Fahrzeug.cpp
+ 
+Building file: ../src/PKW.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PKW.d" -MT"src/PKW.o" -o "src/PKW.o" "../src/PKW.cpp"
+Finished building: ../src/PKW.cpp
+ 
+Building file: ../src/Parken.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parken.d" -MT"src/Parken.o" -o "src/Parken.o" "../src/Parken.cpp"
+../src/Parken.cpp:11:20: error: initializer 'p_dStartZeit' does not name a non-static data member or base class; did you mean the member 'p_dStartzeit'?
+                Verhalten(aWeg), p_dStartZeit(dStartZeit)
+                                 ^~~~~~~~~~~~
+                                 p_dStartzeit
+../src/Parken.h:21:15: note: 'p_dStartzeit' declared here
+        const double p_dStartzeit = 0;
+                     ^
+../src/Parken.cpp:23:6: error: use of undeclared identifier 'p_dStartZeit'
+        if (p_dStartZeit - 1e-10 <= dGlobaleZeit)
+            ^
+../src/Parken.cpp:23:30: error: use of undeclared identifier 'dGlobaleZeit'
+        if (p_dStartZeit - 1e-10 <= dGlobaleZeit)
+                                    ^
+In file included from ../src/Parken.cpp:8:
+../src/Parken.h:21:15: warning: private field 'p_dStartzeit' is not used [-Wunused-private-field]
+        const double p_dStartzeit = 0;
+                     ^
+1 warning and 3 errors generated.
+make: *** [src/Parken.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:02:04 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+Finished building: ../src/Fahrzeug.cpp
+ 
+Building file: ../src/Parken.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parken.d" -MT"src/Parken.o" -o "src/Parken.o" "../src/Parken.cpp"
+../src/Parken.cpp:23:30: error: use of undeclared identifier 'dGlobaleZeit'
+        if (p_dStartZeit - 1e-10 <= dGlobaleZeit)
+                                    ^
+1 error generated.
+make: *** [src/Parken.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:02:27 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Parken.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parken.d" -MT"src/Parken.o" -o "src/Parken.o" "../src/Parken.cpp"
+Finished building: ../src/Parken.cpp
+ 
+Building file: ../src/Simulationsobjekt.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Simulationsobjekt.d" -MT"src/Simulationsobjekt.o" -o "src/Simulationsobjekt.o" "../src/Simulationsobjekt.cpp"
+Finished building: ../src/Simulationsobjekt.cpp
+ 
+Building file: ../src/Verhalten.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Verhalten.d" -MT"src/Verhalten.o" -o "src/Verhalten.o" "../src/Verhalten.cpp"
+../src/Verhalten.cpp:10:12: error: out-of-line definition of 'Verhalten' does not match any declaration in 'Verhalten'
+Verhalten::Verhalten(Weg& aWeg) :
+           ^~~~~~~~~
+../src/Verhalten.h:16:18: note: type of 1st parameter of member declaration does not match definition ('const Weg &' vs 'Weg &')
+        Verhalten(const Weg& aWeg);
+                        ^
+../src/Verhalten.cpp:23:9: error: binding reference of type 'Weg' to value of type 'const Weg' drops 'const' qualifier
+        return p_pWeg;
+               ^~~~~~
+2 errors generated.
+make: *** [src/Verhalten.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:02:45 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Verhalten.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Verhalten.d" -MT"src/Verhalten.o" -o "src/Verhalten.o" "../src/Verhalten.cpp"
+../src/Verhalten.cpp:23:9: error: binding reference of type 'Weg' to value of type 'const Weg' drops 'const' qualifier
+        return p_pWeg;
+               ^~~~~~
+1 error generated.
+make: *** [src/Verhalten.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:03:52 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahren.d" -MT"src/Fahren.o" -o "src/Fahren.o" "../src/Fahren.cpp"
+Finished building: ../src/Fahren.cpp
+ 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+Finished building: ../src/Fahrrad.cpp
+ 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+Finished building: ../src/Fahrzeug.cpp
+ 
+Building file: ../src/PKW.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PKW.d" -MT"src/PKW.o" -o "src/PKW.o" "../src/PKW.cpp"
+Finished building: ../src/PKW.cpp
+ 
+Building file: ../src/Parken.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parken.d" -MT"src/Parken.o" -o "src/Parken.o" "../src/Parken.cpp"
+Finished building: ../src/Parken.cpp
+ 
+Building file: ../src/Verhalten.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Verhalten.d" -MT"src/Verhalten.o" -o "src/Verhalten.o" "../src/Verhalten.cpp"
+Finished building: ../src/Verhalten.cpp
+ 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+../src/Weg.cpp:59:25: warning: unqualified call to 'std::move' [-Wunqualified-std-cast-call]
+        p_pFahrzeuge.push_back(move(pFzg));
+                               ^
+                               std::
+1 warning generated.
+Finished building: ../src/Weg.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/PKW.o ./src/Parken.o ./src/Simulationsobjekt.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+15:04:26 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+Finished building: ../src/Weg.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/PKW.o ./src/Parken.o ./src/Simulationsobjekt.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+15:21:06 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahren.d" -MT"src/Fahren.o" -o "src/Fahren.o" "../src/Fahren.cpp"
+Finished building: ../src/Fahren.cpp
+ 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+Finished building: ../src/Fahrrad.cpp
+ 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+Finished building: ../src/Fahrzeug.cpp
+ 
+Building file: ../src/PKW.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PKW.d" -MT"src/PKW.o" -o "src/PKW.o" "../src/PKW.cpp"
+Finished building: ../src/PKW.cpp
+ 
+Building file: ../src/Parken.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parken.d" -MT"src/Parken.o" -o "src/Parken.o" "../src/Parken.cpp"
+Finished building: ../src/Parken.cpp
+ 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+Finished building: ../src/Weg.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:217:11: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+        Weg pWeg1();
+                 ^~
+../src/main.cpp:217:11: note: remove parentheses to declare a variable
+        Weg pWeg1();
+                 ^~
+../src/main.cpp:220:15: warning: address of function 'pWeg1' will always evaluate to 'true' [-Wpointer-bool-conversion]
+        std::cout << pWeg1 << std::endl;
+                  ~~ ^~~~~
+../src/main.cpp:220:15: note: prefix with the address-of operator to silence this warning
+        std::cout << pWeg1 << std::endl;
+                     ^
+                     &
+../src/main.cpp:223:2: error: cannot delete expression of type 'Weg ()'
+        delete pWeg1;
+        ^      ~~~~~
+../src/main.cpp:224:2: error: cannot delete expression of type 'Weg'
+        delete pWeg2;
+        ^      ~~~~~
+../src/main.cpp:229:2: error: use of undeclared identifier 'cout'; did you mean 'std::cout'?
+        cout << "##################" << endl;
+        ^~~~
+        std::cout
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream:53:33: note: 'std::cout' declared here
+extern _LIBCPP_FUNC_VIS ostream cout;
+                                ^
+../src/main.cpp:229:34: error: use of undeclared identifier 'endl'; did you mean 'std::endl'?
+        cout << "##################" << endl;
+                                        ^~~~
+                                        std::endl
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1037:1: note: 'std::endl' declared here
+endl(basic_ostream<_CharT, _Traits>& __os)
+^
+../src/main.cpp:230:2: error: use of undeclared identifier 'cout'; did you mean 'std::cout'?
+        cout << "## vAufgabe_5() ##" << endl;
+        ^~~~
+        std::cout
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream:53:33: note: 'std::cout' declared here
+extern _LIBCPP_FUNC_VIS ostream cout;
+                                ^
+../src/main.cpp:230:34: error: use of undeclared identifier 'endl'; did you mean 'std::endl'?
+        cout << "## vAufgabe_5() ##" << endl;
+                                        ^~~~
+                                        std::endl
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1037:1: note: 'std::endl' declared here
+endl(basic_ostream<_CharT, _Traits>& __os)
+^
+../src/main.cpp:231:2: error: use of undeclared identifier 'cout'; did you mean 'std::cout'?
+        cout << "##################" << endl << endl;
+        ^~~~
+        std::cout
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream:53:33: note: 'std::cout' declared here
+extern _LIBCPP_FUNC_VIS ostream cout;
+                                ^
+../src/main.cpp:231:34: error: use of undeclared identifier 'endl'; did you mean 'std::endl'?
+        cout << "##################" << endl << endl;
+                                        ^~~~
+                                        std::endl
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1037:1: note: 'std::endl' declared here
+endl(basic_ostream<_CharT, _Traits>& __os)
+^
+../src/main.cpp:231:42: error: use of undeclared identifier 'endl'; did you mean 'std::endl'?
+        cout << "##################" << endl << endl;
+                                                ^~~~
+                                                std::endl
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1037:1: note: 'std::endl' declared here
+endl(basic_ostream<_CharT, _Traits>& __os)
+^
+../src/main.cpp:235:2: error: no template named 'unique_ptr'; did you mean 'std::unique_ptr'?
+        unique_ptr<Fahrzeug> pPKWA = make_unique<PKW>("PKW_A", 120, 5);
+        ^~~~~~~~~~
+        std::unique_ptr
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/unique_ptr.h:109:59: note: 'std::unique_ptr' declared here
+class _LIBCPP_UNIQUE_PTR_TRIVIAL_ABI _LIBCPP_TEMPLATE_VIS unique_ptr {
+                                                          ^
+../src/main.cpp:235:31: error: use of undeclared identifier 'make_unique'
+        unique_ptr<Fahrzeug> pPKWA = make_unique<PKW>("PKW_A", 120, 5);
+                                     ^
+../src/main.cpp:236:23: error: use of undeclared identifier 'pPKWB'; did you mean 'pPKWA'?
+        unique_ptr<Fahrzeug> pPKWB = make_unique<PKW>("PKW_B", 150, 5);
+                             ^~~~~
+                             pPKWA
+../src/main.cpp:235:23: note: 'pPKWA' declared here
+        unique_ptr<Fahrzeug> pPKWA = make_unique<PKW>("PKW_A", 120, 5);
+                             ^
+../src/main.cpp:236:22: error: expected ';' after expression
+        unique_ptr<Fahrzeug> pPKWB = make_unique<PKW>("PKW_B", 150, 5);
+                            ^
+                            ;
+../src/main.cpp:236:2: error: use of undeclared identifier 'unique_ptr'
+        unique_ptr<Fahrzeug> pPKWB = make_unique<PKW>("PKW_B", 150, 5);
+        ^
+../src/main.cpp:236:31: error: use of undeclared identifier 'make_unique'
+        unique_ptr<Fahrzeug> pPKWB = make_unique<PKW>("PKW_B", 150, 5);
+                                     ^
+../src/main.cpp:237:23: error: use of undeclared identifier 'pPKWC'; did you mean 'pPKWA'?
+        unique_ptr<Fahrzeug> pPKWC = make_unique<PKW>("PKW_C", 180, 5);
+                             ^~~~~
+                             pPKWA
+../src/main.cpp:235:23: note: 'pPKWA' declared here
+        unique_ptr<Fahrzeug> pPKWA = make_unique<PKW>("PKW_A", 120, 5);
+                             ^
+../src/main.cpp:237:22: error: expected ';' after expression
+        unique_ptr<Fahrzeug> pPKWC = make_unique<PKW>("PKW_C", 180, 5);
+                            ^
+                            ;
+../src/main.cpp:237:2: error: use of undeclared identifier 'unique_ptr'
+        unique_ptr<Fahrzeug> pPKWC = make_unique<PKW>("PKW_C", 180, 5);
+        ^
+../src/main.cpp:237:31: error: use of undeclared identifier 'make_unique'
+        unique_ptr<Fahrzeug> pPKWC = make_unique<PKW>("PKW_C", 180, 5);
+                                     ^
+../src/main.cpp:238:18: warning: unqualified call to 'std::move' [-Wunqualified-std-cast-call]
+        pWeg1->vAnnahme(move(pPKWA));
+                        ^
+                        std::
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+3 warnings and 20 errors generated.
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:23:30 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/PKW.o ./src/Parken.o ./src/Simulationsobjekt.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+15:23:39 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+15:25:02 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/PKW.o ./src/Parken.o ./src/Simulationsobjekt.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+15:27:23 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/PKW.o ./src/Parken.o ./src/Simulationsobjekt.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+16:10:08 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahrausnahme.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrausnahme.d" -MT"src/Fahrausnahme.o" -o "src/Fahrausnahme.o" "../src/Fahrausnahme.cpp"
+Finished building: ../src/Fahrausnahme.cpp
+ 
+Building file: ../src/Fahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahren.d" -MT"src/Fahren.o" -o "src/Fahren.o" "../src/Fahren.cpp"
+Finished building: ../src/Fahren.cpp
+ 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+Finished building: ../src/Fahrrad.cpp
+ 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+Finished building: ../src/Fahrzeug.cpp
+ 
+Building file: ../src/Losfahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Losfahren.d" -MT"src/Losfahren.o" -o "src/Losfahren.o" "../src/Losfahren.cpp"
+../src/Losfahren.cpp:23:52: error: member access into incomplete type 'const Fahrzeug'
+        std::cout << "Exception: Fahrzeug " << p_pFahrzeug.getName() << " auf Weg "
+                                                          ^
+../src/Fahrausnahme.h:14:7: note: forward declaration of 'Fahrzeug'
+class Fahrzeug;
+      ^
+../src/Losfahren.cpp:24:13: error: member access into incomplete type 'const Weg'
+                        << p_pWeg.getName() << " soll losfahren." << std::endl;
+                                 ^
+../src/Fahrausnahme.h:13:7: note: forward declaration of 'Weg'
+class Weg;
+      ^
+2 errors generated.
+make: *** [src/Losfahren.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:21:02 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahren.d" -MT"src/Fahren.o" -o "src/Fahren.o" "../src/Fahren.cpp"
+Finished building: ../src/Fahren.cpp
+ 
+Building file: ../src/Losfahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Losfahren.d" -MT"src/Losfahren.o" -o "src/Losfahren.o" "../src/Losfahren.cpp"
+../src/Losfahren.cpp:23:52: error: member access into incomplete type 'const Fahrzeug'
+        std::cout << "Exception: Fahrzeug " << p_pFahrzeug.getName() << " auf Weg "
+                                                          ^
+../src/Fahrausnahme.h:14:7: note: forward declaration of 'Fahrzeug'
+class Fahrzeug;
+      ^
+../src/Losfahren.cpp:24:13: error: member access into incomplete type 'const Weg'
+                        << p_pWeg.getName() << " soll losfahren." << std::endl;
+                                 ^
+../src/Fahrausnahme.h:13:7: note: forward declaration of 'Weg'
+class Weg;
+      ^
+2 errors generated.
+make: *** [src/Losfahren.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:23:12 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Losfahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Losfahren.d" -MT"src/Losfahren.o" -o "src/Losfahren.o" "../src/Losfahren.cpp"
+Finished building: ../src/Losfahren.cpp
+ 
+Building file: ../src/PKW.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PKW.d" -MT"src/PKW.o" -o "src/PKW.o" "../src/PKW.cpp"
+Finished building: ../src/PKW.cpp
+ 
+Building file: ../src/Parken.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parken.d" -MT"src/Parken.o" -o "src/Parken.o" "../src/Parken.cpp"
+Finished building: ../src/Parken.cpp
+ 
+Building file: ../src/Simulationsobjekt.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Simulationsobjekt.d" -MT"src/Simulationsobjekt.o" -o "src/Simulationsobjekt.o" "../src/Simulationsobjekt.cpp"
+Finished building: ../src/Simulationsobjekt.cpp
+ 
+Building file: ../src/Streckenende.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Streckenende.d" -MT"src/Streckenende.o" -o "src/Streckenende.o" "../src/Streckenende.cpp"
+../src/Streckenende.cpp:23:52: error: member access into incomplete type 'const Fahrzeug'
+        std::cout << "Exception: Fahrzeug " << p_pFahrzeug.getName() << " auf Weg "
+                                                          ^
+../src/Fahrausnahme.h:14:7: note: forward declaration of 'Fahrzeug'
+class Fahrzeug;
+      ^
+../src/Streckenende.cpp:24:14: error: member access into incomplete type 'const Weg'
+                                << p_pWeg.getName() << " ist am Wegende." << std::endl;
+                                         ^
+../src/Fahrausnahme.h:13:7: note: forward declaration of 'Weg'
+class Weg;
+      ^
+2 errors generated.
+make: *** [src/Streckenende.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:23:50 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Streckenende.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Streckenende.d" -MT"src/Streckenende.o" -o "src/Streckenende.o" "../src/Streckenende.cpp"
+Finished building: ../src/Streckenende.cpp
+ 
+Building file: ../src/Verhalten.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Verhalten.d" -MT"src/Verhalten.o" -o "src/Verhalten.o" "../src/Verhalten.cpp"
+Finished building: ../src/Verhalten.cpp
+ 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+Finished building: ../src/Weg.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrausnahme.o ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/Losfahren.o ./src/PKW.o ./src/Parken.o ./src/Simulationsobjekt.o ./src/Streckenende.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+16:24:00 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+16:32:31 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/PKW.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PKW.d" -MT"src/PKW.o" -o "src/PKW.o" "../src/PKW.cpp"
+../src/PKW.cpp:32:60: error: member access into incomplete type 'const Weg'
+        double dErlaubteGeschwindigkeit = p_pVerhalten -> getWeg().getTempolimit();
+                                                                  ^
+../src/Verhalten.h:11:7: note: forward declaration of 'Weg'
+class Weg;
+      ^
+1 error generated.
+make: *** [src/PKW.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:32:48 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/PKW.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PKW.d" -MT"src/PKW.o" -o "src/PKW.o" "../src/PKW.cpp"
+Finished building: ../src/PKW.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrausnahme.o ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/Losfahren.o ./src/PKW.o ./src/Parken.o ./src/Simulationsobjekt.o ./src/Streckenende.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+16:32:54 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+17:03:31 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/PKW.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PKW.d" -MT"src/PKW.o" -o "src/PKW.o" "../src/PKW.cpp"
+Finished building: ../src/PKW.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrausnahme.o ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/Losfahren.o ./src/PKW.o ./src/Parken.o ./src/Simulationsobjekt.o ./src/Streckenende.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+17:10:06 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrausnahme.o ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/Losfahren.o ./src/PKW.o ./src/Parken.o ./src/Simulationsobjekt.o ./src/Streckenende.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+17:13:54 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrausnahme.o ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/Losfahren.o ./src/PKW.o ./src/Parken.o ./src/Simulationsobjekt.o ./src/Streckenende.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+03:08:06 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahrausnahme.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrausnahme.d" -MT"src/Fahrausnahme.o" -o "src/Fahrausnahme.o" "../src/Fahrausnahme.cpp"
+Finished building: ../src/Fahrausnahme.cpp
+ 
+Building file: ../src/Fahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahren.d" -MT"src/Fahren.o" -o "src/Fahren.o" "../src/Fahren.cpp"
+Finished building: ../src/Fahren.cpp
+ 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+Finished building: ../src/Fahrrad.cpp
+ 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+Finished building: ../src/Fahrzeug.cpp
+ 
+Building file: ../src/Losfahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Losfahren.d" -MT"src/Losfahren.o" -o "src/Losfahren.o" "../src/Losfahren.cpp"
+Finished building: ../src/Losfahren.cpp
+ 
+Building file: ../src/PKW.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PKW.d" -MT"src/PKW.o" -o "src/PKW.o" "../src/PKW.cpp"
+Finished building: ../src/PKW.cpp
+ 
+Building file: ../src/Parken.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parken.d" -MT"src/Parken.o" -o "src/Parken.o" "../src/Parken.cpp"
+Finished building: ../src/Parken.cpp
+ 
+Building file: ../src/SimuClient.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimuClient.d" -MT"src/SimuClient.o" -o "src/SimuClient.o" "../src/SimuClient.cpp"
+Finished building: ../src/SimuClient.cpp
+ 
+Building file: ../src/SimuClientSocket.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimuClientSocket.d" -MT"src/SimuClientSocket.o" -o "src/SimuClientSocket.o" "../src/SimuClientSocket.cpp"
+Finished building: ../src/SimuClientSocket.cpp
+ 
+Building file: ../src/Simulationsobjekt.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Simulationsobjekt.d" -MT"src/Simulationsobjekt.o" -o "src/Simulationsobjekt.o" "../src/Simulationsobjekt.cpp"
+Finished building: ../src/Simulationsobjekt.cpp
+ 
+Building file: ../src/Streckenende.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Streckenende.d" -MT"src/Streckenende.o" -o "src/Streckenende.o" "../src/Streckenende.cpp"
+Finished building: ../src/Streckenende.cpp
+ 
+Building file: ../src/Verhalten.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Verhalten.d" -MT"src/Verhalten.o" -o "src/Verhalten.o" "../src/Verhalten.cpp"
+Finished building: ../src/Verhalten.cpp
+ 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+Finished building: ../src/Weg.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrausnahme.o ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/Losfahren.o ./src/PKW.o ./src/Parken.o ./src/SimuClient.o ./src/SimuClientSocket.o ./src/Simulationsobjekt.o ./src/Streckenende.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+03:08:27 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+03:21:28 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+03:21:33 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+03:28:17 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+03:28:21 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+03:29:44 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/SimuClient.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimuClient.d" -MT"src/SimuClient.o" -o "src/SimuClient.o" "../src/SimuClient.cpp"
+Finished building: ../src/SimuClient.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrausnahme.o ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/Losfahren.o ./src/PKW.o ./src/Parken.o ./src/SimuClient.o ./src/SimuClientSocket.o ./src/Simulationsobjekt.o ./src/Streckenende.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+03:29:52 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+03:32:34 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrausnahme.o ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/Losfahren.o ./src/PKW.o ./src/Parken.o ./src/SimuClient.o ./src/SimuClientSocket.o ./src/Simulationsobjekt.o ./src/Streckenende.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+03:32:42 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+03:36:03 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+03:37:34 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+03:40:15 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+03:48:27 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+03:50:15 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+04:01:04 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahren.d" -MT"src/Fahren.o" -o "src/Fahren.o" "../src/Fahren.cpp"
+Finished building: ../src/Fahren.cpp
+ 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+../src/Fahrrad.cpp:9:10: warning: non-portable path to file '"SimuClient.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Simuclient.h"
+         ^~~~~~~~~~~~~~
+         "SimuClient.h"
+../src/Fahrrad.cpp:35:50: error: member access into incomplete type 'const Weg'
+        double dRelPosition = p_dAbschnittStrecke / aWeg.getLaenge();
+                                                        ^
+../src/Verhalten.h:11:7: note: forward declaration of 'Weg'
+class Weg;
+      ^
+../src/Fahrrad.cpp:36:31: error: member access into incomplete type 'const Weg'
+        bZeichneFahrrad(p_sName, aWeg.getName(), dRelPosition, dGeschwindigkeit());
+                                     ^
+../src/Verhalten.h:11:7: note: forward declaration of 'Weg'
+class Weg;
+      ^
+1 warning and 2 errors generated.
+make: *** [src/Fahrrad.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+04:01:55 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+Finished building: ../src/Fahrrad.cpp
+ 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+Finished building: ../src/Fahrzeug.cpp
+ 
+Building file: ../src/Losfahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Losfahren.d" -MT"src/Losfahren.o" -o "src/Losfahren.o" "../src/Losfahren.cpp"
+Finished building: ../src/Losfahren.cpp
+ 
+Building file: ../src/PKW.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PKW.d" -MT"src/PKW.o" -o "src/PKW.o" "../src/PKW.cpp"
+Finished building: ../src/PKW.cpp
+ 
+Building file: ../src/Streckenende.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Streckenende.d" -MT"src/Streckenende.o" -o "src/Streckenende.o" "../src/Streckenende.cpp"
+Finished building: ../src/Streckenende.cpp
+ 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+Finished building: ../src/Weg.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrausnahme.o ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/Losfahren.o ./src/PKW.o ./src/Parken.o ./src/SimuClient.o ./src/SimuClientSocket.o ./src/Simulationsobjekt.o ./src/Streckenende.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+04:02:08 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+04:04:42 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrausnahme.o ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/Losfahren.o ./src/PKW.o ./src/Parken.o ./src/SimuClient.o ./src/SimuClientSocket.o ./src/Simulationsobjekt.o ./src/Streckenende.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+04:28:14 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahren.d" -MT"src/Fahren.o" -o "src/Fahren.o" "../src/Fahren.cpp"
+Finished building: ../src/Fahren.cpp
+ 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+Finished building: ../src/Fahrrad.cpp
+ 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+Finished building: ../src/Fahrzeug.cpp
+ 
+Building file: ../src/Losfahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Losfahren.d" -MT"src/Losfahren.o" -o "src/Losfahren.o" "../src/Losfahren.cpp"
+../src/Losfahren.cpp:31:49: error: 'this' argument to member function 'pAbgabe' has type 'const Weg', but function is not marked const
+        std::unique_ptr<Fahrzeug> aFzgTemp = std::move(p_pWeg.pAbgabe(p_pFahrzeug));
+                                                       ^~~~~~
+../src/Weg.h:36:28: note: 'pAbgabe' declared here
+        std::unique_ptr<Fahrzeug> pAbgabe(const Fahrzeug& aFzg);
+                                  ^
+../src/Losfahren.cpp:35:10: error: no matching member function for call to 'vAnnahme'
+                p_pWeg.vAnnahme(std::move(aFzgTemp)); //wenn wir der vAnnahme keine Zeit übergeben, wird es als fahrendes Auto angenommen
+                ~~~~~~~^~~~~~~~
+../src/Weg.h:29:7: note: candidate function not viable: 'this' argument has type 'const Weg', but method is not marked const
+        void vAnnahme(std::unique_ptr<Fahrzeug> pFzg);
+             ^
+../src/Weg.h:30:7: note: candidate function not viable: requires 2 arguments, but 1 was provided
+        void vAnnahme(std::unique_ptr<Fahrzeug> pFzg, const double dStartZeit);
+             ^
+2 errors generated.
+make: *** [src/Losfahren.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+04:34:50 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahrausnahme.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrausnahme.d" -MT"src/Fahrausnahme.o" -o "src/Fahrausnahme.o" "../src/Fahrausnahme.cpp"
+../src/Fahrausnahme.cpp:11:3: error: binding reference of type 'Weg' to value of type 'const Weg' drops 'const' qualifier
+                p_pWeg(aWeg), p_pFahrzeug(aFzg)
+                ^      ~~~~
+1 error generated.
+make: *** [src/Fahrausnahme.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+04:46:43 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahrausnahme.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrausnahme.d" -MT"src/Fahrausnahme.o" -o "src/Fahrausnahme.o" "../src/Fahrausnahme.cpp"
+Finished building: ../src/Fahrausnahme.cpp
+ 
+Building file: ../src/Fahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahren.d" -MT"src/Fahren.o" -o "src/Fahren.o" "../src/Fahren.cpp"
+../src/Fahren.cpp:31:9: error: no matching constructor for initialization of 'Streckenende'
+                throw Streckenende(p_pWeg, aFzg);
+                      ^            ~~~~~~~~~~~~
+../src/Streckenende.h:15:2: note: candidate constructor not viable: 1st argument ('const Weg') would lose const qualifier
+        Streckenende(Weg& aWeg, const Fahrzeug& aFzg);
+        ^
+../src/Streckenende.h:13:7: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 2 were provided
+class Streckenende : public Fahrausnahme {
+      ^
+1 error generated.
+make: *** [src/Fahren.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+04:50:26 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahren.d" -MT"src/Fahren.o" -o "src/Fahren.o" "../src/Fahren.cpp"
+Finished building: ../src/Fahren.cpp
+ 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+Finished building: ../src/Fahrrad.cpp
+ 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+In file included from ../src/Fahrzeug.cpp:8:
+In file included from ../src/Fahrzeug.h:11:
+In file included from ../src/Simulationsobjekt.h:11:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:549:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/memory:860:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/shared_ptr.h:28:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/unique_ptr.h:714:32: error: no matching constructor for initialization of 'Fahren'
+    return unique_ptr<_Tp>(new _Tp(_VSTD::forward<_Args>(__args)...));
+                               ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Fahrzeug.cpp:92:22: note: in instantiation of function template specialization 'std::make_unique<Fahren, const Weg &>' requested here
+        p_pVerhalten = std::make_unique<Fahren>(aWeg);
+                            ^
+../src/Fahren.h:13:7: note: candidate constructor (the implicit copy constructor) not viable: cannot convert argument of incomplete type 'const Weg' to 'const Fahren' for 1st argument
+class Fahren : public Verhalten {
+      ^
+../src/Fahren.h:15:2: note: candidate constructor not viable: 1st argument ('const Weg') would lose const qualifier
+        Fahren(Weg& aWeg);
+        ^
+In file included from ../src/Fahrzeug.cpp:8:
+In file included from ../src/Fahrzeug.h:11:
+In file included from ../src/Simulationsobjekt.h:11:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:549:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/memory:860:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/shared_ptr.h:28:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/unique_ptr.h:714:32: error: no matching constructor for initialization of 'Parken'
+    return unique_ptr<_Tp>(new _Tp(_VSTD::forward<_Args>(__args)...));
+                               ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Fahrzeug.cpp:98:22: note: in instantiation of function template specialization 'std::make_unique<Parken, const Weg &, const double &>' requested here
+        p_pVerhalten = std::make_unique<Parken>(aWeg, dStartZeit);
+                            ^
+../src/Parken.h:15:2: note: candidate constructor not viable: 1st argument ('const Weg') would lose const qualifier
+        Parken(Weg& aWeg, const double dStartZeit);
+        ^
+../src/Parken.h:13:7: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 2 were provided
+class Parken : public Verhalten {
+      ^
+2 errors generated.
+make: *** [src/Fahrzeug.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+04:54:48 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahren.d" -MT"src/Fahren.o" -o "src/Fahren.o" "../src/Fahren.cpp"
+Finished building: ../src/Fahren.cpp
+ 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+Finished building: ../src/Fahrrad.cpp
+ 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+Finished building: ../src/Fahrzeug.cpp
+ 
+Building file: ../src/Losfahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Losfahren.d" -MT"src/Losfahren.o" -o "src/Losfahren.o" "../src/Losfahren.cpp"
+../src/Losfahren.cpp:31:39: warning: moving a temporary object prevents copy elision [-Wpessimizing-move]
+        std::unique_ptr<Fahrzeug> aFzgTemp = std::move(p_pWeg.pAbgabe(p_pFahrzeug));
+                                             ^
+../src/Losfahren.cpp:31:39: note: remove std::move call here
+        std::unique_ptr<Fahrzeug> aFzgTemp = std::move(p_pWeg.pAbgabe(p_pFahrzeug));
+                                             ^~~~~~~~~~                           ~
+1 warning generated.
+Finished building: ../src/Losfahren.cpp
+ 
+Building file: ../src/PKW.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PKW.d" -MT"src/PKW.o" -o "src/PKW.o" "../src/PKW.cpp"
+Finished building: ../src/PKW.cpp
+ 
+Building file: ../src/Parken.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parken.d" -MT"src/Parken.o" -o "src/Parken.o" "../src/Parken.cpp"
+Finished building: ../src/Parken.cpp
+ 
+Building file: ../src/Simulationsobjekt.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Simulationsobjekt.d" -MT"src/Simulationsobjekt.o" -o "src/Simulationsobjekt.o" "../src/Simulationsobjekt.cpp"
+Finished building: ../src/Simulationsobjekt.cpp
+ 
+Building file: ../src/Streckenende.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Streckenende.d" -MT"src/Streckenende.o" -o "src/Streckenende.o" "../src/Streckenende.cpp"
+../src/Streckenende.cpp:29:39: warning: moving a temporary object prevents copy elision [-Wpessimizing-move]
+        std::unique_ptr<Fahrzeug> aFzgTemp = std::move(p_pWeg.pAbgabe(p_pFahrzeug));
+                                             ^
+../src/Streckenende.cpp:29:39: note: remove std::move call here
+        std::unique_ptr<Fahrzeug> aFzgTemp = std::move(p_pWeg.pAbgabe(p_pFahrzeug));
+                                             ^~~~~~~~~~                           ~
+1 warning generated.
+Finished building: ../src/Streckenende.cpp
+ 
+Building file: ../src/Verhalten.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Verhalten.d" -MT"src/Verhalten.o" -o "src/Verhalten.o" "../src/Verhalten.cpp"
+Finished building: ../src/Verhalten.cpp
+ 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+Finished building: ../src/Weg.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrausnahme.o ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/Losfahren.o ./src/PKW.o ./src/Parken.o ./src/SimuClient.o ./src/SimuClientSocket.o ./src/Simulationsobjekt.o ./src/Streckenende.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+04:56:38 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Losfahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Losfahren.d" -MT"src/Losfahren.o" -o "src/Losfahren.o" "../src/Losfahren.cpp"
+Finished building: ../src/Losfahren.cpp
+ 
+Building file: ../src/Streckenende.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Streckenende.d" -MT"src/Streckenende.o" -o "src/Streckenende.o" "../src/Streckenende.cpp"
+Finished building: ../src/Streckenende.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrausnahme.o ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/Losfahren.o ./src/PKW.o ./src/Parken.o ./src/SimuClient.o ./src/SimuClientSocket.o ./src/Simulationsobjekt.o ./src/Streckenende.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+04:56:47 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+18:51:41 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahrausnahme.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrausnahme.d" -MT"src/Fahrausnahme.o" -o "src/Fahrausnahme.o" "../src/Fahrausnahme.cpp"
+Finished building: ../src/Fahrausnahme.cpp
+ 
+Building file: ../src/Fahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahren.d" -MT"src/Fahren.o" -o "src/Fahren.o" "../src/Fahren.cpp"
+In file included from ../src/Fahren.cpp:10:
+In file included from ../src/Weg.h:15:
+In file included from ../src/vertagt_liste.h:3:
+../src/vertagt_aktion.h:15:18: error: expected expression
+            VAktion() = ...; // Benötigt man einen Standardkonstruktor?
+                        ^
+../src/vertagt_aktion.h:29:20: error: expected expression
+            VPushBack() = ...;
+                          ^
+../src/vertagt_aktion.h:70:4: error: no template named 'Aktion'; did you mean 'VAktion'?
+                        Aktion<T>::p_pListe.erase(p_it);
+                        ^~~~~~
+                        VAktion
+../src/vertagt_aktion.h:9:8: note: 'VAktion' declared here
+        class VAktion
+              ^
+3 errors generated.
+make: *** [src/Fahren.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:53:33 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahren.d" -MT"src/Fahren.o" -o "src/Fahren.o" "../src/Fahren.cpp"
+Finished building: ../src/Fahren.cpp
+ 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+Finished building: ../src/Fahrrad.cpp
+ 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+Finished building: ../src/Fahrzeug.cpp
+ 
+Building file: ../src/Losfahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Losfahren.d" -MT"src/Losfahren.o" -o "src/Losfahren.o" "../src/Losfahren.cpp"
+Finished building: ../src/Losfahren.cpp
+ 
+Building file: ../src/PKW.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PKW.d" -MT"src/PKW.o" -o "src/PKW.o" "../src/PKW.cpp"
+Finished building: ../src/PKW.cpp
+ 
+Building file: ../src/Parken.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parken.d" -MT"src/Parken.o" -o "src/Parken.o" "../src/Parken.cpp"
+Finished building: ../src/Parken.cpp
+ 
+Building file: ../src/SimuClient.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimuClient.d" -MT"src/SimuClient.o" -o "src/SimuClient.o" "../src/SimuClient.cpp"
+Finished building: ../src/SimuClient.cpp
+ 
+Building file: ../src/SimuClientSocket.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimuClientSocket.d" -MT"src/SimuClientSocket.o" -o "src/SimuClientSocket.o" "../src/SimuClientSocket.cpp"
+Finished building: ../src/SimuClientSocket.cpp
+ 
+Building file: ../src/Simulationsobjekt.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Simulationsobjekt.d" -MT"src/Simulationsobjekt.o" -o "src/Simulationsobjekt.o" "../src/Simulationsobjekt.cpp"
+Finished building: ../src/Simulationsobjekt.cpp
+ 
+Building file: ../src/Streckenende.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Streckenende.d" -MT"src/Streckenende.o" -o "src/Streckenende.o" "../src/Streckenende.cpp"
+Finished building: ../src/Streckenende.cpp
+ 
+Building file: ../src/Verhalten.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Verhalten.d" -MT"src/Verhalten.o" -o "src/Verhalten.o" "../src/Verhalten.cpp"
+Finished building: ../src/Verhalten.cpp
+ 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+In file included from ../src/Weg.cpp:8:
+In file included from ../src/Weg.h:15:
+../src/vertagt_liste.h:61:66: warning: unqualified call to 'std::move' [-Wunqualified-std-cast-call]
+                        p_aktionen.push_back(std::make_unique<VPushBack<T>>(p_objekte,move(obj)));
+                                                                                      ^
+                                                                                      std::
+../src/Weg.cpp:67:15: note: in instantiation of member function 'vertagt::VListe<std::unique_ptr<Fahrzeug>>::push_back' requested here
+        p_pFahrzeuge.push_back(std::move(pFzg));
+                     ^
+In file included from ../src/Weg.cpp:8:
+In file included from ../src/Weg.h:15:
+../src/vertagt_liste.h:67:67: warning: unqualified call to 'std::move' [-Wunqualified-std-cast-call]
+                        p_aktionen.push_back(std::make_unique<VPushFront<T>>(p_objekte,move(obj)));
+                                                                                       ^
+                                                                                       std::
+../src/Weg.cpp:73:15: note: in instantiation of member function 'vertagt::VListe<std::unique_ptr<Fahrzeug>>::push_front' requested here
+        p_pFahrzeuge.push_front(std::move(aFzg));
+                     ^
+2 warnings generated.
+Finished building: ../src/Weg.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrausnahme.o ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/Losfahren.o ./src/PKW.o ./src/Parken.o ./src/SimuClient.o ./src/SimuClientSocket.o ./src/Simulationsobjekt.o ./src/Streckenende.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+18:54:37 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahren.d" -MT"src/Fahren.o" -o "src/Fahren.o" "../src/Fahren.cpp"
+Finished building: ../src/Fahren.cpp
+ 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+Finished building: ../src/Fahrrad.cpp
+ 
+Building file: ../src/Losfahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Losfahren.d" -MT"src/Losfahren.o" -o "src/Losfahren.o" "../src/Losfahren.cpp"
+Finished building: ../src/Losfahren.cpp
+ 
+Building file: ../src/PKW.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PKW.d" -MT"src/PKW.o" -o "src/PKW.o" "../src/PKW.cpp"
+Finished building: ../src/PKW.cpp
+ 
+Building file: ../src/Streckenende.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Streckenende.d" -MT"src/Streckenende.o" -o "src/Streckenende.o" "../src/Streckenende.cpp"
+Finished building: ../src/Streckenende.cpp
+ 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+Finished building: ../src/Weg.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrausnahme.o ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/Losfahren.o ./src/PKW.o ./src/Parken.o ./src/SimuClient.o ./src/SimuClientSocket.o ./src/Simulationsobjekt.o ./src/Streckenende.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+18:54:52 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+19:02:39 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+Finished building: ../src/Weg.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrausnahme.o ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/Losfahren.o ./src/PKW.o ./src/Parken.o ./src/SimuClient.o ./src/SimuClientSocket.o ./src/Simulationsobjekt.o ./src/Streckenende.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+19:02:45 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+19:11:00 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:314:15: error: no type named 'mt19937' in namespace 'std'
+                static std::mt19937 device(0);
+                       ~~~~~^
+../src/main.cpp:336:2: error: use of undeclared identifier 'cout'; did you mean 'std::cout'?
+        cout << "Liste ausgeben (Zahlen wurden noch nicht gelöscht, da noch nicht aktualisiert):" << endl;
+        ^~~~
+        std::cout
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream:53:33: note: 'std::cout' declared here
+extern _LIBCPP_FUNC_VIS ostream cout;
+                                ^
+../src/main.cpp:336:96: error: use of undeclared identifier 'endl'; did you mean 'std::endl'?
+        cout << "Liste ausgeben (Zahlen wurden noch nicht gelöscht, da noch nicht aktualisiert):" << endl;
+                                                                                                     ^~~~
+                                                                                                     std::endl
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1037:1: note: 'std::endl' declared here
+endl(basic_ostream<_CharT, _Traits>& __os)
+^
+3 errors generated.
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:11:59 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:337:2: error: use of undeclared identifier 'cout'; did you mean 'std::cout'?
+        cout << "Liste ausgeben (Zahlen wurden noch nicht gelöscht, da noch nicht aktualisiert):" << endl;
+        ^~~~
+        std::cout
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream:53:33: note: 'std::cout' declared here
+extern _LIBCPP_FUNC_VIS ostream cout;
+                                ^
+../src/main.cpp:337:96: error: use of undeclared identifier 'endl'; did you mean 'std::endl'?
+        cout << "Liste ausgeben (Zahlen wurden noch nicht gelöscht, da noch nicht aktualisiert):" << endl;
+                                                                                                     ^~~~
+                                                                                                     std::endl
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1037:1: note: 'std::endl' declared here
+endl(basic_ostream<_CharT, _Traits>& __os)
+^
+2 errors generated.
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:12:24 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrausnahme.o ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/Losfahren.o ./src/PKW.o ./src/Parken.o ./src/SimuClient.o ./src/SimuClientSocket.o ./src/Simulationsobjekt.o ./src/Streckenende.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+19:12:30 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+19:16:12 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrausnahme.o ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/Losfahren.o ./src/PKW.o ./src/Parken.o ./src/SimuClient.o ./src/SimuClientSocket.o ./src/Simulationsobjekt.o ./src/Streckenende.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+19:18:26 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Fahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahren.d" -MT"src/Fahren.o" -o "src/Fahren.o" "../src/Fahren.cpp"
+Finished building: ../src/Fahren.cpp
+ 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+Finished building: ../src/Fahrrad.cpp
+ 
+Building file: ../src/Losfahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Losfahren.d" -MT"src/Losfahren.o" -o "src/Losfahren.o" "../src/Losfahren.cpp"
+Finished building: ../src/Losfahren.cpp
+ 
+Building file: ../src/PKW.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PKW.d" -MT"src/PKW.o" -o "src/PKW.o" "../src/PKW.cpp"
+Finished building: ../src/PKW.cpp
+ 
+Building file: ../src/Streckenende.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Streckenende.d" -MT"src/Streckenende.o" -o "src/Streckenende.o" "../src/Streckenende.cpp"
+Finished building: ../src/Streckenende.cpp
+ 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+Finished building: ../src/Weg.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrausnahme.o ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/Losfahren.o ./src/PKW.o ./src/Parken.o ./src/SimuClient.o ./src/SimuClientSocket.o ./src/Simulationsobjekt.o ./src/Streckenende.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+23:12:12 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/Parken.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parken.d" -MT"src/Parken.o" -o "src/Parken.o" "../src/Parken.cpp"
+Finished building: ../src/Parken.cpp
+ 
+Building file: ../src/Streckenende.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Streckenende.d" -MT"src/Streckenende.o" -o "src/Streckenende.o" "../src/Streckenende.cpp"
+Finished building: ../src/Streckenende.cpp
+ 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+Finished building: ../src/Weg.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrausnahme.o ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/Losfahren.o ./src/PKW.o ./src/Parken.o ./src/SimuClient.o ./src/SimuClientSocket.o ./src/Simulationsobjekt.o ./src/Streckenende.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+08:31:00 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/PKW.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PKW.d" -MT"src/PKW.o" -o "src/PKW.o" "../src/PKW.cpp"
+Finished building: ../src/PKW.cpp
+ 
+Building file: ../src/Streckenende.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Streckenende.d" -MT"src/Streckenende.o" -o "src/Streckenende.o" "../src/Streckenende.cpp"
+Finished building: ../src/Streckenende.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:308:7: error: no member named 'Annahme' in 'Weg'; did you mean 'vAnnahme'?
+        Weg1.Annahme(std::move(PKWA));
+             ^~~~~~~
+             vAnnahme
+../src/Weg.h:29:7: note: 'vAnnahme' declared here
+        void vAnnahme(std::unique_ptr<Fahrzeug> pFzg);
+             ^
+../src/main.cpp:308:25: error: use of undeclared identifier 'PKWA'; did you mean 'pPKWA'?
+        Weg1.Annahme(std::move(PKWA));
+                               ^~~~
+                               pPKWA
+../src/main.cpp:306:28: note: 'pPKWA' declared here
+        std::unique_ptr<Fahrzeug> pPKWA = std::make_unique<PKW>("PKW_A",150,5);
+                                  ^
+../src/main.cpp:402:9: error: expected ';' after expression
+        vTest()
+               ^
+               ;
+3 errors generated.
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:31:26 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:308:7: error: no member named 'Annahme' in 'Weg'; did you mean 'vAnnahme'?
+        Weg1.Annahme(std::move(PKWA));
+             ^~~~~~~
+             vAnnahme
+../src/Weg.h:29:7: note: 'vAnnahme' declared here
+        void vAnnahme(std::unique_ptr<Fahrzeug> pFzg);
+             ^
+../src/main.cpp:308:25: error: use of undeclared identifier 'PKWA'; did you mean 'pPKWA'?
+        Weg1.Annahme(std::move(PKWA));
+                               ^~~~
+                               pPKWA
+../src/main.cpp:306:28: note: 'pPKWA' declared here
+        std::unique_ptr<Fahrzeug> pPKWA = std::make_unique<PKW>("PKW_A",150,5);
+                                  ^
+../src/main.cpp:402:9: error: expected ';' after expression
+        vTest()
+               ^
+               ;
+3 errors generated.
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:31:49 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:308:26: error: use of undeclared identifier 'PKWA'; did you mean 'pPKWA'?
+        Weg1.vAnnahme(std::move(PKWA));
+                                ^~~~
+                                pPKWA
+../src/main.cpp:306:28: note: 'pPKWA' declared here
+        std::unique_ptr<Fahrzeug> pPKWA = std::make_unique<PKW>("PKW_A",150,5);
+                                  ^
+../src/main.cpp:402:9: error: expected ';' after expression
+        vTest()
+               ^
+               ;
+2 errors generated.
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:32:01 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:308:26: error: use of undeclared identifier 'PKWA'; did you mean 'pPKWA'?
+        Weg1.vAnnahme(std::move(PKWA));
+                                ^~~~
+                                pPKWA
+../src/main.cpp:306:28: note: 'pPKWA' declared here
+        std::unique_ptr<Fahrzeug> pPKWA = std::make_unique<PKW>("PKW_A",150,5);
+                                  ^
+1 error generated.
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:32:33 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrausnahme.o ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/Losfahren.o ./src/PKW.o ./src/Parken.o ./src/SimuClient.o ./src/SimuClientSocket.o ./src/Simulationsobjekt.o ./src/Streckenende.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+08:32:41 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+08:33:23 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabenblock2
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabenblock2"  ./src/Fahrausnahme.o ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/Losfahren.o ./src/PKW.o ./src/Parken.o ./src/SimuClient.o ./src/SimuClientSocket.o ./src/Simulationsobjekt.o ./src/Streckenende.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabenblock2
+ 
+08:33:28 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+09:23:00 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+09:32:29 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+18:35:33 **** Build of configuration Debug for project Aufgabenblock1 ****
+make all 
+make: Nothing to be done for `all'.
+18:35:36 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+18:35:36 **** Build of configuration Debug for project Aufgabensblock3 ****
+make all 
+Building file: ../src/Aufgabensblock3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aufgabensblock3.d" -MT"src/Aufgabensblock3.o" -o "src/Aufgabensblock3.o" "../src/Aufgabensblock3.cpp"
+Finished building: ../src/Aufgabensblock3.cpp
+ 
+Building target: Aufgabensblock3
+Invoking: MacOS X C++ Linker
+g++  -o "Aufgabensblock3"  ./src/Aufgabensblock3.o   
+Finished building target: Aufgabensblock3
+ 
+18:35:56 **** Incremental Build of configuration Debug for project Aufgabensblock3 ****
+make all 
+make: Nothing to be done for `all'.
+20:02:33 **** Incremental Build of configuration Debug for project Aufgabensblock3 ****
+make all 
+Building file: ../src/Fahrausnahme.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrausnahme.d" -MT"src/Fahrausnahme.o" -o "src/Fahrausnahme.o" "../src/Fahrausnahme.cpp"
+Finished building: ../src/Fahrausnahme.cpp
+ 
+Building file: ../src/Fahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahren.d" -MT"src/Fahren.o" -o "src/Fahren.o" "../src/Fahren.cpp"
+Finished building: ../src/Fahren.cpp
+ 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+Finished building: ../src/Fahrrad.cpp
+ 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+Finished building: ../src/Fahrzeug.cpp
+ 
+Building file: ../src/Losfahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Losfahren.d" -MT"src/Losfahren.o" -o "src/Losfahren.o" "../src/Losfahren.cpp"
+Finished building: ../src/Losfahren.cpp
+ 
+Building file: ../src/PKW.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PKW.d" -MT"src/PKW.o" -o "src/PKW.o" "../src/PKW.cpp"
+Finished building: ../src/PKW.cpp
+ 
+Building file: ../src/Parken.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parken.d" -MT"src/Parken.o" -o "src/Parken.o" "../src/Parken.cpp"
+Finished building: ../src/Parken.cpp
+ 
+Building file: ../src/SimuClient.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimuClient.d" -MT"src/SimuClient.o" -o "src/SimuClient.o" "../src/SimuClient.cpp"
+Finished building: ../src/SimuClient.cpp
+ 
+Building file: ../src/SimuClientSocket.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimuClientSocket.d" -MT"src/SimuClientSocket.o" -o "src/SimuClientSocket.o" "../src/SimuClientSocket.cpp"
+Finished building: ../src/SimuClientSocket.cpp
+ 
+Building file: ../src/Simulationsobjekt.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Simulationsobjekt.d" -MT"src/Simulationsobjekt.o" -o "src/Simulationsobjekt.o" "../src/Simulationsobjekt.cpp"
+Finished building: ../src/Simulationsobjekt.cpp
+ 
+Building file: ../src/Streckenende.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Streckenende.d" -MT"src/Streckenende.o" -o "src/Streckenende.o" "../src/Streckenende.cpp"
+Finished building: ../src/Streckenende.cpp
+ 
+Building file: ../src/Verhalten.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Verhalten.d" -MT"src/Verhalten.o" -o "src/Verhalten.o" "../src/Verhalten.cpp"
+Finished building: ../src/Verhalten.cpp
+ 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+Finished building: ../src/Weg.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabensblock3
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabensblock3"  ./src/Fahrausnahme.o ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/Losfahren.o ./src/PKW.o ./src/Parken.o ./src/SimuClient.o ./src/SimuClientSocket.o ./src/Simulationsobjekt.o ./src/Streckenende.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+Finished building target: Aufgabensblock3
+ 
+20:07:08 **** Incremental Build of configuration Debug for project Aufgabensblock3 ****
+make all 
+Building file: ../src/Aufgabensblock3.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aufgabensblock3.d" -MT"src/Aufgabensblock3.o" -o "src/Aufgabensblock3.o" "../src/Aufgabensblock3.cpp"
+Finished building: ../src/Aufgabensblock3.cpp
+ 
+Building file: ../src/Fahrausnahme.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrausnahme.d" -MT"src/Fahrausnahme.o" -o "src/Fahrausnahme.o" "../src/Fahrausnahme.cpp"
+Finished building: ../src/Fahrausnahme.cpp
+ 
+Building file: ../src/Fahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahren.d" -MT"src/Fahren.o" -o "src/Fahren.o" "../src/Fahren.cpp"
+Finished building: ../src/Fahren.cpp
+ 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+Finished building: ../src/Fahrrad.cpp
+ 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+Finished building: ../src/Fahrzeug.cpp
+ 
+Building file: ../src/Losfahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Losfahren.d" -MT"src/Losfahren.o" -o "src/Losfahren.o" "../src/Losfahren.cpp"
+Finished building: ../src/Losfahren.cpp
+ 
+Building file: ../src/PKW.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PKW.d" -MT"src/PKW.o" -o "src/PKW.o" "../src/PKW.cpp"
+Finished building: ../src/PKW.cpp
+ 
+Building file: ../src/Parken.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parken.d" -MT"src/Parken.o" -o "src/Parken.o" "../src/Parken.cpp"
+Finished building: ../src/Parken.cpp
+ 
+Building file: ../src/SimuClient.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimuClient.d" -MT"src/SimuClient.o" -o "src/SimuClient.o" "../src/SimuClient.cpp"
+Finished building: ../src/SimuClient.cpp
+ 
+Building file: ../src/SimuClientSocket.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimuClientSocket.d" -MT"src/SimuClientSocket.o" -o "src/SimuClientSocket.o" "../src/SimuClientSocket.cpp"
+Finished building: ../src/SimuClientSocket.cpp
+ 
+Building file: ../src/Simulationsobjekt.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Simulationsobjekt.d" -MT"src/Simulationsobjekt.o" -o "src/Simulationsobjekt.o" "../src/Simulationsobjekt.cpp"
+Finished building: ../src/Simulationsobjekt.cpp
+ 
+Building file: ../src/Streckenende.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Streckenende.d" -MT"src/Streckenende.o" -o "src/Streckenende.o" "../src/Streckenende.cpp"
+Finished building: ../src/Streckenende.cpp
+ 
+Building file: ../src/Verhalten.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Verhalten.d" -MT"src/Verhalten.o" -o "src/Verhalten.o" "../src/Verhalten.cpp"
+Finished building: ../src/Verhalten.cpp
+ 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+Finished building: ../src/Weg.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Aufgabensblock3
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabensblock3"  ./src/Aufgabensblock3.o ./src/Fahrausnahme.o ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/Losfahren.o ./src/PKW.o ./src/Parken.o ./src/SimuClient.o ./src/SimuClientSocket.o ./src/Simulationsobjekt.o ./src/Streckenende.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+duplicate symbol '_main' in:
+    ./src/Aufgabensblock3.o
+    ./src/main.o
+ld: 1 duplicate symbol for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Aufgabensblock3] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:07:28 **** Incremental Build of configuration Debug for project Aufgabensblock3 ****
+make all 
+Building target: Aufgabensblock3
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabensblock3"  ./src/Aufgabensblock3.o ./src/Fahrausnahme.o ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/Losfahren.o ./src/PKW.o ./src/Parken.o ./src/SimuClient.o ./src/SimuClientSocket.o ./src/Simulationsobjekt.o ./src/Streckenende.o ./src/Verhalten.o ./src/Weg.o ./src/main.o   
+duplicate symbol '_main' in:
+    ./src/Aufgabensblock3.o
+    ./src/main.o
+ld: 1 duplicate symbol for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Aufgabensblock3] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:12:43 **** Incremental Build of configuration Debug for project Aufgabensblock3 ****
+make all 
+Building file: ../src/Aufgabensblock3.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aufgabensblock3.d" -MT"src/Aufgabensblock3.o" -o "src/Aufgabensblock3.o" "../src/Aufgabensblock3.cpp"
+Finished building: ../src/Aufgabensblock3.cpp
+ 
+Building file: ../src/Fahrausnahme.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrausnahme.d" -MT"src/Fahrausnahme.o" -o "src/Fahrausnahme.o" "../src/Fahrausnahme.cpp"
+Finished building: ../src/Fahrausnahme.cpp
+ 
+Building file: ../src/Fahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahren.d" -MT"src/Fahren.o" -o "src/Fahren.o" "../src/Fahren.cpp"
+Finished building: ../src/Fahren.cpp
+ 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+Finished building: ../src/Fahrrad.cpp
+ 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+Finished building: ../src/Fahrzeug.cpp
+ 
+Building file: ../src/Losfahren.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Losfahren.d" -MT"src/Losfahren.o" -o "src/Losfahren.o" "../src/Losfahren.cpp"
+Finished building: ../src/Losfahren.cpp
+ 
+Building file: ../src/PKW.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PKW.d" -MT"src/PKW.o" -o "src/PKW.o" "../src/PKW.cpp"
+Finished building: ../src/PKW.cpp
+ 
+Building file: ../src/Parken.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parken.d" -MT"src/Parken.o" -o "src/Parken.o" "../src/Parken.cpp"
+Finished building: ../src/Parken.cpp
+ 
+Building file: ../src/SimuClient.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimuClient.d" -MT"src/SimuClient.o" -o "src/SimuClient.o" "../src/SimuClient.cpp"
+Finished building: ../src/SimuClient.cpp
+ 
+Building file: ../src/SimuClientSocket.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimuClientSocket.d" -MT"src/SimuClientSocket.o" -o "src/SimuClientSocket.o" "../src/SimuClientSocket.cpp"
+Finished building: ../src/SimuClientSocket.cpp
+ 
+Building file: ../src/Simulationsobjekt.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Simulationsobjekt.d" -MT"src/Simulationsobjekt.o" -o "src/Simulationsobjekt.o" "../src/Simulationsobjekt.cpp"
+Finished building: ../src/Simulationsobjekt.cpp
+ 
+Building file: ../src/Streckenende.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Streckenende.d" -MT"src/Streckenende.o" -o "src/Streckenende.o" "../src/Streckenende.cpp"
+Finished building: ../src/Streckenende.cpp
+ 
+Building file: ../src/Verhalten.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Verhalten.d" -MT"src/Verhalten.o" -o "src/Verhalten.o" "../src/Verhalten.cpp"
+Finished building: ../src/Verhalten.cpp
+ 
+Building file: ../src/Weg.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Weg.d" -MT"src/Weg.o" -o "src/Weg.o" "../src/Weg.cpp"
+Finished building: ../src/Weg.cpp
+ 
+Building target: Aufgabensblock3
+Invoking: MacOS X C++ Linker
+g++ -L/Users/anna-mariarossel/boost/libs -o "Aufgabensblock3"  ./src/Aufgabensblock3.o ./src/Fahrausnahme.o ./src/Fahren.o ./src/Fahrrad.o ./src/Fahrzeug.o ./src/Losfahren.o ./src/PKW.o ./src/Parken.o ./src/SimuClient.o ./src/SimuClientSocket.o ./src/Simulationsobjekt.o ./src/Streckenende.o ./src/Verhalten.o ./src/Weg.o   
+Finished building target: Aufgabensblock3
+ 
+20:13:04 **** Incremental Build of configuration Debug for project Aufgabensblock3 ****
+make all 
+make: Nothing to be done for `all'.

@@ -1,0 +1,28 @@
+/*
+ * Streckenende.cpp
+ *
+ *  Created on: 03.12.2024
+ *      Author: annaroessel
+ */
+
+#include "Streckenende.h"
+#include <iostream>
+
+Streckenende::Streckenende(const Weg& aWeg, const Fahrzeug& aFzg) :
+		Fahrausnahme(aWeg, aFzg)
+{
+}
+
+Streckenende::~Streckenende()
+{
+}
+
+
+void Streckenende::vBearbeiten() const
+{
+	std::cout << "Exception: Fahrzeug " << p_pFahrzeug.getName() << " auf Weg "
+				<< p_pWeg.getName() << " ist am Wegende." << std::endl;
+
+	// Fahrzeug wird aus der Fahrzeugliste entfernt
+	//unique_ptr<Fahrzeug> aFzgTemp = std::move(p_pWeg.pAbgabe(p_pFahrzeug));
+}

@@ -1,0 +1,18 @@
+/*
+ * Fahren.cpp
+ *
+ *  Created on: 03.12.2024
+ *      Author: annaroessel
+ */
+
+#include "Fahren.h"
+
+Fahren::Fahren() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Fahren::~Fahren() {
+	// TODO Auto-generated destructor stub
+}
+

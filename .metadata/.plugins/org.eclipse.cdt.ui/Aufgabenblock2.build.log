@@ -1,0 +1,6 @@
+18:35:36 **** Incremental Build of configuration Debug for project Aufgabenblock2 ****
+make all 
+make: Nothing to be done for `all'.
+
+18:35:36 Build Finished. 0 errors, 0 warnings. (took 609ms)
+

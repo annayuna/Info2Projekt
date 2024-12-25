@@ -1,0 +1,18 @@
+/*
+ * Simulationsobjekt.cpp
+ *
+ *  Created on: 03.12.2024
+ *      Author: annaroessel
+ */
+
+#include "Simulationsobjekt.h"
+
+Simulationsobjekt::Simulationsobjekt() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Simulationsobjekt::~Simulationsobjekt() {
+	// TODO Auto-generated destructor stub
+}
+

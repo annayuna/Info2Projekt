@@ -1,0 +1,18 @@
+/*
+ * Verhalten.cpp
+ *
+ *  Created on: 03.12.2024
+ *      Author: annaroessel
+ */
+
+#include "Verhalten.h"
+
+Verhalten::Verhalten() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Verhalten::~Verhalten() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,6 @@
+10:45:44 **** Incremental Build of configuration Debug for project jgljg ****
+make all 
+make: Nothing to be done for `all'.
+
+10:45:45 Build Finished. 0 errors, 0 warnings. (took 631ms)
+

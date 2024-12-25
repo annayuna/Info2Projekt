@@ -1,0 +1,18 @@
+/*
+ * Parken.cpp
+ *
+ *  Created on: 03.12.2024
+ *      Author: annaroessel
+ */
+
+#include "Parken.h"
+
+Parken::Parken() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Parken::~Parken() {
+	// TODO Auto-generated destructor stub
+}
+

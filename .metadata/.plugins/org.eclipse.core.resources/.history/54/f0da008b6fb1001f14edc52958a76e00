@@ -1,0 +1,18 @@
+/*
+ * Weg.cpp
+ *
+ *  Created on: 03.12.2024
+ *      Author: annaroessel
+ */
+
+#include "Weg.h"
+
+Weg::Weg() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Weg::~Weg() {
+	// TODO Auto-generated destructor stub
+}
+

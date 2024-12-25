@@ -1,0 +1,274 @@
+01:55:13 **** Incremental Build of configuration Debug for project Augabenblock2 ****
+make all 
+Building file: ../src/Fahrrad.cpp
+Invoking: GCC C++ Compiler
+g++ -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrrad.d" -MT"src/Fahrrad.o" -o "src/Fahrrad.o" "../src/Fahrrad.cpp"
+In file included from ../src/Fahrrad.cpp:8:
+In file included from ../src/Fahrrad.h:11:
+../src/Fahrzeug.h:20:40: warning: deleted function definitions are a C++11 extension [-Wc++11-extensions]
+        Fahrzeug(const Fahrzeug& tFahrzeug) = delete;
+                                              ^
+../src/Fahrzeug.h:33:13: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+        static int inline p_iMaxID = 0;
+                   ^
+../src/Fahrzeug.h:38:18: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        const int p_iID = ++p_iMaxID;
+                        ^
+../src/Fahrzeug.h:39:36: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        const double p_dMaxGeschwindigkeit=0;
+                                          ^
+../src/Fahrzeug.h:40:25: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        double p_dGesamtStrecke=0;
+                               ^
+../src/Fahrzeug.h:41:22: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        double p_dGesamtZeit=0;
+                            ^
+../src/Fahrzeug.h:42:16: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        double p_dZeit=0;
+                      ^
+In file included from ../src/Fahrrad.cpp:8:
+../src/Fahrrad.h:19:34: warning: 'override' keyword is a C++11 extension [-Wc++11-extensions]
+        double dGeschwindigkeit() const override;
+                                        ^
+8 warnings generated.
+Finished building: ../src/Fahrrad.cpp
+ 
+Building file: ../src/Fahrzeug.cpp
+Invoking: GCC C++ Compiler
+g++ -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fahrzeug.d" -MT"src/Fahrzeug.o" -o "src/Fahrzeug.o" "../src/Fahrzeug.cpp"
+In file included from ../src/Fahrzeug.cpp:8:
+../src/Fahrzeug.h:20:40: warning: deleted function definitions are a C++11 extension [-Wc++11-extensions]
+        Fahrzeug(const Fahrzeug& tFahrzeug) = delete;
+                                              ^
+../src/Fahrzeug.h:33:13: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+        static int inline p_iMaxID = 0;
+                   ^
+../src/Fahrzeug.h:38:18: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        const int p_iID = ++p_iMaxID;
+                        ^
+../src/Fahrzeug.h:39:36: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        const double p_dMaxGeschwindigkeit=0;
+                                          ^
+../src/Fahrzeug.h:40:25: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        double p_dGesamtStrecke=0;
+                               ^
+../src/Fahrzeug.h:41:22: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        double p_dGesamtZeit=0;
+                            ^
+../src/Fahrzeug.h:42:16: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        double p_dZeit=0;
+                      ^
+7 warnings generated.
+Finished building: ../src/Fahrzeug.cpp
+ 
+Building file: ../src/PKW.cpp
+Invoking: GCC C++ Compiler
+g++ -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PKW.d" -MT"src/PKW.o" -o "src/PKW.o" "../src/PKW.cpp"
+In file included from ../src/PKW.cpp:8:
+In file included from ../src/PKW.h:11:
+../src/Fahrzeug.h:20:40: warning: deleted function definitions are a C++11 extension [-Wc++11-extensions]
+        Fahrzeug(const Fahrzeug& tFahrzeug) = delete;
+                                              ^
+../src/Fahrzeug.h:33:13: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+        static int inline p_iMaxID = 0;
+                   ^
+../src/Fahrzeug.h:38:18: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        const int p_iID = ++p_iMaxID;
+                        ^
+../src/Fahrzeug.h:39:36: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        const double p_dMaxGeschwindigkeit=0;
+                                          ^
+../src/Fahrzeug.h:40:25: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        double p_dGesamtStrecke=0;
+                               ^
+../src/Fahrzeug.h:41:22: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        double p_dGesamtZeit=0;
+                            ^
+../src/Fahrzeug.h:42:16: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        double p_dZeit=0;
+                      ^
+In file included from ../src/PKW.cpp:8:
+../src/PKW.h:22:38: warning: 'override' keyword is a C++11 extension [-Wc++11-extensions]
+        double dTanken(const double dMenge) override;
+                                            ^
+../src/PKW.h:23:21: warning: 'override' keyword is a C++11 extension [-Wc++11-extensions]
+        void vSimulieren() override;
+                           ^
+../src/PKW.h:25:42: warning: 'override' keyword is a C++11 extension [-Wc++11-extensions]
+        void vAusgeben(std::ostream& out) const override;
+                                                ^
+../src/PKW.h:28:28: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        const double p_dVerbrauch = 0.0;
+                                  ^
+../src/PKW.h:29:30: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        const double p_dTankvolumen = 55.0;
+                                    ^
+../src/PKW.h:30:23: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        double p_dTankinhalt = p_dTankvolumen / 2;
+                             ^
+13 warnings generated.
+Finished building: ../src/PKW.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/Users/anna-mariarossel/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+In file included from ../src/main.cpp:10:
+../src/Fahrzeug.h:20:40: warning: deleted function definitions are a C++11 extension [-Wc++11-extensions]
+        Fahrzeug(const Fahrzeug& tFahrzeug) = delete;
+                                              ^
+../src/Fahrzeug.h:33:13: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+        static int inline p_iMaxID = 0;
+                   ^
+../src/Fahrzeug.h:38:18: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        const int p_iID = ++p_iMaxID;
+                        ^
+../src/Fahrzeug.h:39:36: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        const double p_dMaxGeschwindigkeit=0;
+                                          ^
+../src/Fahrzeug.h:40:25: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        double p_dGesamtStrecke=0;
+                               ^
+../src/Fahrzeug.h:41:22: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        double p_dGesamtZeit=0;
+                            ^
+../src/Fahrzeug.h:42:16: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        double p_dZeit=0;
+                      ^
+In file included from ../src/main.cpp:11:
+../src/PKW.h:22:38: warning: 'override' keyword is a C++11 extension [-Wc++11-extensions]
+        double dTanken(const double dMenge) override;
+                                            ^
+../src/PKW.h:23:21: warning: 'override' keyword is a C++11 extension [-Wc++11-extensions]
+        void vSimulieren() override;
+                           ^
+../src/PKW.h:25:42: warning: 'override' keyword is a C++11 extension [-Wc++11-extensions]
+        void vAusgeben(std::ostream& out) const override;
+                                                ^
+../src/PKW.h:28:28: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        const double p_dVerbrauch = 0.0;
+                                  ^
+../src/PKW.h:29:30: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        const double p_dTankvolumen = 55.0;
+                                    ^
+../src/PKW.h:30:23: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+        double p_dTankinhalt = p_dTankvolumen / 2;
+                             ^
+In file included from ../src/main.cpp:12:
+../src/Fahrrad.h:19:34: warning: 'override' keyword is a C++11 extension [-Wc++11-extensions]
+        double dGeschwindigkeit() const override;
+                                        ^
+../src/main.cpp:26:65: error: a space is required between consecutive right angle brackets (use '> >')
+void vFahrzeugListeAusgeben(std::vector<std::unique_ptr<Fahrzeug>>& tFahrzeuge)
+                                                                ^~
+                                                                > >
+../src/main.cpp:30:13: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for (const auto& fahrzeug : tFahrzeuge) //ref, weil unique ptr
+                   ^
+../src/main.cpp:30:28: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (const auto& fahrzeug : tFahrzeuge) //ref, weil unique ptr
+                                  ^
+../src/main.cpp:38:67: error: a space is required between consecutive right angle brackets (use '> >')
+void vFahrzeugListeSimulieren(std::vector<std::unique_ptr<Fahrzeug>>& tFahrzeuge)
+                                                                  ^~
+                                                                  > >
+../src/main.cpp:40:13: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for (const auto& fahrzeug : tFahrzeuge)
+                   ^
+../src/main.cpp:40:28: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (const auto& fahrzeug : tFahrzeuge)
+                                  ^
+../src/main.cpp:46:63: error: a space is required between consecutive right angle brackets (use '> >')
+void vFahrzeugListeTanken(std::vector<std::unique_ptr<Fahrzeug>>& tFahrzeuge)
+                                                              ^~
+                                                              > >
+../src/main.cpp:48:13: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for (const auto& fahrzeug : tFahrzeuge)
+                   ^
+../src/main.cpp:48:28: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (const auto& fahrzeug : tFahrzeuge)
+                                  ^
+../src/main.cpp:75:46: error: no member named 'make_unique' in namespace 'std'
+        std::unique_ptr<Fahrzeug> pFahrzeugF = std::make_unique<Fahrzeug>();
+                                               ~~~~~^
+../src/main.cpp:75:58: error: 'Fahrzeug' does not refer to a value
+        std::unique_ptr<Fahrzeug> pFahrzeugF = std::make_unique<Fahrzeug>();
+                                                                ^
+../src/Fahrzeug.h:15:7: note: declared here
+class Fahrzeug {
+      ^
+../src/main.cpp:75:68: error: expected expression
+        std::unique_ptr<Fahrzeug> pFahrzeugF = std::make_unique<Fahrzeug>();
+                                                                          ^
+../src/main.cpp:76:46: error: no member named 'make_unique' in namespace 'std'
+        std::unique_ptr<Fahrzeug> pFahrzeugG = std::make_unique<Fahrzeug>("FahrzeugG");
+                                               ~~~~~^
+../src/main.cpp:76:58: error: 'Fahrzeug' does not refer to a value
+        std::unique_ptr<Fahrzeug> pFahrzeugG = std::make_unique<Fahrzeug>("FahrzeugG");
+                                                                ^
+../src/Fahrzeug.h:15:7: note: declared here
+class Fahrzeug {
+      ^
+../src/main.cpp:83:38: error: a space is required between consecutive right angle brackets (use '> >')
+        std::vector<std::unique_ptr<Fahrzeug>> fahrzeugUniqueListe;
+                                            ^~
+                                            > >
+../src/main.cpp:90:38: error: a space is required between consecutive right angle brackets (use '> >')
+        std::vector<std::shared_ptr<Fahrzeug>> fahrzeugSharedListe;
+                                            ^~
+                                            > >
+../src/main.cpp:108:46: error: no member named 'make_unique' in namespace 'std'
+        std::unique_ptr<Fahrzeug> pFahrzeugA = std::make_unique<Fahrzeug>("FahrzeugA",80);
+                                               ~~~~~^
+../src/main.cpp:108:58: error: 'Fahrzeug' does not refer to a value
+        std::unique_ptr<Fahrzeug> pFahrzeugA = std::make_unique<Fahrzeug>("FahrzeugA",80);
+                                                                ^
+../src/Fahrzeug.h:15:7: note: declared here
+class Fahrzeug {
+      ^
+../src/main.cpp:109:46: error: no member named 'make_unique' in namespace 'std'
+        std::unique_ptr<Fahrzeug> pFahrzeugB = std::make_unique<Fahrzeug>("FahrzeugB",-20);
+                                               ~~~~~^
+../src/main.cpp:109:58: error: 'Fahrzeug' does not refer to a value
+        std::unique_ptr<Fahrzeug> pFahrzeugB = std::make_unique<Fahrzeug>("FahrzeugB",-20);
+                                                                ^
+../src/Fahrzeug.h:15:7: note: declared here
+class Fahrzeug {
+      ^
+../src/main.cpp:110:46: error: no member named 'make_unique' in namespace 'std'
+        std::unique_ptr<Fahrzeug> pFahrzeugC = std::make_unique<Fahrzeug>("FahrzeugC",100);
+                                               ~~~~~^
+../src/main.cpp:110:58: error: 'Fahrzeug' does not refer to a value
+        std::unique_ptr<Fahrzeug> pFahrzeugC = std::make_unique<Fahrzeug>("FahrzeugC",100);
+                                                                ^
+../src/Fahrzeug.h:15:7: note: declared here
+class Fahrzeug {
+      ^
+../src/main.cpp:112:38: error: a space is required between consecutive right angle brackets (use '> >')
+        std::vector<std::unique_ptr<Fahrzeug>> fahrzeugListe;
+                                            ^~
+                                            > >
+../src/main.cpp:108:68: warning: left operand of comma operator has no effect [-Wunused-value]
+        std::unique_ptr<Fahrzeug> pFahrzeugA = std::make_unique<Fahrzeug>("FahrzeugA",80);
+                                                                          ^~~~~~~~~~~
+../src/main.cpp:109:68: warning: left operand of comma operator has no effect [-Wunused-value]
+        std::unique_ptr<Fahrzeug> pFahrzeugB = std::make_unique<Fahrzeug>("FahrzeugB",-20);
+                                                                          ^~~~~~~~~~~
+../src/main.cpp:110:68: warning: left operand of comma operator has no effect [-Wunused-value]
+        std::unique_ptr<Fahrzeug> pFahrzeugC = std::make_unique<Fahrzeug>("FahrzeugC",100);
+                                                                          ^~~~~~~~~~~
+../src/main.cpp:136:41: error: no member named 'make_unique' in namespace 'std'
+        std::unique_ptr<Fahrzeug> pPKWA = std::make_unique<PKW>("PKW_A", 120, 10);
+                                          ~~~~~^
+../src/main.cpp:136:53: error: 'PKW' does not refer to a value
+        std::unique_ptr<Fahrzeug> pPKWA = std::make_unique<PKW>("PKW_A", 120, 10);
+                                                           ^
+../src/PKW.h:15:7: note: declared here
+class PKW : public Fahrzeug
+      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+23 warnings and 20 errors generated.
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+01:55:16 Build Failed. 20 errors, 51 warnings. (took 2s.939ms)
+
