@@ -25,6 +25,8 @@ public:
 	bool operator==(const Simulationsobjekt& simObj) const; //Operatorüberladung, vergleicht ID's miteinander
 
 	std::string getName() const;
+	int getID() const;
+
 
 
 private:

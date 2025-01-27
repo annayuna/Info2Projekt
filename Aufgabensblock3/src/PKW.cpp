@@ -27,6 +27,7 @@ double PKW::dTanken(const double dMenge){
 	double dTankinhaltAlt = p_dTankinhalt;
 	double dTestTankinhalt = p_dTankinhalt + dMenge;
 	p_dTankinhalt = (dTestTankinhalt > p_dTankvolumen) ? p_dTankvolumen : dTestTankinhalt;
+	p_bLiegengeblieben = false;
 	return (p_dTankinhalt - dTankinhaltAlt);
 }
 
@@ -44,6 +45,7 @@ double PKW::dGeschwindigkeit() const
 
 void PKW::vSimulieren(){
 	if (p_dTankinhalt <= 1e-10){
+		p_bLiegengeblieben = true;
 		return;
 	}
 	double dStreckeAlt = p_dGesamtStrecke;

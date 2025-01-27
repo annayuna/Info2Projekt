@@ -17,7 +17,7 @@ extern double dGlobaleZeit; //verweisen auf das dglobal in der main
 
 class Fahrzeug : public Simulationsobjekt {
 public:
-	Fahrzeug(); // const; string wird nicht vom konstructor geäandert
+	Fahrzeug(); // const; string wird nicht vom konstruktor geäandert
 	Fahrzeug(const std::string& s, const double d = 0);
 	Fahrzeug(const Fahrzeug& tFahrzeug) = delete;
 	virtual ~Fahrzeug();
@@ -34,6 +34,7 @@ public:
 	void vNeueStrecke(Weg& aWeg, const double dStartZeit);
 
 	double getAbschnittStrecke() const;
+	bool getbLiegengeblieben() const;
 
 	virtual void vZeichnen(const Weg& aWeg) const;
 
@@ -44,6 +45,7 @@ protected:
 	double p_dAbschnittStrecke = 0;
 	double p_dGesamtZeit = 0;
 	std::unique_ptr<Verhalten> p_pVerhalten = nullptr;
+	bool p_bLiegengeblieben = false;
 
 
 };

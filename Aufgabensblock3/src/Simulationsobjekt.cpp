@@ -35,3 +35,8 @@ std::string Simulationsobjekt::getName() const
 {
 	return p_sName;
 }
+
+int Simulationsobjekt::getID() const
+{
+	return p_iID;
+}

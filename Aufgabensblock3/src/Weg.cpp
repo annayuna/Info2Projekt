@@ -9,8 +9,8 @@
 #include "Fahrausnahme.h"
 #include <iomanip>
 
-Weg::Weg(const std::string& s, const double l, const Tempolimit t) :
-		Simulationsobjekt(s), p_dLaenge(l), p_eTempolimit(t)
+Weg::Weg(const std::string& s, const double l, const Tempolimit t,const bool u) :
+		Simulationsobjekt(s), p_dLaenge(l), p_eTempolimit(t), p_bUeberholverbot(u)
 {
 }
 
@@ -21,7 +21,7 @@ Weg::~Weg()
 void Weg::vSimulieren()
 {
 	p_pFahrzeuge.vAktualisieren();
-	for(const auto& fahrzeug : p_pFahrzeuge)
+	for(const auto& fahrzeug : p_pFahrzeuge) // durchiterieren durch Liste
 	{
 		try
 		{
@@ -78,6 +78,32 @@ void Weg::vAnnahme(std::unique_ptr<Fahrzeug> aFzg, const double dStartZeit) //Au
 double Weg::getLaenge() const
 {
 	return p_dLaenge;
+}
+
+bool Weg::getUeberholverbot() const
+{
+	return p_bUeberholverbot;
+}
+
+std::vector<std::vector<double>> Weg::getFzgPositions() const
+{
+	std::vector<std::vector<double>> fahrzeuge;
+	for (auto& fahrzeug : p_pFahrzeuge)
+	{
+		if(fahrzeug == nullptr) // Damit die Aufgaben noch funktionieren, bei denen Fahrzeuge kein Verhalten hatten
+		{
+			continue;
+		}
+		if(fahrzeug->getbLiegengeblieben())
+		{
+			continue;
+		}
+		std::vector<double> temp;
+		temp.push_back(fahrzeug->getID());
+		temp.push_back(fahrzeug->getAbschnittStrecke());
+		fahrzeuge.push_back(temp);
+	}
+	return fahrzeuge;
 }
 
 void Weg::vZeichnen() const

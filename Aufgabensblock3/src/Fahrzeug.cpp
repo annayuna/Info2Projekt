@@ -104,6 +104,11 @@ double Fahrzeug::getAbschnittStrecke() const
 	return p_dAbschnittStrecke;
 }
 
+bool Fahrzeug::getbLiegengeblieben() const
+{
+    return p_bLiegengeblieben;
+}
+
 void Fahrzeug::vZeichnen(const Weg& aWeg) const
 {
 	std::cout << "Fehler: vZeichnen sollte immer in der Unterklasse ausgeführt werden." << std::endl;

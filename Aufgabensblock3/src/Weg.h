@@ -17,7 +17,7 @@
 
 class Weg : public Simulationsobjekt {
 public:
-	Weg(const std::string& s = "", const double l = 0, const Tempolimit t = Tempolimit::Autobahn);
+	Weg(const std::string& s = "", const double l = 0, const Tempolimit t = Tempolimit::Autobahn, const bool ueberholverbot = true);
 	virtual ~Weg();
 
 	virtual void vSimulieren() override;
@@ -30,6 +30,8 @@ public:
 	void vAnnahme(std::unique_ptr<Fahrzeug> pFzg, const double dStartZeit);
 
 	double getLaenge() const;
+	bool getUeberholverbot() const;
+	std::vector<std::vector<double>> getFzgPositions() const;
 
 	void vZeichnen() const;
 
@@ -39,7 +41,7 @@ private:
 	const double p_dLaenge = 0;
 	vertagt::VListe<std::unique_ptr<Fahrzeug>> p_pFahrzeuge;
 	const Tempolimit p_eTempolimit = Tempolimit::Autobahn;
-
+	const bool p_bUeberholverbot;
 
 };
 
