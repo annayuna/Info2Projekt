@@ -282,24 +282,38 @@ void vAufgabe_6()
 	int anzahl = 2;
 	bZeichneStrasse("A44", "Feldweg", 500, anzahl, feld);
 
-	while(dGlobaleZeit < 4 - 1e-10) // Schleife für Simulation und Ausgabe
-	{
-		dGlobaleZeit += 0.2;
-		std::cout << "Zeit: " << dGlobaleZeit << std::endl;
-		vSetzeZeit(dGlobaleZeit);
-		Weg1.vSimulieren();
-		Weg1.vZeichnen();
-		Weg2.vSimulieren();
-		Weg2.vZeichnen();
-		std::cout << std::endl;
-		Weg::vKopf();
-		std::cout << Weg1 << std::endl;
-		std::cout << Weg2 << std::endl << std::endl;
-		vSleep(500);
-	}
+	bool bPKWDhinzugefuegt = false;
+		while(dGlobaleZeit < 40 - 1e-6) // Schleife für Simulation und Ausgabe
+		{
+			dGlobaleZeit += 0.5;
+			std::cout << "Zeit: " << dGlobaleZeit << std::endl;
 
-	vBeendeGrafik();
+			// Neuen PKW hinzufügen
+			if (dGlobaleZeit > 20 - 1e-6 && bPKWDhinzugefuegt == false)
+			{
+				std::unique_ptr<Fahrzeug> pPKWD = std::make_unique<PKW>("PKW_D", 200, 5);
+				Weg1.vAnnahme(std::move(pPKWD), 6);
+				bPKWDhinzugefuegt = true;
+			}
+
+			vSetzeZeit(dGlobaleZeit);
+			Weg1.vSimulieren();
+			Weg1.vZeichnen();
+			Weg2.vSimulieren();
+			Weg2.vZeichnen();
+			std::cout << std::endl;
+			Weg::vKopf();
+			std::cout << Weg1 << std::endl;
+			std::cout << Weg2 << std::endl << std::endl;
+		}
+
+		vBeendeGrafik();
+		vSleep(500);
+
+		//std::cin.get();
+
 }
+
 
 void vAufgabe_6a()
 {

@@ -4,7 +4,7 @@
  *  Created on: 27.01.2025
  *      Author: Anna
  */
-/*
+
 #ifndef KREUZUNG_H_
 #define KREUZUNG_H_
 
@@ -22,6 +22,7 @@ public:
 	virtual ~Kreuzung();
 
 	Kreuzung();
+	Kreuzung(const Kreuzung& other);
 	Kreuzung(const std::string& sName, const double dTankstelle);
 
 	// Erstellt 2 Wege zwischen 2 Kreuzungen
@@ -45,12 +46,13 @@ public:
 	double getTankstelle() const;
 
 	// Einlesefunktion
-	void vEinlesen(std::istream & in) override;
+	//void vEinlesen(std::istream & in) override;
 
 private:
 
-	std::list<std::shared_ptr<Weg>> p_pWege;
+	std::list<std::shared_ptr<Weg>> p_pWege; //Liste mit allen Wegen
 	double p_dTankstelle = 0;
-};*/
+
+};
 
 #endif /* KREUZUNG_H_ */

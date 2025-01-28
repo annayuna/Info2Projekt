@@ -11,6 +11,8 @@
 #include <string>
 #include <iostream>
 
+class Kreuzung;
+
 extern double dGlobaleZeit; //verweisen auf dGlobaleZeit in der main
 
 class Simulationsobjekt {

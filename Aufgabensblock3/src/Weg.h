@@ -37,11 +37,18 @@ public:
 
 	std::unique_ptr<Fahrzeug> pAbgabe(const Fahrzeug& aFzg);
 
+	void setRueckweg(const std::shared_ptr<Weg>& rueckweg);
+
+	std::shared_ptr<Kreuzung> getZielkreuzung() const;
+	std::shared_ptr<Weg> getRueckweg() const;
+
 private:
 	const double p_dLaenge = 0;
 	vertagt::VListe<std::unique_ptr<Fahrzeug>> p_pFahrzeuge;
 	const Tempolimit p_eTempolimit = Tempolimit::Autobahn;
 	const bool p_bUeberholverbot;
+	const std::weak_ptr<Kreuzung> p_pZielkreuzung;
+	std::weak_ptr<Weg> p_pRueckweg;
 
 };
 

@@ -135,5 +135,23 @@ std::unique_ptr<Fahrzeug> Weg::pAbgabe(const Fahrzeug& aFzg) //ist eigentlich nu
 
 
 
+// lock: Konvertierung weak zu shared
+
+std::shared_ptr<Kreuzung> Weg::getZielkreuzung() const
+{
+	return p_pZielkreuzung.lock();
+}
+std::shared_ptr<Weg> Weg::getRueckweg() const
+{
+	return p_pRueckweg.lock();
+}
+
+void Weg::setRueckweg(std::shared_ptr<Weg> rueckweg)
+{
+	p_pRueckweg = rueckweg;
+}
+
+
+
 
 

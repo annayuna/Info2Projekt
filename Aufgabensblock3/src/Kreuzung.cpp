@@ -4,20 +4,21 @@
  *  Created on: 27.01.2025
  *      Author: Anna
  */
-/*
+
 #include <iostream>
 #include <random>
 
 #include "Kreuzung.h"
 #include "Fahrzeug.h"
 
-using namespace std;
+//using namespace std;
 
 Kreuzung::~Kreuzung()
 {
 }
 
-Kreuzung::Kreuzung()
+Kreuzung::Kreuzung(const Kreuzung& other)
+	:Simulationsobjekt(other.p_sName), p_pWege(other.p_pWege), p_dTankstelle(other.p_dTankstelle)
 {
 }
 
@@ -27,12 +28,12 @@ Kreuzung::Kreuzung(const std::string& sName, const double dTankstelle):
 {
 }
 
-void Kreuzung::vVerbinde(shared_ptr<Kreuzung> aKreuzungStart, shared_ptr<Kreuzung> aKreuzungZiel,
-			const double dLaenge, const string& sNameHinweg, const string& sNameRueckweg,
+void Kreuzung::vVerbinde(std::shared_ptr<Kreuzung> aKreuzungStart, std::shared_ptr<Kreuzung> aKreuzungZiel,
+			const double dLaenge, const std::string& sNameHinweg, const std::string& sNameRueckweg,
 			const Tempolimit eTempolimit, const bool bUeberholverbot)
 {
-	shared_ptr<Weg> pHinweg = make_shared<Weg>(sNameHinweg, dLaenge, eTempolimit, bUeberholverbot, aKreuzungZiel);
-	shared_ptr<Weg> pRueckweg = make_shared<Weg>(sNameRueckweg, dLaenge, eTempolimit, bUeberholverbot, aKreuzungStart);
+	std::shared_ptr<Weg> pHinweg = std::make_shared<Weg>(sNameHinweg, dLaenge, eTempolimit, bUeberholverbot, aKreuzungZiel);
+	std::shared_ptr<Weg> pRueckweg = std::make_shared<Weg>(sNameRueckweg, dLaenge, eTempolimit, bUeberholverbot, aKreuzungStart);
 
 	aKreuzungStart->p_pWege.push_back(pHinweg);
 	aKreuzungZiel->p_pWege.push_back(pRueckweg);
@@ -49,7 +50,7 @@ void Kreuzung::vTanken(Fahrzeug& aFzg)
 	}
 }
 
-void Kreuzung::vAnnahme(unique_ptr<Fahrzeug> pFzg, double dStartzeit)
+void Kreuzung::vAnnahme(std::unique_ptr<Fahrzeug> pFzg, double dStartzeit)
 {
 	Kreuzung::vTanken(*pFzg);
 	p_pWege.front()->vAnnahme(move(pFzg), dStartzeit);
@@ -64,7 +65,7 @@ void Kreuzung::vSimulieren()
 	}
 }
 
-shared_ptr<Weg> Kreuzung::pZufaelligerWeg(Weg& aWeg) const
+std::shared_ptr<Weg> Kreuzung::pZufaelligerWeg(Weg& aWeg) const
 {
 	if (p_pWege.size() == 0)
 	{
@@ -84,7 +85,7 @@ shared_ptr<Weg> Kreuzung::pZufaelligerWeg(Weg& aWeg) const
 
 	// Die Zufallszahl soll der Index des Weges sein
 	// Der Rückweg vom vorgegebenen Weg wird hierbei ignoriert.
-	list<shared_ptr<Weg>>::const_iterator it = p_pWege.begin();
+	std::list<shared_ptr<Weg>>::const_iterator it = p_pWege.begin();
 	if (*it == aWeg.getRueckweg()) { it++; }
 	for(int i=0; i<iIndex; i++)
 	{
@@ -106,7 +107,7 @@ void Kreuzung::vEinlesen(istream & in)
 	in >> p_dTankstelle;
 }
 
-*/
+
 
 
 
