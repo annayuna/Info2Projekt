@@ -29,6 +29,8 @@ public:
 	std::string getName() const;
 	int getID() const;
 
+	virtual void vEinlesen(std::istream& in);
+
 
 
 private:

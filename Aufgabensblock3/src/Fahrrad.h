@@ -19,6 +19,8 @@ public:
 	double dGeschwindigkeit() const override;
 
 	void vZeichnen(const Weg& aWeg) const override;
+
+	void vEinlesen(std::istream& in) override;
 };
 
 #endif /* FAHRRAD_H_ */

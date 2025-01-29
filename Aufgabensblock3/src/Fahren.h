@@ -16,6 +16,7 @@ public:
 	virtual ~Fahren();
 
 	double dStrecke(const Fahrzeug& aFzg, const double dZeitIntervall) const override;
+
 };
 
 #endif /* FAHREN_H_ */

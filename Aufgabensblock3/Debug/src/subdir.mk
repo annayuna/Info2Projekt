@@ -15,6 +15,7 @@ CPP_SRCS += \
 ../src/Parken.cpp \
 ../src/SimuClient.cpp \
 ../src/SimuClientSocket.cpp \
+../src/Simulation.cpp \
 ../src/Simulationsobjekt.cpp \
 ../src/Streckenende.cpp \
 ../src/Verhalten.cpp \
@@ -32,6 +33,7 @@ CPP_DEPS += \
 ./src/Parken.d \
 ./src/SimuClient.d \
 ./src/SimuClientSocket.d \
+./src/Simulation.d \
 ./src/Simulationsobjekt.d \
 ./src/Streckenende.d \
 ./src/Verhalten.d \
@@ -49,6 +51,7 @@ OBJS += \
 ./src/Parken.o \
 ./src/SimuClient.o \
 ./src/SimuClientSocket.o \
+./src/Simulation.o \
 ./src/Simulationsobjekt.o \
 ./src/Streckenende.o \
 ./src/Verhalten.o \
@@ -67,7 +70,7 @@ src/%.o: ../src/%.cpp src/subdir.mk
 clean: clean-src
 
 clean-src:
-	-$(RM) ./src/Aufgabensblock3.d ./src/Aufgabensblock3.o ./src/Fahrausnahme.d ./src/Fahrausnahme.o ./src/Fahren.d ./src/Fahren.o ./src/Fahrrad.d ./src/Fahrrad.o ./src/Fahrzeug.d ./src/Fahrzeug.o ./src/Kreuzung.d ./src/Kreuzung.o ./src/Losfahren.d ./src/Losfahren.o ./src/PKW.d ./src/PKW.o ./src/Parken.d ./src/Parken.o ./src/SimuClient.d ./src/SimuClient.o ./src/SimuClientSocket.d ./src/SimuClientSocket.o ./src/Simulationsobjekt.d ./src/Simulationsobjekt.o ./src/Streckenende.d ./src/Streckenende.o ./src/Verhalten.d ./src/Verhalten.o ./src/Weg.d ./src/Weg.o
+	-$(RM) ./src/Aufgabensblock3.d ./src/Aufgabensblock3.o ./src/Fahrausnahme.d ./src/Fahrausnahme.o ./src/Fahren.d ./src/Fahren.o ./src/Fahrrad.d ./src/Fahrrad.o ./src/Fahrzeug.d ./src/Fahrzeug.o ./src/Kreuzung.d ./src/Kreuzung.o ./src/Losfahren.d ./src/Losfahren.o ./src/PKW.d ./src/PKW.o ./src/Parken.d ./src/Parken.o ./src/SimuClient.d ./src/SimuClient.o ./src/SimuClientSocket.d ./src/SimuClientSocket.o ./src/Simulation.d ./src/Simulation.o ./src/Simulationsobjekt.d ./src/Simulationsobjekt.o ./src/Streckenende.d ./src/Streckenende.o ./src/Verhalten.d ./src/Verhalten.o ./src/Weg.d ./src/Weg.o
 
 .PHONY: clean-src
 

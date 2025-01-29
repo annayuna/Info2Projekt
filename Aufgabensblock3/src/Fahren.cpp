@@ -52,3 +52,4 @@ double Fahren::dStrecke(const Fahrzeug& aFzg, const double dZeitIntervall) const
 	}
 	return (dVerbleibendeStrecke < dFahrzeugStrecke) ? dVerbleibendeStrecke : dFahrzeugStrecke;
 }
+

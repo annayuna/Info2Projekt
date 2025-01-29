@@ -32,6 +32,8 @@ public:
 
 	void vZeichnen(const Weg& aWeg) const override;
 
+	void vEinlesen(std::istream& in) override;
+
 private:
 	const double p_dVerbrauch = 0.0;
 	const double p_dTankvolumen = 55.0;

@@ -39,6 +39,8 @@ public:
 
 	virtual void vZeichnen(const Weg& aWeg) const;
 
+	virtual void vEinlesen(std::istream& in) override;
+
 
 protected:
 	const double p_dMaxGeschwindigkeit = 0;

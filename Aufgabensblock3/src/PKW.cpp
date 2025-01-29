@@ -23,14 +23,6 @@ PKW::~PKW() {
 	// TODO Auto-generated destructor stub
 }
 
-/*double PKW::dTanken()
-{
-	double dGetankt = p_dTankvolumen - p_dTankinhalt;
-	p_dTankinhalt = p_dTankvolumen;
-	p_bLiegengeblieben = false;
-	return dGetankt;
-}*/
-
 double PKW::dTanken(const double dMenge){
 	double dTankinhaltAlt = p_dTankinhalt;
 	double dTestTankinhalt = p_dTankinhalt + dMenge;
@@ -75,3 +67,12 @@ void PKW::vZeichnen(const Weg& aWeg) const
 	double dRelPosition = p_dAbschnittStrecke / aWeg.getLaenge();
 	bZeichnePKW(p_sName, aWeg.getName(), dRelPosition, dGeschwindigkeit(), p_dTankinhalt);
 }
+
+void PKW::vEinlesen(std::istream& in)
+{
+	Fahrzeug::vEinlesen(in);
+	in >> p_dVerbrauch >> p_dTankvolumen;
+
+}
+
+

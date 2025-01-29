@@ -40,3 +40,12 @@ int Simulationsobjekt::getID() const
 {
 	return p_iID;
 }
+
+void Simulationsobjekt::vEinlesen(istream& in)
+{
+	if (p_sName != "")
+	{
+		throw runtime_error("Error: Das Objekt existiert schon.");
+	}
+	in >> p_sName;
+}

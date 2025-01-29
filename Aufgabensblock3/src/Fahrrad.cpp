@@ -36,3 +36,8 @@ void Fahrrad::vZeichnen(const Weg& aWeg) const
 	double dRelPosition = p_dAbschnittStrecke / aWeg.getLaenge();
 	bZeichneFahrrad(p_sName, aWeg.getName(), dRelPosition, dGeschwindigkeit());
 }
+
+void Fahrrad::vEinlesen(std::istream& in)
+{
+	Fahrzeug::vEinlesen(in);
+}
