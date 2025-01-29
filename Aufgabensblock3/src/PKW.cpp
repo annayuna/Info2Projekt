@@ -23,6 +23,14 @@ PKW::~PKW() {
 	// TODO Auto-generated destructor stub
 }
 
+/*double PKW::dTanken()
+{
+	double dGetankt = p_dTankvolumen - p_dTankinhalt;
+	p_dTankinhalt = p_dTankvolumen;
+	p_bLiegengeblieben = false;
+	return dGetankt;
+}*/
+
 double PKW::dTanken(const double dMenge){
 	double dTankinhaltAlt = p_dTankinhalt;
 	double dTestTankinhalt = p_dTankinhalt + dMenge;

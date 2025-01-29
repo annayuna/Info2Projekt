@@ -17,7 +17,9 @@
 
 class Weg : public Simulationsobjekt {
 public:
-	Weg(const std::string& s = "", const double l = 0, const Tempolimit t = Tempolimit::Autobahn, const bool ueberholverbot = true);
+	Weg(const std::string& s = "", const double l = 0, const Tempolimit t = Tempolimit::Autobahn,
+			const bool ueberholverbot = true, std::shared_ptr<Kreuzung> zielkreuzung = nullptr,
+			std::shared_ptr<Weg> zielweg = nullptr);
 	virtual ~Weg();
 
 	virtual void vSimulieren() override;
@@ -37,7 +39,7 @@ public:
 
 	std::unique_ptr<Fahrzeug> pAbgabe(const Fahrzeug& aFzg);
 
-	void setRueckweg(const std::shared_ptr<Weg>& rueckweg);
+	void setRueckweg(const std::shared_ptr<Weg> rueckweg);
 
 	std::shared_ptr<Kreuzung> getZielkreuzung() const;
 	std::shared_ptr<Weg> getRueckweg() const;

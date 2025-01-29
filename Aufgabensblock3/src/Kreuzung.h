@@ -1,7 +1,7 @@
 /*
  * Kreuzung.h
  *
- *  Created on: 27.01.2025
+ *  Created on: 25.01.2025
  *      Author: Anna
  */
 
@@ -31,7 +31,7 @@ public:
 			const Tempolimit eTempolimit, const bool bUeberholverbot);
 
 	// Tankt Fahrzeuge voll
-	void vTanken(Fahrzeug& aFzg);
+	void vTanken(Fahrzeug* aFzg);
 
 	// Setzt ein Fahrzeug parkend auf den ersten Weg der Kreuzung
 	void vAnnahme(std::unique_ptr<Fahrzeug> pFzg, double dStartzeit);

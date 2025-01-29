@@ -25,6 +25,7 @@ public:
 	virtual void vAusgeben(std::ostream& out) const override;
 	static void vKopf();
 	virtual void vSimulieren() override;
+	//virtual double dTanken();
 	virtual double dTanken(const double dMenge = std::numeric_limits<double>::infinity()); //bei default wird vollgetankt
 	virtual double dGeschwindigkeit() const;
 	bool operator<(const Fahrzeug& tFahrzeug) const;

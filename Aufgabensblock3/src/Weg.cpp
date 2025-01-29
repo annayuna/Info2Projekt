@@ -9,8 +9,14 @@
 #include "Fahrausnahme.h"
 #include <iomanip>
 
-Weg::Weg(const std::string& s, const double l, const Tempolimit t,const bool u) :
-		Simulationsobjekt(s), p_dLaenge(l), p_eTempolimit(t), p_bUeberholverbot(u)
+Weg::Weg(const std::string& s, const double l, const Tempolimit t,const bool u,
+		std::shared_ptr<Kreuzung> pKreuzung, std::shared_ptr<Weg> pRueckweg) :
+		Simulationsobjekt(s),
+		p_dLaenge(l),
+		p_eTempolimit(t),
+		p_bUeberholverbot(u),
+		p_pZielkreuzung(pKreuzung),
+		p_pRueckweg(pRueckweg)
 {
 }
 

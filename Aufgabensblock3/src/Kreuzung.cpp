@@ -1,7 +1,7 @@
 /*
  * Kreuzung.cpp
  *
- *  Created on: 27.01.2025
+ *  Created on: 25.01.2025
  *      Author: Anna
  */
 
@@ -9,7 +9,8 @@
 #include <random>
 
 #include "Kreuzung.h"
-#include "Fahrzeug.h"
+#include "PKW.h"
+
 
 //using namespace std;
 
@@ -42,18 +43,33 @@ void Kreuzung::vVerbinde(std::shared_ptr<Kreuzung> aKreuzungStart, std::shared_p
 	pRueckweg->setRueckweg(pHinweg);
 }
 
-void Kreuzung::vTanken(Fahrzeug& aFzg)
+void Kreuzung::vTanken(Fahrzeug* aFzg)
 {
-	if (p_dTankstelle > 0)
+	if (aFzg == nullptr || p_dTankstelle <= 0)
 	{
-		p_dTankstelle -= aFzg.dTanken();
+		return;
+	}
+
+	PKW* pkw = dynamic_cast<PKW*>(aFzg);
+	if(pkw != nullptr)
+	{
+		double tankmenge = pkw->dTanken(std::numeric_limits<double>::infinity());
+		std::cout << " Tanken: " << aFzg->getName() << " tankt " << tankmenge << " Liter." << std::endl;
+		p_dTankstelle -= tankmenge;
+		if(p_dTankstelle <= 0)
+		{
+			p_dTankstelle = 0;
+		}
 	}
 }
 
 void Kreuzung::vAnnahme(std::unique_ptr<Fahrzeug> pFzg, double dStartzeit)
 {
-	Kreuzung::vTanken(*pFzg);
-	p_pWege.front()->vAnnahme(move(pFzg), dStartzeit);
+	if(!p_pWege.empty())
+	{
+		vTanken(pFzg.get());
+		p_pWege.front()->vAnnahme(std::move(pFzg), dStartzeit);
+	}
 }
 
 void Kreuzung::vSimulieren()
@@ -69,7 +85,7 @@ std::shared_ptr<Weg> Kreuzung::pZufaelligerWeg(Weg& aWeg) const
 {
 	if (p_pWege.size() == 0)
 	{
-		cout << "Error, keine Wege vorhanden." << endl;
+		std::cout << "Error, keine Wege vorhanden." << std::endl;
 	}
 
 	// nur ein Weg an der Kreuzung
@@ -85,7 +101,7 @@ std::shared_ptr<Weg> Kreuzung::pZufaelligerWeg(Weg& aWeg) const
 
 	// Die Zufallszahl soll der Index des Weges sein
 	// Der Rückweg vom vorgegebenen Weg wird hierbei ignoriert.
-	std::list<shared_ptr<Weg>>::const_iterator it = p_pWege.begin();
+	std::list<std::shared_ptr<Weg>>::const_iterator it = p_pWege.begin();
 	if (*it == aWeg.getRueckweg()) { it++; }
 	for(int i=0; i<iIndex; i++)
 	{
@@ -101,11 +117,11 @@ double Kreuzung::getTankstelle() const
 	return p_dTankstelle;
 }
 
-void Kreuzung::vEinlesen(istream & in)
+/*void Kreuzung::vEinlesen(std::istream & in)
 {
 	Simulationsobjekt::vEinlesen(in);
 	in >> p_dTankstelle;
-}
+}*/
 
 
 

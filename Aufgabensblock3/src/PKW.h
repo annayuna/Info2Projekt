@@ -19,7 +19,12 @@ public:
 	PKW(const std::string& sName, const double dMaxGeschwindigkeit, const double dVerbrauch, const double p_dTankvolumen = 55.0);
 	virtual ~PKW();
 
+	// PKW tankt voll oder dMenge
+	// return: getankte Menge
+	//double dTanken() override;
 	double dTanken(const double dMenge) override;
+
+	// Berechnung der Geschwindigkeit
 	double dGeschwindigkeit() const override;
 
 	void vSimulieren() override;
