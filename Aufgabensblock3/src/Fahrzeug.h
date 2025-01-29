@@ -43,7 +43,7 @@ public:
 
 
 protected:
-	const double p_dMaxGeschwindigkeit = 0;
+	double p_dMaxGeschwindigkeit = 0;
 	double p_dGesamtStrecke = 0;
 	double p_dAbschnittStrecke = 0;
 	double p_dGesamtZeit = 0;

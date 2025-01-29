@@ -9,6 +9,7 @@
 
 #include <iomanip>
 
+
 Simulationsobjekt::Simulationsobjekt(const std::string& s) :
 				p_sName(s)
 {
@@ -41,11 +42,11 @@ int Simulationsobjekt::getID() const
 	return p_iID;
 }
 
-void Simulationsobjekt::vEinlesen(istream& in)
+void Simulationsobjekt::vEinlesen(std::istream& in)
 {
 	if (p_sName != "")
 	{
-		throw runtime_error("Error: Das Objekt existiert schon.");
+		throw std::runtime_error("Error: Das Objekt existiert schon.");
 	}
 	in >> p_sName;
 }

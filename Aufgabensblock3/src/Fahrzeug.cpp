@@ -10,6 +10,7 @@
 #include "Parken.h"
 
 #include <iomanip>
+#include <istream>
 
 
 Fahrzeug::Fahrzeug() :
@@ -112,6 +113,12 @@ bool Fahrzeug::getbLiegengeblieben() const
 void Fahrzeug::vZeichnen(const Weg& aWeg) const
 {
 	std::cout << "Fehler: vZeichnen sollte immer in der Unterklasse ausgeführt werden." << std::endl;
+}
+
+void Fahrzeug::vEinlesen(std::istream& in)
+{
+	Simulationsobjekt::vEinlesen(in);
+	in >> p_dMaxGeschwindigkeit;
 }
 
 

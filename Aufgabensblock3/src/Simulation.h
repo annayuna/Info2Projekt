@@ -4,7 +4,7 @@
 #include <map>
 
 #include "Kreuzung.h"
-
+/*
 class Simulation
 {
 public:
@@ -28,5 +28,6 @@ private:
 	// vSimulieren benötigt diese Info
 	bool p_bMitGrafik = false;
 };
-
+*/
 #endif /* SIMULATION_H_ */
+

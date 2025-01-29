@@ -6,14 +6,13 @@
 #include "Fahrrad.h"
 #include "SimuClient.h"
 
-using namespace std;
+/*
+extern std::istream& operator>>(std::istream& in, Simulationsobjekt& aFzg);
 
-extern istream& operator>>(istream& in, Simulationsobjekt& aFzg);
-
-void Simulation::vKreuzungEinlesen(istream& in)
+void Simulation::vKreuzungEinlesen(std::istream& in)
 {
 	// Kreuzung erstellen
-	auto pKreuzung = make_shared<Kreuzung>();
+	auto pKreuzung = std::make_shared<Kreuzung>();
 	in >> *pKreuzung;
 
 	// prüfen, ob Kreuzung schon existiert. Wenn nein, dann erstellen
@@ -36,9 +35,9 @@ void Simulation::vKreuzungEinlesen(istream& in)
 	}
 }
 
-void Simulation::vStrasseEinlesen(istream& in)
+void Simulation::vStrasseEinlesen(std::istream& in)
 {
-	string sStartKreuzung = "", sZielKreuzung = "", sWeg1 = "", sWeg2 = "";
+	std::string sStartKreuzung = "", sZielKreuzung = "", sWeg1 = "", sWeg2 = "";
 	double dLaenge = 0;
 	int iTempolimit = 0, iUeberholverbot = 1;
 
@@ -110,14 +109,14 @@ void Simulation::vStrasseEinlesen(istream& in)
 	}
 }
 
-void Simulation::vPKWEinlesen(istream& in)
+void Simulation::vPKWEinlesen(std::istream& in)
 {
 	// PKW Daten einlesen
 	auto pPKW = std::make_unique<PKW>();
 	in >> *pPKW;
 
 	// Kreuzung und Start Daten einlesen
-	string sStartKreuzung = "";
+	std::string sStartKreuzung = "";
 	double dStartZeit = 0.0;
 	in >> sStartKreuzung >> dStartZeit;
 
@@ -133,14 +132,14 @@ void Simulation::vPKWEinlesen(istream& in)
 	}
 }
 
-void Simulation::vFahrradEinlesen(istream& in)
+void Simulation::vFahrradEinlesen(std::istream& in)
 {
 	// Fahrrad Daten einlesen
 	auto pZwischenFahrrad = std::make_unique<Fahrrad>();
 	in >> *pZwischenFahrrad;
 
 	// Kreuzung und Start Daten einlesen
-	string sStartKreuzung = "";
+	std::string sStartKreuzung = "";
 	double dStartZeit = 0.0;
 	in >> sStartKreuzung >> dStartZeit;
 
@@ -158,7 +157,7 @@ void Simulation::vFahrradEinlesen(istream& in)
 
 
 
-void Simulation::vEinlesen(istream& in, bool bMitGrafik)
+void Simulation::vEinlesen(std::istream& in, bool bMitGrafik)
 {
 	in.exceptions(ios_base::failbit | ios_base::badbit);
 
@@ -176,7 +175,7 @@ void Simulation::vEinlesen(istream& in, bool bMitGrafik)
 		{
 			iFehlerzeile++;
 
-			string schluesselwort = "";
+			std::string schluesselwort = "";
 			in >> schluesselwort;
 
 			if (schluesselwort == "KREUZUNG") 		{ vKreuzungEinlesen(in); }
@@ -188,7 +187,7 @@ void Simulation::vEinlesen(istream& in, bool bMitGrafik)
 	}
 	catch (const runtime_error& error)
 	{
-		cout << "Fehler in Zeile " << iFehlerzeile << ": " << error.what() << endl;
+		std::cout << "Fehler in Zeile " << iFehlerzeile << ": " << error.what() << endl;
 		return;
 	}
 }
@@ -200,7 +199,7 @@ void Simulation::vSimulieren(double dDauer, double dZeitschritt)
 		if (p_bMitGrafik)
 		{
 			vSetzeZeit(dGlobaleZeit);
-			cout << "Zeit: " << dGlobaleZeit << endl;
+			std::cout << "Zeit: " << dGlobaleZeit << std::endl;
 		}
 		// Kreuzungen simulieren
 		for (auto& kreuzung : p_pKreuzungen)
@@ -208,5 +207,5 @@ void Simulation::vSimulieren(double dDauer, double dZeitschritt)
 			kreuzung.second->vSimulieren();
 		}
 	}
-}
+}*/
 
