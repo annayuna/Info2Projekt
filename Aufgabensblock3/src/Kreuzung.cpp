@@ -81,40 +81,31 @@ void Kreuzung::vSimulieren()
 	}
 }
 
-std::shared_ptr<Weg> Kreuzung::pZufaelligerWeg(Weg& aWeg) const
+double Kreuzung::getTankstelle() const
+{
+	return p_dTankstelle;
+}
+
+std::shared_ptr<Weg> Kreuzung::pZufaelligerWeg(Weg& ankommenderWeg) const
 {
 	if (p_pWege.size() == 0)
 	{
 		std::cout << "Error, keine Wege vorhanden." << std::endl;
 	}
 
-	// nur ein Weg an der Kreuzung
-	if (p_pWege.size() == 1)
-	{
-		return p_pWege.front();
-	}
+    std::vector<std::shared_ptr<Weg>> moeglicheWege;
+    for (auto &weg : p_pWege) {
+        if (weg.get() != ankommenderWeg.getRueckweg().get()) {
+            moeglicheWege.push_back(weg);
+        }
+    }
 
-	// Zufallszahl (iIndex) zwischen 0 und (size - 2) generieren
-	static std::mt19937 device(time(NULL));
-	std::uniform_int_distribution<int> dist(0, p_pWege.size()-2);
-	int iIndex = dist(device);
+    if (moeglicheWege.empty()) {
+    return ankommenderWeg.getRueckweg();
+    }
 
-	// Die Zufallszahl soll der Index des Weges sein
-	// Der Rückweg vom vorgegebenen Weg wird hierbei ignoriert.
-	std::list<std::shared_ptr<Weg>>::const_iterator it = p_pWege.begin();
-	if (*it == aWeg.getRueckweg()) { it++; }
-	for(int i=0; i<iIndex; i++)
-	{
-		it++;
-		if (*it == aWeg.getRueckweg()) { it++; }
-	}
-
-	return *it;
-}
-
-double Kreuzung::getTankstelle() const
-{
-	return p_dTankstelle;
+    int zufaelligerIndex = rand() % moeglicheWege.size();
+    return moeglicheWege[zufaelligerIndex];
 }
 
 /*void Kreuzung::vEinlesen(std::istream & in)

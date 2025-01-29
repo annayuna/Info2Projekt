@@ -40,7 +40,7 @@ public:
 	void vSimulieren() override;
 
 	// Liefert einen zufälligen Weg, der wenn möglich nicht der Rückweg des gegebenen Weges ist
-	std::shared_ptr<Weg> pZufaelligerWeg(Weg& aWeg) const;
+	std::shared_ptr<Weg> pZufaelligerWeg(Weg& ankommenderWeg) const;
 
 	// Getter Funktion
 	double getTankstelle() const;

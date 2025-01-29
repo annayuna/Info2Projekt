@@ -12,6 +12,7 @@
 #include "Fahrrad.h"
 #include "Weg.h"
 #include "SimuClient.h"
+#include "Kreuzung.h"
 #include <memory>
 #include <vector>
 #include <iomanip>
@@ -283,7 +284,7 @@ void vAufgabe_6()
 	bZeichneStrasse("A44", "Feldweg", 500, anzahl, feld);
 
 	bool bPKWDhinzugefuegt = false;
-		while(dGlobaleZeit < 40 - 1e-6) // Schleife für Simulation und Ausgabe
+		while(dGlobaleZeit < 42 - 1e-6) // Schleife für Simulation und Ausgabe
 		{
 			dGlobaleZeit += 0.5;
 			std::cout << "Zeit: " << dGlobaleZeit << std::endl;
@@ -366,6 +367,83 @@ void vAufgabe_6a()
 	std::cout << std::endl;
 }
 
+void vAufgabe_7()
+{
+	std::cout << "##################" << std::endl;
+	std::cout << "## vAufgabe_7() ##" << std::endl;
+	std::cout << "##################" << std::endl << std::endl;
+
+	bInitialisiereGrafik(1000, 700);
+
+	// Kreuzungen erzeugen
+	std::shared_ptr<Kreuzung> kr_1 = std::make_shared<Kreuzung>("Kr1", 0);
+	std::shared_ptr<Kreuzung> kr_2 = std::make_shared<Kreuzung>("Kr2", 1000);
+	std::shared_ptr<Kreuzung> kr_3 = std::make_shared<Kreuzung>("Kr3", 0);
+	std::shared_ptr<Kreuzung> kr_4 = std::make_shared<Kreuzung>("Kr4", 0);
+
+	// Kreuzungen zeichnen
+	bZeichneKreuzung(680, 40);
+	bZeichneKreuzung(680, 300);
+	bZeichneKreuzung(680, 570);
+	bZeichneKreuzung(320, 300);
+
+	// Wege erzeugen
+	Kreuzung::vVerbinde(kr_1, kr_2, 40, "W12", "W21", Tempolimit::Innerorts, true);
+	Kreuzung::vVerbinde(kr_2, kr_3, 115, "W23a", "W32a", Tempolimit::Autobahn, false);
+	Kreuzung::vVerbinde(kr_2, kr_3, 40, "W23b", "W32b", Tempolimit::Innerorts, true);
+	Kreuzung::vVerbinde(kr_2, kr_4, 55, "W24", "W42", Tempolimit::Innerorts, true);
+	Kreuzung::vVerbinde(kr_3, kr_4, 85, "W34", "W43", Tempolimit::Autobahn, false);
+	Kreuzung::vVerbinde(kr_4, kr_4, 130, "W44a", "W44b", Tempolimit::Landstrasse, false);
+
+	// Wegkoordinaten setzen
+	int iStrasse1Korrdinaten[4] = { 680,40,680,300 };
+	int iStrasse2Korrdinaten[12] = { 680,300,850,300,970,390,970,500,850,570,680,570 };
+	int iStrasse3Korrdinaten[4] = { 680,300,680,570 };
+	int iStrasse4Korrdinaten[4] = { 680,300,320,300 };
+	int iStrasse5Korrdinaten[10] = { 680,570,500,570,350,510,320,420,320,300 };
+	int iStrasse6Korrdinaten[14] = { 320,300,170,300,70,250,80,90,200,60,320,150,320,300 };
+
+	// Wege zeichnen
+	bZeichneStrasse("W12", "W21", 40, 2,iStrasse1Korrdinaten);
+	bZeichneStrasse("W23a", "W32a", 115, 6, iStrasse2Korrdinaten);
+	bZeichneStrasse("W23b", "W32b", 40, 2, iStrasse3Korrdinaten);
+	bZeichneStrasse("W24", "W42", 55, 2, iStrasse4Korrdinaten);
+	bZeichneStrasse("W34", "W43", 85, 5, iStrasse5Korrdinaten);
+	bZeichneStrasse("W44a", "W44b", 130, 7, iStrasse6Korrdinaten);
+
+	// Fahrzeuge erzeugen
+	std::unique_ptr<Fahrzeug> PKW1 = std::make_unique<PKW>("PKW1", 150, 11);
+	std::unique_ptr<Fahrzeug> PKW2 = std::make_unique<PKW>("PKW2", 120, 12, 45.0);
+	std::unique_ptr<Fahrzeug> PKW3 = std::make_unique<PKW>("PKW3", 80, 13, 100.0);
+	std::unique_ptr<Fahrzeug> Fahrrad1 = std::make_unique<Fahrrad>("Fahrrad1", 30);
+	std::unique_ptr<Fahrzeug> Fahrrad2 = std::make_unique<Fahrrad>("Fahrrad2", 20);
+	std::unique_ptr<Fahrzeug> Fahrrad3 = std::make_unique<Fahrrad>("Fahrrad3", 12);
+
+	// Fahrzeuge auf Kreuzung 1 setzen
+	kr_1->vAnnahme(std::move(PKW1),0.0);
+	kr_1->vAnnahme(std::move(PKW2),0.25);
+	kr_1->vAnnahme(std::move(PKW3),0.5);
+	kr_1->vAnnahme(std::move(Fahrrad1),1.8);
+	kr_1->vAnnahme(std::move(Fahrrad2),1.9);
+	kr_1->vAnnahme(std::move(Fahrrad3),2.0);
+
+	// Simulieren
+	for (dGlobaleZeit = 0; dGlobaleZeit < 10; dGlobaleZeit += 0.25)
+	{
+		std::cout << "Zeit: " << dGlobaleZeit << std::endl;
+		vSetzeZeit(dGlobaleZeit);
+		kr_1->vSimulieren();
+		kr_2->vSimulieren();
+		kr_3->vSimulieren();
+		kr_4->vSimulieren();
+	}
+
+	//cin.get();
+	vBeendeGrafik();
+	//vSleep(500);
+	//cin.get();
+}
+
 void vAufgabenblock1(){
 	std::cout << std::endl << "     ------  Aufgabenblock 1  ------" << std::endl << std::endl << std::endl << std::endl;
 
@@ -392,9 +470,22 @@ void vAufgabenblock2(){
 	std::cout << std::endl << std::endl << std::endl;
 }
 
+void vAufgabenblock3()
+{
+	std::cout << std::endl << "     ------  Aufgabenblock 3  ------" << std::endl << std::endl << std::endl << std::endl;
+	vAufgabe_7();
+	/*std::cout << std::endl << std::endl << std::endl;
+	vAufgabe_8();
+	std::cout << std::endl << std::endl << std::endl;
+	vAufgabe_9();
+	std::cout << std::endl << std::endl << std::endl;
+	vAufgabe_9a();*/
+}
+
 int main() {
 
-	vAufgabenblock1();
-	vAufgabenblock2();
+	//vAufgabenblock1();
+	//vAufgabenblock2();
+	vAufgabenblock3();
 	return 0;
 }

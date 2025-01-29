@@ -21,7 +21,6 @@ public:
 
 	// PKW tankt voll oder dMenge
 	// return: getankte Menge
-	//double dTanken() override;
 	double dTanken(const double dMenge) override;
 
 	// Berechnung der Geschwindigkeit
