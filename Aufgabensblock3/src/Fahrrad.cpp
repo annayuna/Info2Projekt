@@ -10,7 +10,7 @@
 #include "Weg.h"
 
 #include <cmath>
-
+Fahrrad::Fahrrad() : Fahrzeug(){}
 Fahrrad::Fahrrad(const std::string& sName, const double dMaxGeschwindigkeit) :
 		Fahrzeug(sName, dMaxGeschwindigkeit)
 {

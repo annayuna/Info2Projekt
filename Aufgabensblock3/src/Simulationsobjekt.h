@@ -17,6 +17,7 @@ extern double dGlobaleZeit; //verweisen auf dGlobaleZeit in der main
 
 class Simulationsobjekt {
 public:
+	Simulationsobjekt();
 	Simulationsobjekt(const std::string& s);
 	Simulationsobjekt(const Simulationsobjekt& simObj) = delete;
 	virtual ~Simulationsobjekt();

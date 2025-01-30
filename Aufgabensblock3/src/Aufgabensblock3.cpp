@@ -13,11 +13,12 @@
 #include "Weg.h"
 #include "SimuClient.h"
 #include "Kreuzung.h"
+#include "Simulation.h"
 #include <memory>
 #include <vector>
 #include <iomanip>
 #include <random>
-
+#include <fstream>
 
 double dGlobaleZeit = 0.0;
 
@@ -26,6 +27,10 @@ std::ostream& operator<<(std::ostream& out, Simulationsobjekt& simObj)
 {
 	simObj.vAusgeben(out);
 	return out;
+}
+std::istream& operator>>(std::istream& in, Simulationsobjekt& simObj) {
+	simObj.vEinlesen(in);
+    return in;
 }
 
 // gibt alle Fahrzeug in einem vector aus
@@ -310,9 +315,6 @@ void vAufgabe_6()
 
 		vBeendeGrafik();
 		vSleep(500);
-
-		//std::cin.get();
-
 }
 
 
@@ -437,11 +439,60 @@ void vAufgabe_7()
 		kr_3->vSimulieren();
 		kr_4->vSimulieren();
 	}
-
-	//cin.get();
 	vBeendeGrafik();
-	//vSleep(500);
-	//cin.get();
+
+}
+
+void vAufgabe_8()
+{
+	try
+	{
+		std::ifstream inputFile("/Users/anna-mariarossel/eclipse-workspace/Aufgabensblock3/src/VO.dat");
+		if(!inputFile)
+		{
+			throw std::runtime_error("File not found");
+			return;
+		}
+		std::unique_ptr<Fahrzeug> fahrrad = std::make_unique<Fahrrad>();
+		std::unique_ptr<Fahrzeug> pkw = std::make_unique<PKW>();
+		std::shared_ptr<Kreuzung> kreuzung = std::make_shared<Kreuzung>();
+		inputFile >> *pkw >> *fahrrad >> *kreuzung;
+		Fahrzeug::vKopf();
+		std::cout << *pkw << std::endl << *fahrrad << std::endl << *kreuzung << std::endl;
+	}
+	catch (const std::exception& e)
+	{
+		std::cout << "FEHLER: " << e.what() << std::endl;
+		return;
+	}
+}
+
+void vAufgabe_9()
+{
+	std::ifstream inputFile("/Users/anna-mariarossel/eclipse-workspace/Aufgabensblock3/src/Simu.dat");
+	if (!inputFile) {
+		throw std::runtime_error("File not found");
+		return;
+	}
+	Simulation sim;
+	sim.vEinlesen(inputFile);
+}
+
+void vAufgabe_9a(){
+	std::ifstream inputFile("/Users/anna-mariarossel/eclipse-workspace/Aufgabensblock3/src/SimuDisplay.dat");
+	if (!inputFile) {
+		throw std::runtime_error("File not found");
+		return;
+	}
+	Simulation sim;
+	sim.vEinlesen(inputFile, true);//file einlesen, mit grafik
+	for (dGlobaleZeit = 0; dGlobaleZeit < 10; dGlobaleZeit += 0.25)
+		{
+			std::cout << "Zeit: " << dGlobaleZeit << std::endl;
+			sim.vSimulieren();
+			vSetzeZeit(dGlobaleZeit);
+		}
+		vBeendeGrafik();
 }
 
 void vAufgabenblock1(){
@@ -474,18 +525,18 @@ void vAufgabenblock3()
 {
 	std::cout << std::endl << "     ------  Aufgabenblock 3  ------" << std::endl << std::endl << std::endl << std::endl;
 	vAufgabe_7();
-	/*std::cout << std::endl << std::endl << std::endl;
+	std::cout << std::endl << std::endl << std::endl;
 	vAufgabe_8();
 	std::cout << std::endl << std::endl << std::endl;
 	vAufgabe_9();
 	std::cout << std::endl << std::endl << std::endl;
-	vAufgabe_9a();*/
+	vAufgabe_9a();
 }
 
 int main() {
 
-	//vAufgabenblock1();
-	//vAufgabenblock2();
+	vAufgabenblock1();
+	vAufgabenblock2();
 	vAufgabenblock3();
 	return 0;
 }

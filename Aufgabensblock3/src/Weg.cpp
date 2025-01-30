@@ -43,7 +43,7 @@ void Weg::vSimulieren()
 
 double Weg::getTempolimit() const
 {
-	return (double) p_eTempolimit;
+	return getkmhTempolimit(p_eTempolimit);
 }
 
 void Weg::vKopf()

@@ -13,6 +13,8 @@
 #include <iomanip>
 #include <limits>
 
+PKW::PKW() : Fahrzeug(){}
+
 PKW::PKW(const std::string& sName, const double dMaxGeschwindigkeit, const double dVerbrauch, const double dTankvolumen) :
 Fahrzeug(sName, dMaxGeschwindigkeit), p_dVerbrauch(dVerbrauch),
 p_dTankvolumen(dTankvolumen), p_dTankinhalt(p_dTankvolumen / 2)
@@ -72,6 +74,7 @@ void PKW::vEinlesen(std::istream& in)
 {
 	Fahrzeug::vEinlesen(in);
 	in >> p_dVerbrauch >> p_dTankvolumen;
+	p_dTankinhalt = p_dTankvolumen/2;
 
 }
 

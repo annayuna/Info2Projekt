@@ -13,6 +13,7 @@
 class Fahrrad : public Fahrzeug {
 
 public:
+	Fahrrad();
 	Fahrrad(const std::string& sName, const double dMaxGeschwindigkeit);
 	virtual ~Fahrrad();
 

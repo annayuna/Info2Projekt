@@ -15,7 +15,7 @@
 class PKW : public Fahrzeug
 {
 public:
-
+	PKW();
 	PKW(const std::string& sName, const double dMaxGeschwindigkeit, const double dVerbrauch, const double p_dTankvolumen = 55.0);
 	virtual ~PKW();
 

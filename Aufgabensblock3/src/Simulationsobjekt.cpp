@@ -9,7 +9,7 @@
 
 #include <iomanip>
 
-
+Simulationsobjekt::Simulationsobjekt(){}
 Simulationsobjekt::Simulationsobjekt(const std::string& s) :
 				p_sName(s)
 {

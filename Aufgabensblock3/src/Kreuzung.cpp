@@ -17,7 +17,7 @@
 Kreuzung::~Kreuzung()
 {
 }
-
+Kreuzung::Kreuzung() : Simulationsobjekt(){}
 Kreuzung::Kreuzung(const Kreuzung& other)
 	:Simulationsobjekt(other.p_sName), p_pWege(other.p_pWege), p_dTankstelle(other.p_dTankstelle)
 {
